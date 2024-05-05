@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Comments</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Comments">
+                <h1>Comentários em HTML</h1>
+                <p>Comentários em HTML não são exibidos pelo navegador, mas podem ajudar a documentar o código-fonte
+                    HTML.
+                </p>
+                <hr>
+
+                <h2>Tag de Comentário HTML</h2>
+                <p>Você pode adicionar comentários ao seu código-fonte HTML usando a seguinte sintaxe:</p>
+
+                <pre>
+                    <span class="html-comment">&lt;!-- Escreva seus comentários aqui --&gt;</span>
+                </pre>
+
+                <p>Note que há um ponto de exclamação (<code>!</code>) na tag de início, mas não na tag de fechamento.
+                </p>
+
+                <p><strong>Nota:</strong> Comentários não são exibidos pelo navegador, mas podem ajudar a documentar o
+                    código-fonte HTML.</p>
+                <hr>
+
+                <h2>Adicionar Comentários</h2>
+                <p>Com comentários, você pode adicionar notificações e lembretes ao seu código HTML:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-comment">&lt;!-- Este é um comentário --&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-comment">&lt;!-- Lembre-se de adicionar mais informações aqui --&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <!-- Este é um comentário -->
+                    <p>Este é um parágrafo.</p>
+                    <!-- Lembre-se de adicionar mais informações aqui -->
+                </div>
+                <hr>
+
+                <h2>Ocultar Conteúdo</h2>
+                <p>Comentários podem ser usados para ocultar conteúdo. Isso pode ser útil para ocultar conteúdo
+                    temporariamente:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-comment">&lt;!-- &lt;p&gt;Este é outro parágrafo.&lt;/p&gt; --&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo também.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um parágrafo.</p>
+                    <!-- <p>Este é outro parágrafo.</p> -->
+                    <p>Este é um parágrafo também.</p>
+                </div>
+                <p>Você também pode ocultar mais de uma linha. Tudo entre <code class="html-comment">&lt;!--</code> e
+                    <code class="html-comment">--&gt;</code>
+                    será oculto da exibição.
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-comment">&lt;!--</span>
+     <span class="html-comment">&lt;p&gt;Veja esta imagem interessante:&lt;/p&gt;</span>
+     <span class="html-comment">&lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;</span>
+     <span class="html-comment">--&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo também.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um parágrafo.</p>
+                    <!--
+                    <p>Veja esta imagem interessante:</p>
+                    <img border="0" src="pic_trulli.jpg" alt="Trulli">
+                    -->
+                    <p>Este é um parágrafo também.</p>
+                </div>
+
+                <p>Os comentários também são ótimos para depurar HTML, porque você pode comentar linhas de código HTML,
+                    uma de cada vez, para procurar erros.
+                </p>
+                <hr>
+
+                <h2>Ocultar Conteúdo Inline</h2>
+                <p>Comentários podem ser usados para ocultar partes no meio do código HTML.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este</span> <span class="html-comment">&lt;!-- texto interessante --&gt;</span> <span class="html-text">é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este <!-- texto interessante --> é um parágrafo.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

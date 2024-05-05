@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantics</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Semantics">
+                <h1>Elementos Semânticos em HTML</h1>
+                <p>Os elementos semânticos são elementos que têm significado.</p>
+                <p>Um elemento semântico descreve claramente seu significado para o navegador e para o desenvolvedor.
+                </p>
+
+                <p>Exemplos de elementos não semânticos: <code style="color:#0059ff">&lt;div&gt;</code> e <code style="color:#0059ff">&lt;span&gt;</code> - Não
+                    dizem nada sobre seu conteúdo.</p>
+                <p>Exemplos de elementos semânticos: <code style="color:#0059ff">&lt;form&gt;</code>, <code style="color:#0059ff">&lt;table&gt;</code>, e
+                    <code style="color:#0059ff">&lt;article&gt;</code> - Definem claramente seu conteúdo.
+                </p>
+                <hr>
+
+                <h2>Elementos Semânticos em HTML</h2>
+                <p>Muitos sites contêm código HTML como: <code style="color:#0059ff">&lt;div id="nav"&gt;</code>,
+                    <code style="color:#0059ff">&lt;div class="header"&gt;</code>, <code style="color:#0059ff">&lt;div id="footer"&gt;</code> para indicar
+                    navegação, cabeçalho e rodapé.
+                </p>
+                <p>No HTML, existem alguns elementos semânticos que podem ser usados para definir diferentes partes de
+                    uma página da web:</p>
+
+                <ul style="columns: 7;list-style: none;">
+                    <li><code>&lt;article&gt;</code></li>
+                    <li><code>&lt;aside&gt;</code></li>
+                    <li><code>&lt;details&gt;</code></li>
+                    <li><code>&lt;figcaption&gt;</code></li>
+                    <li><code>&lt;figure&gt;</code></li>
+                    <li><code>&lt;footer&gt;</code></li>
+                    <li><code>&lt;header&gt;</code></li>
+                    <li><code>&lt;main&gt;</code></li>
+                    <li><code>&lt;mark&gt;</code></li>
+                    <li><code>&lt;nav&gt;</code></li>
+                    <li><code>&lt;section&gt;</code></li>
+                    <li><code>&lt;summary&gt;</code></li>
+                    <li><code>&lt;time&gt;</code></li>
+                </ul>
+
+                <h3>Exemplo do Elemento &lt;section&gt;</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;section&gt;</code> define uma seção em um documento. Segundo a documentação HTML
+                    do W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com um cabeçalho."</p>
+
+                <pre>
+                    <span class="html-tag">&lt;section&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">WWF</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">O Fundo Mundial para a Natureza (WWF) é uma organização internacional que trabalha em questões relacionadas à conservação, pesquisa e restauração do 
+            meio ambiente, anteriormente chamada de Fundo Mundial para a Vida Selvagem. O WWF foi fundado em 1961.</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/section&gt;</span>
+        
+     <span class="html-tag">&lt;section&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">O símbolo do Panda do WWF</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">O Panda se tornou o símbolo do WWF. O famoso logo do panda do WWF teve origem em um panda chamado Chi Chi, que foi transferido do Zoológico de Pequim 
+            para o Zoológico de Londres no mesmo ano da criação do WWF.</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/section&gt;</span>                  
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <section>
+                        <h1>WWF</h1>
+                        <p>
+                            O Fundo Mundial para a Natureza (WWF) é uma organização internacional que trabalha em
+                            questões relacionadas à conservação, pesquisa e restauração do
+                            meio ambiente, anteriormente chamada de Fundo Mundial para a Vida Selvagem. O WWF foi
+                            fundado em 1961.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h1>O símbolo do Panda do WWF</h1>
+                        <p>
+                            O Panda se tornou o símbolo do WWF. O famoso logo do panda do WWF teve origem em um panda
+                            chamado Chi Chi, que foi transferido do Zoológico de Pequim
+                            para o Zoológico de Londres no mesmo ano da criação do WWF.
+                        </p>
+                    </section>
+                </div>
+
+                <h3>Exemplo do Elemento &lt;article&gt;</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;article&gt;</code> especifica conteúdo independente e autossuficiente.</p>
+                <p>Um artigo deve fazer sentido por conta própria e deve ser possível distribuí-lo independentemente do
+                    resto do site.</p>
+
+                <pre>
+                    <span class="html-tag">&lt;article&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Google Chrome</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">Google Chrome é um navegador web desenvolvido pela Google, lançado em 2008. Chrome é o navegador web mais popular do mundo hoje!</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/article&gt;</span>
+    
+     <span class="html-tag">&lt;article&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Mozilla Firefox</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">Mozilla Firefox é um navegador web de código aberto desenvolvido pela Mozilla. Firefox tem sido o segundo navegador web mais popular desde janeiro de 
+            2018.</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/article&gt;</span>
+    
+     <span class="html-tag">&lt;article&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Microsoft Edge</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">Microsoft Edge é um navegador web desenvolvido pela Microsoft, lançado em 2015. O Microsoft Edge substituiu o Internet Explorer.</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/article&gt;</span>                  
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <article>
+                        <h2>Google Chrome</h2>
+                        <p>
+                            Google Chrome é um navegador web desenvolvido pela Google, lançado em 2008. Chrome é o
+                            navegador web mais popular do mundo hoje!
+                        </p>
+                    </article>
+
+                    <article>
+                        <h2>Mozilla Firefox</h2>
+                        <p>
+                            Mozilla Firefox é um navegador web de código aberto desenvolvido pela Mozilla. Firefox tem
+                            sido o segundo navegador web mais popular desde janeiro de 2018.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h2>Microsoft Edge</h2>
+                        <p>
+                            Microsoft Edge é um navegador web desenvolvido pela Microsoft, lançado em 2015. O Microsoft
+                            Edge substituiu o Internet Explorer.
+                        </p>
+                    </article>
+                </div>
+
+                <h3>Exemplo 2</h3>
+                <pre>
+                    <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">.all-browsers</span> {
+            <span class="html-attribute">margin</span>: <span class="html-value">0</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">5px</span>;
+            <span class="html-attribute">background-color</span>: <span class="html-value">lightgray</span>;
+        }
+
+        <span class="html-tag">.all-browsers &gt; h1</span>, <span class="html-tag">.browser</span> {
+            <span class="html-attribute">margin</span>: <span class="html-value">10px</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">5px</span>;
+        }
+
+        <span class="html-tag">.browser</span> {
+            <span class="html-attribute">background</span>: <span class="html-value">white</span>;
+        }
+
+        <span class="html-tag">.browser &gt; h2</span>, <span class="html-tag">p</span> {
+            <span class="html-attribute">margin</span>: <span class="html-value">4px</span>;
+            <span class="html-attribute">font-size</span>: <span class="html-value">90%</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+                    
+     <span class="html-tag">&lt;article</span> <span class="html-attribute">class</span>="<span class="html-value">all-browsers</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Navegadores Mais Populares</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;article</span> <span class="html-attribute">class</span>="<span class="html-value">browser</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Google Chrome</span><span class="html-tag">&lt;/h2&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">Google Chrome é um navegador web desenvolvido pela Google, lançado em 2008. Chrome é o navegador web mais popular do mundo hoje!</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/article&gt;</span>
+        <span class="html-tag">&lt;article</span> <span class="html-attribute">class</span>="<span class="html-value">browser</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Mozilla Firefox</span><span class="html-tag">&lt;/h2&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span>
+                <span class="html-text">Mozilla Firefox é um navegador web de código aberto desenvolvido pela Mozilla. Firefox tem sido o segundo navegador web mais popular desde janeiro de
+                2018.</span>
+            <span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/article&gt;</span>
+        <span class="html-tag">&lt;article</span> <span class="html-attribute">class</span>="<span class="html-value">browser</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Microsoft Edge</span><span class="html-tag">&lt;/h2&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">Microsoft Edge é um navegador web desenvolvido pela Microsoft, lançado em 2015. O Microsoft Edge substituiu o Internet Explorer.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/article&gt;</span>
+     <span class="html-tag">&lt;/article&gt;</span>                    
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <style>
+                        .all-browsers {
+                            margin: 0;
+                            padding: 5px;
+                            background-color: lightgray;
+                        }
+
+                        .all-browsers>h1,
+                        .browser {
+                            margin: 10px;
+                            padding: 5px;
+                        }
+
+                        .browser {
+                            background: white;
+                        }
+
+                        .browser>h2,
+                        p {
+                            margin: 4px;
+                            font-size: 90%;
+                        }
+                    </style>
+
+                    <article class="all-browsers">
+                        <h1>Navegadores Mais Populares</h1>
+                        <article class="browser">
+                            <h2>Google Chrome</h2>
+                            <p>Google Chrome é um navegador web desenvolvido pela Google, lançado em 2008. Chrome é o
+                                navegador web mais popular do mundo hoje!</p>
+                        </article>
+                        <article class="browser">
+                            <h2>Mozilla Firefox</h2>
+                            <p>
+                                Mozilla Firefox é um navegador web de código aberto desenvolvido pela Mozilla. Firefox
+                                tem sido o segundo navegador web mais popular desde janeiro de
+                                2018.
+                            </p>
+                        </article>
+                        <article class="browser">
+                            <h2>Microsoft Edge</h2>
+                            <p>Microsoft Edge é um navegador web desenvolvido pela Microsoft, lançado em 2015. O
+                                Microsoft Edge substituiu o Internet Explorer.</p>
+                        </article>
+                    </article>
+                </div>
+                <hr>
+
+                <h3>Exemplo do Elemento &lt;header&gt;</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;header&gt;</code> representa um contêiner para conteúdo introdutório ou um
+                    conjunto de links de navegação.</p>
+
+                <pre>
+                    <span class="html-tag">&lt;article&gt;</span>
+        <span class="html-tag">&lt;header&gt;</span>
+            <span class="html-tag">&lt;h1&gt;</span><span class="html-text">O que o WWF faz?</span><span class="html-tag">&lt;/h1&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">A missão do WWF:</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/header&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">A missão do WWF é parar a degradação do ambiente natural do nosso planeta e construir um futuro em que os seres humanos vivam em harmonia com a natureza.</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/article&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div>
+                        <article>
+                            <header style="background-color: initial; color: initial; text-shadow: none;">
+                                <h1>O que o WWF faz?</h1>
+                                <p>A missão do WWF:</p>
+                            </header>
+                            <p>
+                                A missão do WWF é parar a degradação do ambiente natural do nosso planeta e construir um
+                                futuro em que os seres humanos vivam em harmonia com a natureza.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <h3>Exemplo do Elemento &lt;footer&gt;</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;footer&gt;</code> define um rodapé para um documento ou seção.</p>
+                <pre>
+                    <span class="html-tag">&lt;footer&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Autor: Hege Refsnes</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">mailto:hege@example.com</span>"<span class="html-tag">&gt;</span><span class="html-text">hege@example.com</span><span class="html-tag">&lt;/a&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/footer&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <footer style="background-color: initial; color: initial; text-shadow: none;">
+                        <p>Autor: Hege Refsnes</p>
+                        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+                    </footer>
+                </div>
+
+                <h3>Exemplo do Elemento &lt;nav&gt;</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;nav&gt;</code> define um conjunto de links de navegação.</p>
+                <p>É importante notar que nem todos os links de um documento devem estar dentro de um
+                    <code style="color:#0059ff">&lt;nav&gt;</code>. O elemento <code style="color:#0059ff">&lt;nav&gt;</code> é destinado apenas para grandes blocos
+                    de links de navegação.
+                </p>
+
+                <pre>
+                    <span class="html-tag">&lt;nav&gt;</span>
+        <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">/html/</span>"<span class="html-tag">&gt;</span><span class="html-text">HTML</span><span class="html-tag">&lt;/a&gt;</span> |
+        <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">/css/</span>"<span class="html-tag">&gt;</span><span class="html-text">CSS</span><span class="html-tag">&lt;/a&gt;</span> |
+        <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">/js/</span>"<span class="html-tag">&gt;</span><span class="html-text">JavaScript</span><span class="html-tag">&lt;/a&gt;</span> |
+        <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">/jquery/</span>"<span class="html-tag">&gt;</span><span class="html-text">jQuery</span><span class="html-tag">&lt;/a&gt;</span>
+     <span class="html-tag">&lt;/nav&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <style>
+                        nav {
+                            overflow: hidden;
+                        }
+                        nav a:hover {
+                            background-color: initial;
+                            color: initial;
+                        }
+                    </style>
+                    <div style="width: 100%;">
+                        <nav style="width: 100%; height: auto;">
+                            <a href="/html/">HTML</a> |
+                            <a href="/css/">CSS</a> |
+                            <a href="/js/">JavaScript</a> |
+                            <a href="/jquery/">jQuery</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <h3>Exemplo do Elemento &lt;aside&gt;</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;aside&gt;</code> define algum conteúdo separado do conteúdo em que está inserido
+                    (como uma barra lateral).</p>
+                <p>O conteúdo de <code style="color:#0059ff">&lt;aside&gt;</code> deve ser indiretamente relacionado ao conteúdo ao seu redor.
+                </p>
+
+                <pre>
+                    <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">aside</span> {
+            <span class="html-attribute">width</span>: <span class="html-value">30%</span>;
+            <span class="html-attribute">padding-left</span>: <span class="html-value">15px</span>;
+            <span class="html-attribute">margin-left</span>: <span class="html-value">15px</span>;
+            <span class="html-attribute">float</span>: <span class="html-value">right</span>;
+            <span class="html-attribute">font-style</span>: <span class="html-value">italic</span>;
+            <span class="html-attribute">background-color</span>: <span class="html-value">lightgray</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+
+     <span class="html-tag">&lt;aside&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">O centro Epcot é um parque temático no Walt Disney World Resort, com atrações emocionantes, pavilhões internacionais, fogos de artifício premiados
+             e eventos especiais sazonais.</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/aside&gt;</span>
+
+    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Minha família e eu visitamos o centro Epcot neste verão. O clima estava bom e Epcot foi incrível! Eu tive um ótimo verão junto com minha família!</span><span class="html-tag">&lt;/p&gt;</span>
+    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Minha família e eu visitamos o centro Epcot neste verão. O clima estava bom e Epcot foi incrível! Eu tive um ótimo verão junto com minha família!</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;">
+                        <style>
+                        aside {
+                            width: 30%;
+                            padding-left: 15px;
+                            margin-left: 15px;
+                            float: right;
+                            font-style: italic;
+                            background-color: lightgray;
+                        }
+                     </style>
+                
+                    <p>Minha família e eu visitamos o centro Epcot neste verão. O clima estava bom e Epcot foi incrível! Eu tive um ótimo verão junto com minha família!</p>
+                     <aside>
+                        <p>
+                            O centro Epcot é um parque temático no Walt Disney World Resort, com atrações emocionantes, pavilhões internacionais, fogos de artifício premiados
+                             e eventos especiais sazonais.
+                        </p>
+                     </aside>
+                
+                    <p>Minha família e eu visitamos o centro Epcot neste verão. O clima estava bom e Epcot foi incrível! Eu tive um ótimo verão junto com minha família!</p>
+                    <p>Minha família e eu visitamos o centro Epcot neste verão. O clima estava bom e Epcot foi incrível! Eu tive um ótimo verão junto com minha família!</p>
+                    </div>
+                    
+                </div>
+
+                <h3>Exemplo do Elemento &lt;figure&gt; com &lt;figcaption&gt;</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;figure&gt;</code> especifica conteúdo autossuficiente, como ilustrações,
+                    diagramas, fotos, listas de código, etc.</p>
+                <p>O elemento <code style="color:#0059ff">&lt;figcaption&gt;</code> define uma legenda para um <code style="color:#0059ff">&lt;figure&gt;</code>. A
+                    legenda pode ser colocada como o primeiro ou o último filho do elemento <code style="color:#0059ff">&lt;figure&gt;</code>.
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;figure&gt;</span>
+        <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>="<span class="html-value">../media/Dog.png</span>" <span class="html-attribute">alt</span>="<span class="html-text">Cachorro</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;figcaption&gt;</span><span class="html-text">Fig.1 - Cachorro.</span><span class="html-tag">&lt;/figcaption&gt;</span>
+     <span class="html-tag">&lt;/figure&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <figure>
+                        <img src="../media/Dog.png" alt="Cachorro" style="width: 250px">
+                        <figcaption>Fig.1 - Cachorro.</figcaption>
+                     </figure>
+                </div>
+                <hr>
+
+                <h2>Por Que Elementos Semânticos?</h2>
+                <p>De acordo com o W3C: "Uma Web semântica permite que os dados sejam compartilhados e reutilizados em
+                    diferentes aplicativos, empresas e comunidades."</p>
+                <hr>
+
+                <h2>Lista de Elementos Semânticos em HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;article&gt;</code></td>
+                        <td>Define conteúdo independente e autossuficiente</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;aside&gt;</code></td>
+                        <td>Define conteúdo separado do conteúdo principal</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;details&gt;</code></td>
+                        <td>Define detalhes adicionais que o usuário pode ver ou ocultar</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;figcaption&gt;</code></td>
+                        <td>Define uma legenda para um elemento <code>&lt;figure&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;figure&gt;</code></td>
+                        <td>Especifica conteúdo autossuficiente, como ilustrações, diagramas, fotos, listas de código,
+                            etc.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;footer&gt;</code></td>
+                        <td>Define um rodapé para um documento ou seção</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;header&gt;</code></td>
+                        <td>Especifica um cabeçalho para um documento ou seção</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;main&gt;</code></td>
+                        <td>Especifica o conteúdo principal de um documento</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;mark&gt;</code></td>
+                        <td>Define texto destacado</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;nav&gt;</code></td>
+                        <td>Define links de navegação</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>Define uma seção em um documento</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;summary&gt;</code></td>
+                        <td>Define um cabeçalho visível para um elemento <code>&lt;details&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;time&gt;</code></td>
+                        <td>Define uma data/hora</td>
+                    </tr>
+                </table>
+
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

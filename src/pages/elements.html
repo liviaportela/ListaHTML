@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Elements">
+                <h1>Elementos HTML</h1>
+                <p>Um elemento HTML é tudo aquilo entre a tag de abertura e a tag de fechamento:</p>
+                <pre>
+                    <span class="html-tag">&lt;nome_da_tag&gt;</span>Conteúdo aqui...<span class="html-tag">&lt;/nome_da_tag&gt;</span>
+                </pre>
+
+                <p>Exemplo de alguns elementos HTML:</p>
+                <pre>
+                    <span class="html-tag">&lt;h1&gt;</span>Meu primeiro título.<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span>Meu primeiro parágrafo.<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+
+                <table>
+                    <tr>
+                        <th>Tag inicial</th>
+                        <th>Conteúdo do elemento</th>
+                        <th>Tag final</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h1&gt;</code></td>
+                        <td>Meu primeiro título</td>
+                        <td><code>&lt;/h1&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Meu primeiro parágrafo</td>
+                        <td><code>&lt;p&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;br&gt;</code></td>
+                        <td>none</td>
+                        <td>none</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <h2>Elementos HTML Aninhados</h2>
+                <p>Os elementos HTML podem ser aninhados (o que significa que elementos podem conter outros elementos).
+                </p>
+                <p>Todos os documentos HTML consistem em elementos HTML aninhados.</p>
+                <p>O exemplo a seguir contém quatro elementos HTML (<code style="color:#0059ff">&lt;html&gt;</code>,
+                    <code style="color:#0059ff">&lt;body&gt;</code>, <code style="color:#0059ff">&lt;h1&gt;</code>, e
+                    <code style="color:#0059ff">&lt;p&gt;</code>):
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                <span class="html-tag">&lt;!DOCTYPE</span> <span class="html-attribute">html</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;html</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;body&gt;</span>
+            <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Meu primeiro título</span><span class="html-tag">&lt;/h1&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">Meu primeiro parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/body&gt;</span>
+        <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h1>Meu primeiro título</h1>
+                    <p>Meu primeiro parágrafo.</p>
+                </div>
+
+                <h2>Explicação do Exemplo</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;html&gt;</code> É o elemento raiz e define todo o documento HTML.</p> 
+                <p>Ele tem uma tag de abertura <code style="color:#0059ff">&lt;html&gt;</code> e uma tag de fechamento
+                    <code style="color:#0059ff">&lt;/html&gt;</code>.
+                </p>
+                <p>
+                    Dentro do elemento <code style="color:#0059ff">&lt;html&gt;</code> há um elemento <code style="color:#0059ff">&lt;body&gt;</code>, que define o corpo do documento.
+                </p>
+
+                <pre>
+                    <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Meu primeiro título</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Meu primeiro parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+    <span class="html-tag">&lt;/body&gt;</span>
+                    </pre>
+
+                <p>O elemento <code style="color:#0059ff">&lt;body&gt;</code> define o corpo do documento.</p> 
+                <p>
+                    Possui uma tag inicial <code style="color:#0059ff">&lt;body&gt;</code> e uma tag final <code style="color:#0059ff">&lt;/body&gt;</code>
+                </p>
+                <p>
+                    Dentro do elemento <code style="color:#0059ff">&lt;body&gt;</code>, há dois outros elementos: <code style="color:#0059ff">&lt;h1&gt;</code> e <code style="color:#0059ff">&lt;p&gt;</code>.
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Meu primeiro título</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Meu primeiro parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <hr>
+
+                <h2>Nunca Pule a Tag Final</h2>
+                <p>Alguns elementos HTML serão exibidos corretamente, mesmo se você esquecer a tag final:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;html&gt;</span>
+        <span class="html-tag">&lt;body&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span>Isso é um parágrafo
+            <span class="html-tag">&lt;p&gt;</span>Isso é um parágrafo
+        <span class="html-tag">&lt;/body&gt;</span>
+    <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Isso é um parágrafo
+                    <p>Isso é um parágrafo
+                </div>
+                <b>No entanto, nunca confie nisso! Resultados inesperados e erros podem ocorrer se você esquecer a tag
+                    final!</b>
+                <hr>
+
+                <h2>Elemento HTML Vazio</h2>
+                <p>Elementos HTML sem conteúdo são chamados de elementos vazios.</p>
+                <p>O elemento <code style="color:#0059ff">&lt;br&gt;</code> define uma quebra de linha e é um elemento vazio sem uma tag de
+                    fechamento.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>Este é um parágrafo com uma quebra de linha.<span class="html-tag">&lt;br&gt;</span>Esta é uma nova linha no mesmo parágrafo.<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um parágrafo com uma quebra de linha.<br> Esta é uma nova linha no mesmo parágrafo.</p>
+                </div>
+                <hr>
+
+                <h2>Tags HTML Não Diferenciam Maiúsculas de Minúsculas</h2>
+                <p>As tags HTML não diferenciam maiúsculas de minúsculas: <code style="color:#0059ff">&lt;P&gt;</code> significa o mesmo que
+                    <code style="color:#0059ff">&lt;p&gt;</code>.
+                </p>
+                <p>Embora o padrão HTML não exija tags em minúsculas, a W3C recomenda o uso de letras minúsculas em HTML
+                    e exige isso para documentos mais estritos, como XHTML.
+                </p>
+                <hr>
+
+                <h2>Referência de tags HTML</h2>
+                <table>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;html&gt;</code></td>
+                        <td>Define a raiz de um documento HTML</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;body&gt;</code></td>
+                        <td>Define o corpo do documento</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h1&gt;</code> ao <code>&lt;h6&gt;</code></td>
+                        <td>Define títulos HTML</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

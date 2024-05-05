@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Style Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Style Guide">
+                <h1>Guia de Estilo HTML</h1>
+                <p>Um código HTML consistente, limpo e organizado torna mais fácil para outras pessoas ler e entender
+                    seu código.</p>
+                <hr>
+
+                <h2>Boas Práticas e Dicas para Criar um Bom Código HTML</h2>
+                <h3>Sempre Declare o Tipo de Documento</h3>
+                <p>Sempre declare o tipo de documento como a primeira linha do seu documento.</p>
+                <p>O tipo de documento correto para HTML é:</p>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE</span> <span class="html-attribute">html</span><span class="html-tag">&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>Use Nomes de Elementos em Minúsculas</h3>
+                <p>O HTML permite misturar letras maiúsculas e minúsculas nos nomes dos elementos.</p>
+                <p>No entanto, recomendamos usar nomes de elementos em minúsculas, porque:</p>
+                <ul style="text-align: initial; list-style: initial;">
+                    <li>Misturar maiúsculas e minúsculas não fica bom</li>
+                    <li>Os desenvolvedores normalmente usam minúsculas</li>
+                    <li>Minúsculas parecem mais limpas</li>
+                    <li>Minúsculas são mais fáceis de escrever</li>
+                </ul>
+
+                <p>Exemplo de bom código:</p>
+                <pre>
+                    <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>                  
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um parágrafo.</p>
+                </div>
+                <p>Exemplo de mau código:</p>
+                <pre>
+                    <span class="html-tag">&lt;BODY&gt;</span>
+        <span class="html-tag">&lt;P&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/P&gt;</span>
+     <span class="html-tag">&lt;/BODY&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <P>Este é um parágrafo.</P>
+                </div>
+                <hr>
+
+                <h3>Feche Todos os Elementos HTML</h3>
+                <p>No HTML, você não precisa fechar todos os elementos (por exemplo, o elemento <code style="color:#0059ff">&lt;p&gt;</code>).
+                </p>
+                <p>No entanto, recomendamos fortemente fechar todos os elementos HTML, como este exemplo de bom código:
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;section&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/section&gt;</span>                  
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <section>
+                        <p>Este é um parágrafo.</p>
+                        <p>Este é um parágrafo.</p>
+                    </section>
+                </div>
+                <pre>
+                    <span class="html-tag">&lt;section&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span>
+     <span class="html-tag">&lt;/section&gt;</span>               
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <section>
+                        <p>Este é um parágrafo.
+                        <p>Este é um parágrafo.
+                    </section>
+                </div>
+                <hr>
+
+                <h3>Use Nomes de Atributo em Minúsculas</h3>
+                <p>O HTML permite misturar letras maiúsculas e minúsculas nos nomes dos atributos.</p>
+                <p>No entanto, recomendamos usar nomes de atributos em minúsculas, porque:</p>
+                <ul style="text-align: initial; list-style: initial;">
+                    <li>Misturar maiúsculas e minúsculas não fica bom</li>
+                    <li>Os desenvolvedores normalmente usam minúsculas</li>
+                    <li>Minúsculas parecem mais limpas</li>
+                    <li>Minúsculas são mais fáceis de escrever</li>
+                </ul>
+                <p>Exemplo de bom código:</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">https://www.w3schools.com/html/</span>"<span class="html-tag">&gt;</span><span class="html-text">Visite nosso tutorial de HTML</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://www.w3schools.com/html/">Visite nosso tutorial de HTML</a>
+                </div>
+                <p>Exemplo de mau código:</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">HREF</span>="<span class="html-value">https://www.w3schools.com/html/</span>"<span class="html-tag">&gt;</span><span class="html-text">Visite nosso tutorial de HTML</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a HREF="https://www.w3schools.com/html/">Visite nosso tutorial de HTML</a>
+                </div>
+                <hr>
+
+                <h3>Sempre Cite os Valores dos Atributos</h3>
+                <p>O HTML permite valores de atributos sem aspas.</p>
+                <p>No entanto, recomendamos citar os valores dos atributos, porque:</p>
+                <ul style="text-align: initial; list-style: initial;">
+                    <li>Os desenvolvedores normalmente citam valores de atributos</li>
+                    <li>Valores entre aspas são mais fáceis de ler</li>
+                    <li>Você DEVE usar aspas se o valor contiver espaços</li>
+                </ul>
+                <p>Exemplo de bom código:</p>
+                <pre>
+                    <span class="html-tag">&lt;table</span> <span class="html-attribute">class</span>="<span class="html-value">striped</span>"<span class="html-tag">&gt;</span>
+                </pre>
+
+                <p>Exemplo de mau código:</p>
+                <pre>
+                    <span class="html-tag">&lt;table</span> <span class="html-attribute">class</span>=<span class="html-value">striped</span><span class="html-tag">&gt;</span>
+                </pre>
+
+                <p>Exemplo de código muito ruim:</p>
+                <pre>
+                    <span class="html-tag">&lt;table</span> <span class="html-attribute">class</span>=<span class="html-value">table striped</span><span class="html-tag">&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>Especificar o Atributo alt, Largura e Altura para Imagens</h3>
+                <p>Sempre especifique o atributo <code style="color:#f0b400">alt</code> para imagens. Este atributo é importante se a imagem
+                    não puder ser exibida.</p>
+                <p>Também é recomendável definir a largura e a altura das imagens para evitar cintilação, pois o
+                    navegador pode reservar espaço para a imagem antes do carregamento.</p>
+                <p>Exemplo de bom código:</p>
+                <pre>
+                    <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>="<span class="html-value">html5.gif</span>" <span class="html-attribute">alt</span>="<span class="html-text">HTML5</span>" <span class="html-attribute">style</span>="<span class="html-value">width: 128px; height: 128px</span>"<span class="html-tag">&gt;</span>                  
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <img src="../media/Dog.png" alt="Cachorro" style="width: 128px; height: 128px">
+                </div>
+                <p>Exemplo de mau código:</p>
+                <pre>
+                    <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>="<span class="html-value">../media/Dog.png</span>"<span class="html-tag">&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <img src="../media/Dog.png" width="150px">
+                </div>
+                <hr>
+
+                <h3>Espaços e Sinais de Igualdade</h3>
+                <p>HTML permite espaços em torno de sinais de igual. Mas sem espaço é mais fácil de ler e agrupa melhor
+                    as entidades.</p>
+                <p>Exemplo de bom código:</p>
+                <pre>
+                    <span class="html-tag">&lt;link</span> <span class="html-attribute">rel</span>="<span class="html-value">stylesheet</span>" <span class="html-attribute">href</span>="<span class="html-value">styles.css</span>"<span class="html-tag">&gt;</span>
+                </pre>
+                <p>Exemplo de mau código:</p>
+                <pre>
+                    <span class="html-tag">&lt;link</span>  <span class="html-attribute">rel</span> <span class="html-attribute">=</span> "<span class="html-value">stylesheet</span>" <span class="html-attribute">href</span> <span class="html-attribute">=</span> "<span class="html-value">styles.css</span>"<span class="html-tag">&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>Evitar Linhas de Código Muito Longas</h3>
+                <p>Quando usar um editor de HTML, não é conveniente rolar para a direita e para a esquerda para ler o
+                    código HTML. Tente evitar linhas de código muito longas.</p>
+                <hr>
+
+                <h3>Linhas em Branco e Indentação</h3>
+                <p>Não adicione linhas em branco, espaços ou indentação sem um motivo.</p>
+                <p>Para melhorar a legibilidade, adicione linhas em branco para separar grandes blocos ou blocos lógicos
+                    de código.</p>
+                <p>Para melhorar a legibilidade, adicione duas espaços de indentação. Não use a tecla de tabulação.</p>
+
+                <h3>Exemplo de bom código</h3>
+                <pre>
+                    <span class="html-tag">&lt;body&gt;</span>
+
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Cidades Famosas</span><span class="html-tag">&lt;/h1&gt;</span>
+
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Tóquio é a capital do Japão, o centro da Grande Tóquio e a área metropolitana mais populosa do mundo.</span><span class="html-tag">&lt;/p&gt;</span>
+
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra. É a cidade mais populosa do Reino Unido.</span><span class="html-tag">&lt;/p&gt;</span>
+
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Paris é a capital da França. A área de Paris é um dos maiores centros populacionais da Europa.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+                </pre>
+
+                <h3>Exemplo de mal código</h3>
+                <pre>
+                    <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Cidades Famosas</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Tóquio é a capital do Japão, o centro da Grande Tóquio, e a área metropolitana mais populosa do mundo.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra. É a cidade mais populosa do Reino Unido.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Paris é a capital da França. A área de Paris é um dos maiores centros populacionais da Europa.</span><span class="html-tag">&lt;/p&gt;</span>
+    <span class="html-tag">&lt;/body&gt;</span>
+                </pre>
+
+                <h3>Exemplo de boas práticas para tabelas:</h3>
+                <pre>
+                    <span class="html-tag">&lt;table&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">Nome</span><span class="html-tag">&lt;/th&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">Descrição</span><span class="html-tag">&lt;/th&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">A</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Descrição de A</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">B</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Descrição de B</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+     <span class="html-tag">&lt;/table&gt;</span>                  
+                </pre>
+
+                <h3>Exemplo de Boas Práticas para Listas:</h3>
+                <pre>
+                    <span class="html-tag">&lt;ul&gt;</span>
+        <span class="html-tag">&lt;li&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/li&gt;</span>
+        <span class="html-tag">&lt;li&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/li&gt;</span>
+        <span class="html-tag">&lt;li&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/li&gt;</span>
+     <span class="html-tag">&lt;/ul&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>O Elemento &lt;title&gt; Nunca Deve Ser Omitido</h3>
+                <p>O elemento <code style="color:#0059ff">&lt;title&gt;</code> é obrigatório em HTML.</p>
+                <p>O conteúdo do título da página é muito importante para a otimização de mecanismos de busca (SEO)! O
+                    título da página é usado por algoritmos de mecanismos de busca para decidir a ordem ao listar
+                    páginas nos resultados de busca.</p>
+                <pre>
+                        <span class="html-tag">&lt;title&gt;</span><span class="html-text">Guia de Estilo HTML e Convenções de Codificação</span><span class="html-tag">&lt;/title&gt;</span>
+                    </pre>
+                <hr>
+
+                <h3>Posso Omitir &lt;html&gt; e &lt;body&gt;?</h3>
+                <p>Uma página HTML será validada sem as tags <code style="color:#0059ff">&lt;html&gt;</code> e <code style="color:#0059ff">&lt;body&gt;</code>:</p>
+                <pre>
+     <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html&gt;</span>
+        <span class="html-tag">&lt;title&gt;</span><span class="html-text">Título da Página</span><span class="html-tag">&lt;/title&gt;</span>
+     <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Este é um cabeçalho</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>                    
+                </pre>
+
+                <p>No entanto, recomendamos sempre adicionar as tags <code style="color:#0059ff">&lt;html&gt;</code> e
+                    <code style="color:#0059ff">&lt;body&gt;</code>!
+                </p>
+                <p>Omitir <code style="color:#0059ff">&lt;body&gt;</code> pode causar erros em navegadores mais antigos.</p>
+                <p>Omitir <code style="color:#0059ff">&lt;html&gt;</code> e <code style="color:#0059ff">&lt;body&gt;</code> também pode quebrar software de DOM e
+                    XML.</p>
+                <hr>
+
+                <h3>Posso Omitir &lt;head&gt;?</h3>
+                <p>A tag <code style="color:#0059ff">&lt;head&gt;</code> também pode ser omitida.</p>
+                <p>Os navegadores irão adicionar todos os elementos antes de <code style="color:#0059ff">&lt;body&gt;</code> a um elemento
+                    <code style="color:#0059ff">&lt;head&gt;</code> padrão.
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html&gt;</span>
+     <span class="html-tag">&lt;title&gt;</span><span class="html-text">Título da Página</span><span class="html-tag">&lt;/title&gt;</span>
+     <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Este é um cabeçalho</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>Devo Fechar Elementos HTML Vazios?</h3>
+                <p>No HTML, é opcional fechar elementos vazios.</p>
+                <p>Permitido:</p>
+                <pre>
+                    <span class="html-tag">&lt;meta</span> <span class="html-attribute">charset</span>="<span class="html-value">utf-8</span>"<span class="html-tag">&gt;</span>
+                </pre>
+                <p>Também Permitido:</p>
+                <pre>
+                    <span class="html-tag">&lt;meta</span> <span class="html-attribute">charset</span>="<span class="html-value">utf-8</span>" <span class="html-tag">/&gt;</span>
+                </pre>
+                <p>Se você espera que software XML/XHTML acesse sua página, mantenha a barra de fechamento (/), pois ela
+                    é necessária no XML e XHTML.</p>
+                <hr>
+
+                <h3>Adicione o Atributo lang</h3>
+                <p>Sempre inclua o atributo <code style="color:#f0b400">lang</code> dentro da tag <code style="color:#0059ff">&lt;html&gt;</code>, para declarar o
+                    idioma da página da web. Isso ajuda os mecanismos de busca e navegadores.</p>
+
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html</span> <span class="html-attribute">lang</span>="<span class="html-value">en-us</span>"<span class="html-tag">&gt;</span>
+     <span class="html-tag">&lt;head&gt;</span>
+        <span class="html-tag">&lt;title&gt;</span><span class="html-text">Título da Página</span><span class="html-tag">&lt;/title&gt;</span>
+     <span class="html-tag">&lt;/head&gt;</span>
+     <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Este é um cabeçalho</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>Meta Dados</h3>
+                <p>Para garantir a interpretação correta e indexação adequada pelos mecanismos de busca, tanto o idioma
+                    quanto a codificação de caracteres (<code style="color:#0059ff">&lt;meta charset="charset"&gt;</code>) devem ser definidos
+                    o mais cedo possível em um documento HTML.</p>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html</span> <span class="html-attribute">lang</span>="<span class="html-value">en-us</span>"<span class="html-tag">&gt;</span>
+     <span class="html-tag">&lt;head&gt;</span>
+        <span class="html-tag">&lt;meta</span> <span class="html-attribute">charset</span>="<span class="html-value">UTF-8</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;title&gt;</span><span class="html-text">Título da Página</span><span class="html-tag">&lt;/title&gt;</span>
+     <span class="html-tag">&lt;/head&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>Configurando o Viewport</h3>
+                <p>O viewport é a área visível de uma página da web para o usuário. Varia conforme o dispositivo - será
+                    menor em um celular do que em uma tela de computador.</p>
+                <p>Você deve incluir o seguinte elemento <code style="color:#0059ff">&lt;meta&gt;</code> em todas as suas páginas da web:</p>
+                <pre>
+                    <span class="html-tag">&lt;meta</span> <span class="html-attribute">name</span>="<span class="html-value">viewport</span>" <span class="html-attribute">content</span>="<span class="html-value">width=device-width, initial-scale=1.0</span>"<span class="html-tag">&gt;</span>
+                </pre>
+                <p>Isso dá ao navegador instruções sobre como controlar as dimensões e a escala da página.</p>
+                <p>O parâmetro <code style="color:#f0b400">width=device-width</code> define a largura da página para seguir a largura da tela
+                    do dispositivo (que variará conforme o dispositivo).</p>
+                <p>O parâmetro <code style="color:#f0b400">initial-scale=1.0</code> define o nível de zoom inicial quando a página é carregada
+                    pelo navegador.</p>
+                <hr>
+
+                <h3>Comentários em HTML</h3>
+                <p>Comentários curtos devem ser escritos em uma única linha, como este:</p>
+                <pre>
+                    <span class="html-comment">&lt;!-- Este é um comentário --&gt;</span>
+                </pre>
+                <p>Comentários que se estendem por mais de uma linha devem ser escritos assim:</p>
+                <pre>
+                    <span class="html-comment">&lt;!--
+        Este é um exemplo de comentário longo. Este é um exemplo de comentário longo.
+        Este é um exemplo de comentário longo. Este é um exemplo de comentário longo.
+    --&gt;</span>                  
+                </pre>
+                <p>Comentários longos são mais fáceis de ler se forem recuados com dois espaços.</p>
+                <hr>
+
+                <h3>Uso de Folhas de Estilo</h3>
+                <p>Use sintaxe simples para vincular folhas de estilo (o atributo <code style="color:#f0b400">type</code> não é necessário):
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;link</span> <span class="html-attribute">rel</span>="<span class="html-value">stylesheet</span>" <span class="html-attribute">href</span>="<span class="html-value">styles.css</span>"<span class="html-tag">&gt;</span>                  
+                </pre>
+                <p>Regras de CSS curtas podem ser escritas de forma compacta, como este exemplo:</p>
+                <pre>
+                    <span class="html-tag">p.intro</span> {
+        <span class="html-attribute">font-family</span>: <span class="html-value">Verdana</span>;
+        <span class="html-attribute">font-size</span>: <span class="html-value">16em</span>;
+     }                      
+                </pre>
+                <p>Regras de CSS mais longas devem ser escritas em várias linhas:</p>
+                <pre>
+                    <span class="html-tag">body</span> {
+        <span class="html-attribute">background-color</span>: <span class="html-value">lightgrey</span>;
+        <span class="html-attribute">font-family</span>: <span class="html-value">"Arial Black", Helvetica, sans-serif</span>;
+        <span class="html-attribute">font-size</span>: <span class="html-value">16em</span>;
+        <span class="html-attribute">color</span>: <span class="html-value">black</span>;
+    }      
+                </pre>
+                <hr>
+
+                <h3>Carregando JavaScript em HTML</h3>
+                <p>Use sintaxe simples para carregar scripts externos (o atributo <code style="color:#f0b400">type</code> não é necessário):
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;script</span> <span class="html-attribute">src</span>="<span class="html-value">myscript.js</span>"<span class="html-tag">&gt;&lt;/script&gt;</span>
+                </pre>
+                <hr>
+
+                <h3>Acessando Elementos HTML com JavaScript</h3>
+                <p>Usar código HTML "desarrumado" pode resultar em erros de JavaScript.</p>
+                <p>Essas duas instruções JavaScript produzem resultados diferentes:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="js-var">getElementById</span>("Demo").<span class="js-var">innerHTML</span> = <span class="js-var">"Hello"</span>;
+     <span class="js-var">getElementById</span>("demo").<span class="js-var">innerHTML</span> = <span class="js-var">"Hello"</span>;
+                </pre>
+                <hr>
+
+                <h3>Arquivo de Nomes em Minúsculas</h3>
+                <p>Alguns servidores web (Apache, Unix) são sensíveis a maiúsculas/minúsculas em nomes de arquivos:
+                    "london.jpg" não pode ser acessado como "London.jpg".</p>
+                <p>Outros servidores web (Microsoft, IIS) não são sensíveis a maiúsculas/minúsculas: "london.jpg" pode
+                    ser acessado como "London.jpg".</p>
+                <p>Se você usa uma mistura de maiúsculas e minúsculas, deve estar ciente disso.</p>
+                <p>Para evitar esses problemas, use sempre nomes de arquivos em minúsculas!</p>
+                <hr>
+
+                <h3>Extensões de Arquivo</h3>
+                <p>Os arquivos HTML devem ter uma extensão .html (.htm é permitido).</p>
+                <p>Os arquivos CSS devem ter uma extensão .css.</p>
+                <p>Os arquivos JavaScript devem ter uma extensão .js.</p>
+                <hr>
+
+                <h3>Diferenças Entre .htm e .html?</h3>
+                <p>Não há diferença entre as extensões de arquivo .htm e .html!</p>
+                <p>Ambas serão tratadas como HTML por qualquer navegador e servidor web.</p>
+                <hr>
+
+                <h3>Nomes de Arquivo Padrão</h3>
+                <p>Quando um URL não especifica um nome de arquivo no final (como "https://www.w3schools.com/"), o
+                    servidor apenas adiciona um nome de arquivo padrão, como "index.html", "index.htm", "default.html",
+                    ou "default.htm".</p>
+                <p>Se seu servidor for configurado apenas com "index.html" como nome de arquivo padrão, seu arquivo deve
+                    ser chamado "index.html", e não "default.html".</p>
+                <p>No entanto, os servidores podem ser configurados com mais de um nome de arquivo padrão; normalmente,
+                    você pode configurar quantos nomes de arquivo padrão quiser.</p>
+
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

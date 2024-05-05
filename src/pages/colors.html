@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Colors</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Colors">
+                <h1>Cores no HTML</h1>
+                <p>As cores em HTML podem ser especificadas usando nomes de cores predefinidos, ou valores RGB, HEX,
+                    HSL, RGBA ou HSLA.</p>
+                <hr>
+
+                <h2>Nomes de Cores</h2>
+                <p>Em HTML, uma cor pode ser especificada usando um nome de cor:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: Tomato; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>Tomato<span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: Orange; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>Orange<span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: DodgerBlue; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>DodgerBlue<span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: MediumSeaGreen; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>MediumSeaGreen<span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: Gray; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>Gray<span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: SlateBlue; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>SlateBlue<span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: Violet; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>Violet<span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color: LightGray; height: 25px; width: 230px;"</span><span class="html-tag">&gt;</span>LightGray<span class="html-tag">&lt;/div&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="background-color: Tomato; height: 25px; width: 230px;">Tomato</div>
+                    <div style="background-color: Orange; height: 25px; width: 230px;">Orange</div>
+                    <div style="background-color: DodgerBlue; height: 25px; width: 230px;">DodgerBlue</div>
+                    <div style="background-color: MediumSeaGreen; height: 25px; width: 230px;">MediumSeaGreen</div>
+                    <div style="background-color: Gray; height: 25px; width: 230px;">Gray</div>
+                    <div style="background-color: SlateBlue; height: 25px; width: 230px;">SlateBlue</div>
+                    <div style="background-color: Violet; height: 25px; width: 230px;">Violet</div>
+                    <div style="background-color: LightGray; height: 25px; width: 230px;">LightGray</div>
+                </div>
+                <p>O HTML suporta 140 nomes de cores padrão.</p>
+                <hr>
+
+                <h2>Cor de Fundo</h2>
+                <p>Você pode definir a cor de fundo para elementos HTML:</p>
+                <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">Hello World
+                </div>
+                <div class="w3-container" style="background-color:tomato;color:white;"><br>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                    aliquip ex ea commodo consequat.<br><br>
+                </div>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:DodgerBlue;"</span><span class="html-tag">&gt;</span>Olá, Mundo<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:Tomato;"</span><span class="html-tag">&gt;</span>Lorem ipsum dolor sit amet...<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;">
+                        <h1 style="background-color:DodgerBlue;">Olá, Mundo</h1>
+                        <p style="background-color:Tomato;">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>Cor do Texto</h2>
+                <p>Você pode definir a cor do texto:</p>
+                <h3 style="color:tomato">Hello World</h3>
+                <p style="color:dodgerblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p style="color:mediumseagreen">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                    suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"color:tomato;"</span><span class="html-tag">&gt;</span>Olá, Mundo<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"color:DodgerBlue;"</span><span class="html-tag">&gt;</span>Lorem ipsum dolor sit amet...<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"color:MediumSeaGreen;"</span><span class="html-tag">&gt;</span>Ut wisi enim ad minim veniam...<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h1 style="color:tomato;">Olá, Mundo</h1>
+                    <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet...</p>
+                    <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam...</p>
+                </div>
+                <hr>
+
+                <h2>Cor das Bordas</h2>
+                <p>Você pode definir a cor das bordas:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"border:2px solid Tomato;"</span><span class="html-tag">&gt;</span>Olá, Mundo<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"border:2px solid DodgerBlue;"</span><span class="html-tag">&gt;</span>Olá, Mundo<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"border:2px solid Violet;"</span><span class="html-tag">&gt;</span>Olá, Mundo<span class="html-tag">&lt;/h1&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;">
+                        <h1 style="border:2px solid Tomato;">Olá, Mundo</h1>
+                        <h1 style="border:2px solid DodgerBlue;">Olá, Mundo</h1>
+                        <h1 style="border:2px solid Violet;">Olá, Mundo</h1>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>Valores de Cores</h2>
+                <p>No HTML, as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL,
+                    valores RGBA e valores HSLA.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:rgb(255, 99, 71);"</span><span class="html-tag">&gt;</span>RGB(255, 99, 71)<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:#ff6347;"</span><span class="html-tag">&gt;</span>#ff6347<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:hsl(9, 100%, 64%);"</span><span class="html-tag">&gt;</span>HSL(9, 100%, 64%)<span class="html-tag">&lt;/h1&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;">
+                        <h1 style="background-color:rgb(255, 99, 71);">RGB(255, 99, 71)</h1>
+                        <h1 style="background-color:#ff6347;">#ff6347</h1>
+                        <h1 style="background-color:hsl(9, 100%, 64%);">HSL(9, 100%, 64%)</h1>
+                    </div>
+                </div>
+
+                <p>Os dois elementos &lt;div&gt; a seguir têm sua cor de fundo definida com valores RGBA e HSLA, que
+                    adicionam um canal Alpha à cor (aqui temos 50% de transparência):</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:rgba(255, 99, 71, 0.5);"</span><span class="html-tag">&gt;</span>RGBA(255, 99, 71, 0.5)<span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:hsla(9, 100%, 64%, 0.5);"</span><span class="html-tag">&gt;</span>HSLA(9, 100%, 64%, 0.5)<span class="html-tag">&lt;/h1&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;">
+                        <h1 style="background-color:rgba(255, 99, 71, 0.5);">RGBA(255, 99, 71, 0.5)</h1>
+                        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">HSLA(9, 100%, 64%, 0.5)</h1>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

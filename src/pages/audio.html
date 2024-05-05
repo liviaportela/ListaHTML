@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Audio">
+                <h1>HTML Áudio</h1>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;audio&gt;</code> é usado para reproduzir um arquivo
+                    de áudio em uma página
+                    da web.
+                </p>
+                <hr>
+
+                <p>Para reproduzir um arquivo de áudio em HTML, use o elemento <code
+                        style="color:#0059ff">&lt;audio&gt;</code>:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;audio</span> <span class="html-attribute">controls</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;source</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/igotafeeling.mp3"</span> <span class="html-attribute">type</span>=<span class="html-value">"audio/mpeg"</span><span class="html-tag">&gt;</span>
+        Seu navegador não suporta o elemento de áudio.
+     <span class="html-tag">&lt;/audio&gt;</span>
+                </pre>
+                <h3>resultado</h3>
+                <div class="exemplo">
+                    <audio controls>
+                        <source src="../media/igotafeeling.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+
+                <h2>HTML Audio - Como Funciona</h2>
+                <p>O atributo <code style="color:#f0b400">controls</code> adiciona controles de áudio, como play, pause
+                    e volume.</p>
+                <p>O elemento <code style="color:#0059ff">&lt;source&gt;</code> permite especificar arquivos de áudio
+                    alternativos que o
+                    navegador pode escolher. O navegador usará o primeiro formato reconhecido.
+                </p>
+                <p>
+                    O texto entre as tags <code style="color:#0059ff">&lt;audio&gt;</code> e <code
+                        style="color:#0059ff">&lt;/audio&gt;</code> será exibido apenas em
+                    navegadores que não suportam o elemento <code style="color:#0059ff">&lt;audio&gt;</code>.
+                </p>
+                <hr>
+
+                <h2>HTML &lt;audio&gt; Autoplay</h2>
+                <p>Para iniciar um arquivo de áudio automaticamente, use o atributo <code
+                        style="color:#f0b400">autoplay</code>:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;audio</span> <span class="html-attribute">controls</span> <span class="html-attribute">autoplay</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;source</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/igotafeeling.mp3"</span> <span class="html-attribute">type</span>=<span class="html-value">"audio/mpeg"</span><span class="html-tag">&gt;</span>
+        Seu navegador não suporta o elemento de áudio.
+     <span class="html-tag">&lt;/audio&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <audio controls autoplay>
+                        <source src="../media/igotafeeling.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+
+                <p><strong>Nota:</strong> Os navegadores geralmente não permitem autoplay na maioria
+                    dos casos. No entanto, autoplay com mudo é sempre permitido.</p>
+
+                <p>Adicione o atributo <code style="color:#f0b400">muted</code> após <code
+                        style="color:#f0b400">autoplay</code> para permitir que seu arquivo de
+                    áudio comece a tocar automaticamente (mas com som desativado):</p>
+
+                <div class="exemplo">
+                    <audio controls autoplay muted>
+                        <source src="../media/igotafeeling.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+                <hr>
+
+                <h2>Tipos de Mídia para Áudio HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Formato do Arquivo</th>
+                        <th>Tipo de Mídia</th>
+                    </tr>
+                    <tr>
+                        <td>MP3</td>
+                        <td>audio/mpeg</td>
+                    </tr>
+                    <tr>
+                        <td>OGG</td>
+                        <td>audio/ogg</td>
+                    </tr>
+                    <tr>
+                        <td>WAV</td>
+                        <td>audio/wav</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <h2>HTML Audio - Métodos, Propriedades e Eventos</h2>
+                <p>O HTML DOM define métodos, propriedades e eventos para o elemento <code
+                        style="color:#0059ff">&lt;audio&gt;</code>.</p>
+                <p>Isso permite carregar, reproduzir e pausar áudios, bem como definir duração e volume.</p>
+                <p>Há também eventos DOM que podem notificar você quando um áudio começa a tocar, é pausado, etc.</p>
+                <hr>
+
+                <h2>Tags de Áudio HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;audio&gt;</code></td>
+                        <td>Define conteúdo de som</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;source&gt;</code></td>
+                        <td>Define múltiplos recursos de mídia para elementos de mídia, como <code>&lt;video&gt;</code>
+                            e <code>&lt;audio&gt;</code>.</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

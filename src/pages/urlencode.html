@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML URL Encode</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML URL Encode">
+                <h1>HTML URL Encode</h1>
+                <p>Uma URL é outro termo para endereço da web. Pode ser composta por palavras (por exemplo,
+                    w3schools.com), ou um endereço de Protocolo da Internet (IP) (por exemplo, 192.68.20.50).</p>
+                <p>A maioria das pessoas digita o nome ao navegar, porque nomes são mais fáceis de lembrar do que
+                    números.</p>
+                <hr>
+
+                <h2>Esquema de URL</h2>
+                <p>Os navegadores da web solicitam páginas dos servidores da web usando uma URL. Uma URL é usada para
+                    endereçar um documento (ou outros dados) na web.</p>
+
+                <p>Um endereço da web como <code style="color:#0059ff">https://www.w3schools.com/html/default.asp</code>
+                    segue estas regras de
+                    sintaxe:</p>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;strong&gt;</span>scheme://prefix.domain:port/path/filename<span class="html-tag">&lt;/strong&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><strong>scheme://prefix.domain:port/path/filename</strong></p>
+                </div>
+                <h3>Explicação:</h3>
+                <p><strong>scheme</strong> - define o tipo de serviço na Internet (os mais comuns são http ou
+                    https)</p>
+                <p><strong>prefix</strong> - define um prefixo de domínio (o padrão para http é www)</p>
+                <p><strong>domain</strong> - define o nome do domínio da Internet (como w3schools.com)</p>
+                <p><strong>port</strong> - define o número da porta no host (o padrão para http é 80)</p>
+                <p><strong>path</strong> - define um caminho no servidor (se omitido, é o diretório raiz do site)
+                </p>
+                <p><strong>filename</strong> - define o nome de um documento ou recurso
+            </li>
+            <hr>
+
+            <h2>Esquemas Comuns de URL</h2>
+            <table border="1">
+                <tr>
+                    <th>Esquema</th>
+                    <th>Significado</th>
+                    <th>Uso</th>
+                </tr>
+                <tr>
+                    <td>http</td>
+                    <td>HyperText Transfer Protocol</td>
+                    <td>Páginas da web comuns, não criptografadas</td>
+                </tr>
+                <tr>
+                    <td>https</td>
+                    <td>Secure HyperText Transfer Protocol</td>
+                    <td>Páginas da web seguras, criptografadas</td>
+                </tr>
+                <tr>
+                    <td>ftp</td>
+                    <td>File Transfer Protocol</td>
+                    <td>Download ou upload de arquivos</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td>Arquivo local</td>
+                    <td>Um arquivo no seu computador</td>
+                </tr>
+            </table>
+            <hr>
+
+            <div style="margin: 20px;">
+                <h2>Codificação da URL</h2>
+                <p>URLs só podem ser enviadas pela Internet usando o conjunto de caracteres ASCII. Se uma URL contém
+                    caracteres fora do conjunto ASCII, ela deve ser convertida.</p>
+                <p>O URL encoding converte caracteres não-ASCII em um formato que pode ser transmitido pela Internet.
+                    Substitui caracteres não-ASCII por "%" seguido de dígitos hexadecimais.</p>
+                <p>URLs não podem conter espaços. Normalmente, o URL encoding substitui um espaço por um sinal de mais
+                    (+), ou %20.</p>
+            </div>
+            <hr>
+
+            <h2>Exemplos de Caracteres Encoded</h2>
+            <table border="1">
+                <tr>
+                    <th>Caractere</th>
+                    <th>De Windows-1252</th>
+                    <th>De UTF-8</th>
+                </tr>
+                <tr>
+                    <td>€</td>
+                    <td>%80</td>
+                    <td>%E2%82%AC</td>
+                </tr>
+                <tr>
+                    <td>£</td>
+                    <td>%A3</td>
+                    <td>%C2%A3</td>
+                </tr>
+                <tr>
+                    <td>©</td>
+                    <td>%A9</td>
+                    <td>%C2%A9</td>
+                </tr>
+                <tr>
+                    <td>®</td>
+                    <td>%AE</td>
+                    <td>%C2%AE</td>
+                </tr>
+                <tr>
+                    <td>À</td>
+                    <td>%C0</td>
+                    <td>%C3%80</td>
+                </tr>
+                <tr>
+                    <td>Á</td>
+                    <td>%C1</td>
+                    <td>%C3%81</td>
+                </tr>
+                <tr>
+                    <td>Â</td>
+                    <td>%C2</td>
+                    <td>%C3%82</td>
+                </tr>
+            </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

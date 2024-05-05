@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Links">
+                <h1>HTML Links</h1>
+                <p>Os links são criados com o elemento &lt;a&gt; e podem ser usados para navegação.</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://example.com"</span><span class="html-tag">&gt;</span><span class="html-text">Link para Example.com</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <a href="https://example.com" target="_blank">Link para Example.com</a>
+                </div>
+                <hr>
+
+                <h1>Links em HTML - Hiperlinks</h1>
+                <p>Os links são encontrados em quase todas as páginas da web. Eles permitem aos usuários navegar de uma
+                    página para outra.</p>
+                <hr>
+
+                <h2>Definição de Links</h2>
+                <p>Links em HTML são hiperlinks.</p>
+                <p> Você pode clicar em um link para saltar para outro documento.</p>
+                <p>Quando você move o mouse sobre um link, a seta do mouse se transforma em uma mãozinha.</p>
+                <hr>
+
+                <h2>Sintaxe de Links</h2>
+                <p>A tag HTML <code style="color:#0059ff">&lt;a&gt;</code> define um hyperlink. A sintaxe é a seguinte:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"url"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">texto do link</span><span class="html-tag">&lt;/a&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="url" target="_blank">texto do link</a>
+                </div>
+
+                <p>O atributo mais importante do elemento <code style="color:#0059ff">&lt;a&gt;</code> é o atributo <code style="color:#f0b400">href</code>, que
+                    indica o destino do link.</p>
+                <p> O texto do link é a parte que será visível para o leitor.</p>
+                <p> Clicar no texto do link enviará o leitor para o endereço URL especificado.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                        <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://www.w3schools.com/"</span><span class="html-tag">&gt;</span><span class="html-text">Visite o W3Schools.com!</span><span class="html-tag">&lt;/a&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://www.w3schools.com/">Visite o W3Schools.com!</a>
+                </div>
+                <p>Por padrão, os links aparecerão da seguinte maneira em todos os navegadores:</p>
+                <ul>
+                    <li>Um link não visitado é sublinhado e azul.</li>
+                    <li>Um link visitado é sublinhado e roxo.</li>
+                    <li>Um link ativo é sublinhado e vermelho.</li>
+                </ul>
+                <p><strong>Dica:</strong> Links podem ser estilizados com CSS para ter uma aparência diferente!</p>
+                <hr>
+
+                <h2>O Atributo target</h2>
+                <p>Por padrão, a página vinculada será exibida na janela/aba atual do navegador. Para mudar isso, você
+                    deve especificar um destino diferente para o link. O atributo <code style="color:#f0b400">target</code> pode ter um dos
+                    seguintes valores:
+                </p>
+                <p><code>_self</code> - Padrão. Abre o documento na mesma janela/aba em que foi clicado.</p>
+                <p><code>_blank</code> - Abre o documento em uma nova janela ou aba.</p>
+                <p><code>_parent</code> - Abre o documento no quadro pai.</p>
+                <p><code>_top</code> - Abre o documento no corpo completo da janela.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://www.w3schools.com/"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Visite o W3Schools.com!</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://www.w3schools.com/" target="_blank">Visite o W3Schools.com!</a>
+                </div>
+                <hr>
+
+                <h2>URLs Absolutas vs. URLs Relativas</h2>
+                <p>Ambos os exemplos anteriores usam um URL absoluto (um endereço web completo) no atributo
+                    <code style="color:#f0b400">href</code>.
+                </p>
+                <p> Um link local (um link para uma página dentro do mesmo site) é especificado com
+                    um URL relativo (sem a parte "https://www"):</p>
+
+                <h3>Exemplo de URLs Absolutas</h3>
+                <pre>
+                        <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://www.w3.org/"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">W3C</span><span class="html-tag">&lt;/a&gt;</span>
+     <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://www.google.com/"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Google</span><span class="html-tag">&lt;/a&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://www.w3.org/" target="_blank">W3C</a></p>
+                    <a href="https://www.google.com/" target="_blank">Google</a></p>
+                </div>
+
+                <h3>Exemplo de URLs Relativas</h3>
+                <pre>
+                        <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"/ListaHTML/src/media/"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Imagens HTML</span><span class="html-tag">&lt;/a&gt;</span>
+     <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"/ListaHTML/src/pages/favicon.html"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Próximo tutorial</span><span class="html-tag">&lt;/a&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="/ListaHTML/src/media/">Imagens HTML</a></p>
+                    <a href="/ListaHTML/src/pages/favicon.html">Próximo tutorial</a></p>
+                </div>
+                <hr>
+
+                <h2>Usar uma Imagem como Link</h2>
+                <p>Para usar uma imagem como link, basta colocar a tag <code style="color:#0059ff">&lt;img&gt;</code> dentro da tag
+                    <code style="color:#0059ff">&lt;a&gt;</code>:
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://www.w3schools.com/"</span><span class="html-tag">&gt;</span> 
+        <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/Dog.png"</span> <span class="html-attribute">alt</span>=<span class="html-value">"Próximo Tutorial"</span> <span class="html-attribute">style</span>=<span class="html-value">"width:42px;height:42px;"</span><span class="html-tag">&gt;</span>
+     <span class="html-tag">&lt;/a&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="/ListaHTML/src/pages/favicon.html">
+                        <img src="../media/Dog.png" alt="Próximo Tutorial" style="width:42px;height:42px;">
+                    </a>
+                </div>
+                <hr>
+
+                <h2>Link para um Endereço de E-mail</h2>
+                <p>Use <code>mailto:</code> dentro do atributo <code>href</code> para criar um link que abre o programa
+                    de e-mail do usuário para enviar um novo e-mail:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"mailto:someone@example.com"</span><span class="html-tag">&gt;</span><span class="html-text">Enviar e-mail</span><span class="html-tag">&lt;/a&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="mailto:someone@example.com">Enviar e-mail</a>
+                </div>
+                <hr>
+
+                <h2>Botão como Link</h2>
+                <p>Para usar um botão HTML como link, você precisa adicionar algum código JavaScript. JavaScript permite
+                    especificar o que acontece em determinados eventos, como um clique em um botão:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;button</span> <span class="html-attribute">onclick</span>=<span class="html-value">"<span class="html-tag">document</span>.<span class="html-attribute">location</span>='/ListaHTML/src/pages/favicon.html'"</span><span class="html-tag">&gt;</span><span class="html-text">Tutorial de HTML</span><span class="html-tag">&lt;/button&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <button onclick="document.location='/ListaHTML/src/pages/favicon.html'">Próximo Tutorial</button>
+                </div>
+                <hr>
+
+                <h2>O Atributo title em Links</h2>
+                <p>O atributo <code style="color:#0059ff">title</code> especifica informações extras sobre um elemento. Essas informações
+                    geralmente são exibidas como uma dica de ferramenta (tooltip) quando o mouse passa sobre o elemento.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://www.w3schools.com/html/"</span> <span class="html-attribute">title</span>=<span class="html-value">"Ir para a seção HTML do W3Schools"</span><span class="html-tag">&gt;</span><span class="html-text">Visite nosso Tutorial de HTML</span><span class="html-tag">&lt;/a&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://www.w3schools.com/html/" title="Ir para a seção HTML do W3Schools">Visite nosso Tutorial de HTML</a>
+                </div>
+                <hr>
+
+                <h2>Mais Sobre URLs Absolutas e Relativas</h2>
+                <h3>Exemplo de URL Absoluta</h3>
+                <p>Use um URL completo para vincular a uma página da web:</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://www.w3schools.com/html/default.asp"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Tutorial de HTML</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://www.w3schools.com/html/default.asp">Tutorial de HTML</a>
+                </div>
+
+                <h3>Exemplo de URL Relativa para a Mesma Pasta</h3>
+                <p>Link para uma página localizada na mesma pasta que a página atual:</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"favicon.html"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Visite o W3Schools.com!</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><a href="favicon.html">Tutorial de HTML</a></p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

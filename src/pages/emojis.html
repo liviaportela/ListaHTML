@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Emojis</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Emojis">
+                <h1>Emojis em HTML</h1>
+                <p>Emojis são caracteres do conjunto de caracteres UTF-8: 😄 😍 💗</p>
+                <hr>
+
+                <table border="1">
+                    <tr>
+                        <th>Emoji</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>🗻</td>
+                        <td>& #128507;</td>
+                    </tr>
+                    <tr>
+                        <td>🗼</td>
+                        <td>& #128508;</td>
+                    </tr>
+                    <tr>
+                        <td>🗽</td>
+                        <td>& #128509;</td>
+                    </tr>
+                    <tr>
+                        <td>🗾</td>
+                        <td>& #128510;</td>
+                    </tr>
+                    <tr>
+                        <td>🗿</td>
+                        <td>& #128511;</td>
+                    </tr>
+                    <tr>
+                        <td>😀</td>
+                        <td>& #128512;</td>
+                    </tr>
+                    <tr>
+                        <td>😁</td>
+                        <td>& #128513;</td>
+                    </tr>
+                    <tr>
+                        <td>😂</td>
+                        <td>& #128514;</td>
+                    </tr>
+                    <tr>
+                        <td>😃</td>
+                        <td>& #128515;</td>
+                    </tr>
+                    <tr>
+                        <td>😄</td>
+                        <td>& #128516;</td>
+                    </tr>
+                    <tr>
+                        <td>😅</td>
+                        <td>& #128517;</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <h2>Exemplos de emojis HTML</h2>
+                <p>Símbolos de transporte:</p>
+                <div class="exemplo">
+                    <p>🚀🚁🚂🚃🚄</p>
+                </div>
+                <p>Emojis de escritório:</p>
+                <div class="exemplo">
+                    <p>💺💻💼💽💾</p>
+                </div>
+                <p>Emojis de pessoas:</p>
+                <div class="exemplo">
+                    <p>👮👯👰👱👲</p>
+                </div>
+                <p>Emojis de animais:</p>
+                <div class="exemplo">
+                    <p>🐂🐃🐄🐅🐆</p>
+                </div>
+                <hr>
+
+                <h2>O que são Emojis?</h2>
+                <p>Emojis parecem imagens ou ícones, mas são caracteres do conjunto UTF-8 (Unicode).</p>
+                <p> UTF-8 cobre quase todos os caracteres e símbolos do mundo.</p>
+                <hr>
+
+                <h2>Caracteres UTF-8</h2>
+                <p>Muitos caracteres UTF-8 não podem ser digitados em um teclado, mas eles sempre podem ser exibidos usando números (chamados números de entidade):</p>
+
+                <p>A é 65</p>
+                <p>B é 66</p>
+                <p>C é 67</p>
+
+                <p>Para mostrar A, B e C usando entidades numéricas:</p>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;code&gt;</span>& #65; & #66; & #67;<span class="html-tag">&lt;/code&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><code>&#65; &#66; &#67;</code></p>
+                </div>
+                <hr>
+
+                <h2>Exemplos de Emojis com Entidades Numéricas</h2>
+                <p>Emojis também são caracteres do alfabeto UTF-8. Aqui estão algumas formas de exibir emojis:</p>                
+                <p>Usando entidades numéricas:</p>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>& #128512; & #128516; & #128525; & #128151;<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <p>&#128512; &#128516; &#128525; &#128151;</p>
+                </div>
+                
+                <h2>Exemplo com Emojis Dimensionados</h2>
+                <p>Emojis podem ser redimensionados como outros caracteres:</p>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html&gt;</span>
+     <span class="html-tag">&lt;meta</span> <span class="html-attribute">charset</span>="<span class="html-value">UTF-8</span>"<span class="html-tag">&gt;</span>
+     <span class="html-tag">&lt;body&gt;</span>
+
+     <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Emojis Redimensionados</span><span class="html-tag">&lt;/h1&gt;</span>
+
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>="<span class="html-value">font-size: 48px</span>"<span class="html-tag">&gt;</span>
+        & #128512; & #128516; & #128525; & #128151;
+     <span class="html-tag">&lt;/p&gt;</span>
+
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p style="font-size:48px;">&#128512; &#128516; &#128525; &#128151;</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

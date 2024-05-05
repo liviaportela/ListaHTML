@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ID</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Id">
+                <h1>Atributo ID em HTML</h1>
+                <p>O atributo <code style="color:#f0b400">id</code> é usado para especificar um identificador único para um elemento HTML.</p>
+                <p>Você não pode ter mais de um elemento com o mesmo <code style="color:#f0b400">id</code> em um documento HTML.</p>
+                <p>O valor do atributo <code style="color:#f0b400">id</code> deve ser único dentro do documento HTML.</p>
+
+                <p>O atributo <code style="color:#f0b400">id</code> é usado para apontar para uma declaração de estilo específica em uma folha
+                    de estilo. Ele também pode ser usado por JavaScript para acessar e manipular o elemento com o
+                    <code style="color:#f0b400">id</code> específico.
+                </p>
+                <hr>
+
+                <h2>Como Usar o Atributo id</h2>
+                <p>A sintaxe para usar <code style="color:#f0b400">id</code> é: escreva um caractere de hash (#), seguido por um nome de id.
+                    Em seguida, defina as propriedades do CSS entre chaves { }.</p>
+
+                <h3>Exemplo de Uso do Atributo id</h3>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html&gt;</span>
+     <span class="html-tag">&lt;head&gt;</span>
+     <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">#myHeader</span> {
+            <span class="html-attribute">background-color</span>: <span class="html-value">lightblue</span>;
+            <span class="html-attribute">color</span>: <span class="html-value">black</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">40px</span>;
+            <span class="html-attribute">text-align</span>: <span class="html-value">center</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+     <span class="html-tag">&lt;/head&gt;</span>
+            
+     <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">O Atributo id</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Use CSS para estilizar um elemento com o id "myHeader":</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;h1</span> <span class="html-attribute">id</span>="<span class="html-value">myHeader</span>"<span class="html-tag">&gt;</span><span class="html-text">Meu Cabeçalho</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>                    
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <style>
+                            #myHeader {
+                                background-color: lightblue;
+                                color: black;
+                                padding: 40px;
+                                text-align: center;
+                            }
+                        </style>
+                        <h2>O Atributo id</h2>
+                        <p>Use CSS para estilizar um elemento com o id "myHeader":</p>
+                        <h1 id="myHeader">Meu Cabeçalho</h1>
+                    </div>
+                </div>
+
+                <p><strong>Nota:</strong> O nome do id é sensível a maiúsculas e minúsculas!</p>
+                <p><strong>Nota:</strong> O nome do id deve conter pelo menos um caractere, não pode começar com um
+                    número e não deve conter espaços em branco (espaços, tabulações, etc.).</p>
+                <hr>
+
+                <h2>Diferença Entre Classe e ID</h2>
+                <p>Um nome de classe pode ser usado por vários elementos HTML, enquanto um nome de id deve ser usado
+                    apenas por um elemento HTML na página:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-comment">/* Estilize o elemento com o id "myHeader" */</span>
+        <span class="html-tag">#myHeader</span> {
+            <span class="html-attribute">background-color</span>: <span class="html-value">lightblue</span>;
+            <span class="html-attribute">color</span>: <span class="html-value">black</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">40px</span>;
+            <span class="html-attribute">text-align</span>: <span class="html-value">center</span>;
+        }
+
+        <span class="html-comment">/* Estilize todos os elementos com o nome da classe "city" */</span>
+        <span class="html-tag">.city</span> {
+            <span class="html-attribute">background-color</span>: <span class="html-value">tomato</span>;
+            <span class="html-attribute">color</span>: <span class="html-value">white</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">10px</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+
+     <span class="html-comment">&lt;!-- Um elemento com um id único --&gt;</span>
+     <span class="html-tag">&lt;h1</span> <span class="html-attribute">id</span>="<span class="html-value">myHeader</span>"<span class="html-tag">&gt;</span><span class="html-text">Minhas Cidades</span><span class="html-tag">&lt;/h1&gt;</span>
+
+     <span class="html-comment">&lt;!-- Vários elementos com a mesma classe --&gt;</span>
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Paris é a capital da França.</span><span class="html-tag">&lt;/p&gt;</span>
+
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Tóquio é a capital do Japão.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <style>
+                            /* Estilize o elemento com o id "myHeader" */
+                            #myHeader {
+                                background-color: lightblue;
+                                color: black;
+                                padding: 40px;
+                                text-align: center;
+                            }
+
+                            /* Estilize todos os elementos com o nome da classe "city" */
+                            .city {
+                                background-color: tomato;
+                                color: white;
+                                padding: 10px;
+                            }
+                        </style>
+
+                        <!-- Um elemento com um id único -->
+                        <h1 id="myHeader">Minhas Cidades</h1>
+
+                        <!-- Vários elementos com a mesma classe -->
+                        <h2 class="city">Londres</h2>
+                        <p>Londres é a capital da Inglaterra.</p>
+
+                        <h2 class="city">Paris</h2>
+                        <p>Paris é a capital da França.</p>
+
+                        <h2 class="city">Tóquio</h2>
+                        <p>Tóquio é a capital do Japão.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>Marcadores HTML com ID e Links</h2>
+                <p>Marcadores HTML são usados para permitir que os leitores pulem para partes específicas de uma página
+                    da web.</p>
+                <p>Os marcadores podem ser úteis se sua página for muito longa.</p>
+                <p>Para usar um marcador, primeiro você deve criá-lo e depois adicionar um link para ele.</p>
+                <p>Quando o link é clicado, a página rola para a localização do marcador.</p>
+
+                <h3>Exemplo de Marcador HTML</h3>
+                <h3>Parte 1</h3>
+                <pre>
+                    <span class="html-tag">&lt;h2</span> <span class="html-attribute">id</span>="<span class="html-value">C4</span>"<span class="html-tag">&gt;</span><span class="html-text">Capítulo 4</span><span class="html-tag">&lt;/h2&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h2 id="C4">Capítulo 4</h2>
+                </div>
+
+                <h3>Parte 2</h3>
+                <p>Depois, adicione um link para o marcador ("Ir para o Capítulo 4"), a partir da mesma página:</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">#C4</span>"<span class="html-tag">&gt;</span><span class="html-text">Ir para o Capítulo 4</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="#C4">Ir para o Capítulo 4</a>
+                </div>
+
+                <h3>Exemplo</h3>
+                <p>Ou, adicione um link para o marcador ("Ir para o Próximo Tutorial"), a partir de outra página:</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">iframes.html#HTML Iframes</span>"<span class="html-tag">&gt;</span><span class="html-text">Ir para o Próximo Tutorial</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="iframes.html#HTML Iframes">Ir para o Próximo Tutorial</a>
+                </div>
+                <hr>
+
+                <h2>Usando o Atributo id em JavaScript</h2>
+                <p>O atributo <code style="color:#f0b400">id</code> também pode ser usado por JavaScript para realizar certas tarefas para um
+                    elemento específico.</p>
+                <p>JavaScript pode acessar um elemento com um id específico usando o método
+                    <code style="color:#f0b400">getElementById()</code>:
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">id</span>="<span class="html-value">myHeader</span>"<span class="html-tag">&gt;</span><span class="html-text">Olá Mundo!</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;button</span> <span class="html-attribute">onclick</span>="<span class="html-value">displayResult()</span>"<span class="html-tag">&gt;</span><span class="html-text">Mudar texto</span><span class="html-tag">&lt;/button&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="html-tag">function</span> <span class="js-var">displayResult</span>() {
+            <span class="html-tag">document</span>.<span class="js-var">getElementById</span>("myHeader").<span class="js-var">innerHTML</span> = <span class="html-value">"Tenha um bom dia!"</span>;
+        }
+     <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <p>Use o atributo <code style="color:#f0b400">id</code> para manipular texto com JavaScript:</p>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <h1 id="meuCabecalho">Olá Mundo!</h1>
+                        <button onclick="displayResult()">Mudar texto</button>
+
+                        <script>
+                            function displayResult() {
+                                document.getElementById("meuCabecalho").innerHTML = "Tenha um bom dia!";
+                            }
+                        </script>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

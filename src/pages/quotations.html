@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quotations</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Quotations">
+                <h1>Elementos de Citação HTML</h1>
+                <p>Uma citação serve para atribuir autoridade, referenciar fontes, evitar plágio, ilustrar ou contextualizar ideias em um texto ou discurso.</p>
+                <hr>
+
+                <h2>Elemento HTML &lt;blockquote&gt; para Citações</h2>
+                <p>O elemento HTML <code>&lt;blockquote&gt;</code> define uma seção que é citada de outra fonte.</p>
+                <p>Os navegadores geralmente aplicam um recuo ao elemento <code>&lt;blockquote&gt;</code>, destacando-o visualmente.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Aqui está uma citação do site da WWF:</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;blockquote</span> <span class="html-attribute">cite</span>=<span class="html-value">"http://www.worldwildlife.org/who/index.html"</span><span class="html-tag">&gt;</span> <span class="html-text">
+        Por 60 anos, a WWF trabalhou para ajudar as pessoas e a natureza a prosperar. Como a maior
+        organização de conservação do mundo, a WWF trabalha em quase 100 países. Em todos os níveis,
+        colaboramos com pessoas ao redor do mundo para desenvolver e fornecer soluções inovadoras que
+        protegem comunidades, vida selvagem e os lugares em que vivem.</span>
+     <span class="html-tag">&lt;/blockquote&gt;</span></pre>
+                <h3>Resultado</h3>
+                <div class="exemplo" style="align-items: normal;">
+                    <p>Aqui está uma citação do site da WWF:</p>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html"> 
+                        Por 60 anos, a WWF trabalhou para ajudar as pessoas e a natureza a prosperar. Como a maior
+                        organização de conservação do mundo, a WWF trabalha em quase 100 países. Em todos os níveis,
+                        colaboramos com pessoas ao redor do mundo para desenvolver e fornecer soluções inovadoras que
+                        protegem comunidades, vida selvagem e os lugares em que vivem.
+                    </blockquote>
+                </div>
+                <hr>
+
+                <h2>Elemento HTML &lt;q&gt; para Citações Curtas</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;q&gt;</code> define uma citação curta.</p>
+                <p>Os navegadores normalmente inserem aspas ao redor da citação.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">O objetivo da WWF é:</span> <span class="html-tag">&lt;q&gt;</span><span class="html-text">Construir um futuro onde as pessoas vivam em harmonia com a natureza.</span><span class="html-tag">&lt;/q&gt;</span></span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>O objetivo da WWF é: <q>Construir um futuro onde as pessoas vivam em harmonia com a natureza.</q></p>
+                </div>
+                <hr>
+
+                <h2>Elemento HTML &lt;abbr&gt; para Abreviações</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;abbr&gt;</code> define uma abreviação ou acrônimo, como "HTML", "CSS",
+                    "Sr.", "Dr.", "ASAP", "ATM".</p>
+                <p>Marcar abreviações pode fornecer informações úteis para navegadores, sistemas de tradução e
+                    mecanismos de busca.</p>
+                <p><strong>Dica:</strong> Use o atributo global <code style="color:#f0b400">title</code> para mostrar a descrição da
+                    abreviação/acrônimo ao passar o mouse sobre o elemento.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">A</span> <span class="html-tag">&lt;abbr</span> <span class="html-attribute">title</span>=<span class="html-value">"Organização Mundial da Saúde"</span><span class="html-tag">&gt;</span><span class="html-text">OMS</span><span class="html-tag">&lt;/abbr&gt;</span></span> <span class="html-text">foi fundada em 1948.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>A <abbr title="Organização Mundial da Saúde">OMS</abbr> foi fundada em 1948.</p>
+                </div>
+                <hr>
+
+                <h2>Elemento HTML &lt;address&gt; para Informações de Contato</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;address&gt;</code> define as informações de contato para o
+                    autor/proprietário de um documento ou artigo.</p>
+                <p>As informações de contato podem ser um endereço de e-mail, URL, endereço físico, número de telefone,
+                    perfil de mídia social, etc.</p>
+                <p>O texto no elemento <code style="color:#0059ff">&lt;address&gt;</code> geralmente é exibido em itálico, e os navegadores
+                    sempre adicionarão uma quebra de linha antes e depois do elemento <code style="color:#0059ff">&lt;address&gt;</code>.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;address&gt;</span> 
+        <span class="html-text">Escrito por John Doe.<span class="html-tag">&lt;br&gt;</span>
+        <span class="html-text">Visite-nos em:<span class="html-tag">&lt;br&gt;</span>
+        <span class="html-text">Example.com<span class="html-tag">&lt;br&gt;</span>
+        <span class="html-text">Caixa Postal 564, Disneyland<span class="html-tag">&lt;br&gt;</span></span>
+        <span class="html-text">EUA</span>
+     <span class="html-tag">&lt;/address&gt;</span></pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <address> 
+                        Escrito por John Doe.<br>
+                        Visite-nos em:<br>
+                        Example.com<br>
+                        Caixa Postal 564, Disneyland<br>
+                        EUA
+                    </address>
+                </div>
+                <hr>
+
+                <h2>Elemento HTML &lt;cite&gt; para Título de Obras</h2>
+                <p>O elemento HTML <code style="color:#f0b400">&lt;cite&gt;</code> define o título de uma obra criativa (por exemplo, um
+                    livro, poema, música, filme, pintura, escultura, etc.).</p>
+                <p><strong>Nota:</strong> O nome de uma pessoa não é o título de uma obra.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;cite&gt;</span><span class="html-text">O Grito</span><span class="html-tag">&lt;/cite&gt;</span></span> <span class="html-text">por Edvard Munch. Pintado em 1893.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><cite>O Grito</cite> por Edvard Munch. Pintado em 1893.</p>
+                </div>
+                <hr>
+
+                <h2>Elemento HTML &lt;bdo&gt; para Substituição Bidirecional</h2>
+                <p>BDO significa "Substituição Bidirecional".</p>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;bdo&gt;</code> é usado para substituir a direção do texto atual:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;bdo</span> <span class="html-attribute">dir</span>=<span class="html-value">"rtl"</span><span class="html-tag">&gt;</span><span class="html-text">Este texto será escrito da direita para a esquerda.</span><span class="html-tag">&lt;/bdo&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <bdo dir="rtl">Este texto será escrito da direita para a esquerda.</bdo>
+                </div>
+                <hr>
+
+                <h2>Referência para Elementos de Citação e Formatação HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;abbr&gt;</td>
+                        <td>Define uma abreviação ou acrônimo</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;address&gt;</td>
+                        <td>Define informações de contato para o autor/proprietário de um documento</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;bdo&gt;</td>
+                        <td>Define a direção do texto</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;blockquote&gt;</td>
+                        <td>Define uma seção citada de outra fonte</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;cite&gt;</td>
+                        <td>Define o título de uma obra</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;q&gt;</td>
+                        <td>Define uma citação curta</td>
+                    </tr>
+                </table>
+
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

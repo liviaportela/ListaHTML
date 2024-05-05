@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Form Elements">
+                <h1>Elementos de &lt;form&gt; em HTML</h1>
+                <p>Os elementos de formulário incluem campos de texto, botões de opção, caixas de seleção, entre
+                    outros.
+                </p>
+                <hr>
+
+                <p>O elemento HTML <code style="color:#0059ff">&lt;form&gt;</code> pode conter um ou mais dos seguintes elementos de formulário:</p>
+                <ul style="text-align: start;columns: 8; list-style: none;margin: 20px;">
+                    <li>&lt;input&gt;</li>
+                    <li>&lt;label&gt;</li>
+                    <li>&lt;select&gt;</li>
+                    <li>&lt;textarea&gt;</li>
+                    <li>&lt;button&gt;</li>
+                    <li>&lt;fieldset&gt;</li>
+                    <li>&lt;legend&gt;</li>
+                    <li>&lt;datalist&gt;</li>
+                    <li>&lt;output&gt;</li>
+                    <li>&lt;option&gt;</li>
+                    <li>&lt;optgroup&gt;</li>
+                </ul>
+                <hr>
+
+                <h2>O Elemento &lt;input&gt;</h2>
+                <p>Um dos elementos de formulário mais utilizados é o elemento <code style="color:#0059ff">&lt;input&gt;</code>.</p>
+                <p>O elemento <code style="color:#0059ff">&lt;input&gt;</code> pode ser exibido de várias maneiras, dependendo do atributo <em>type</em>.
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+     <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <label for="fname">Primeiro nome:</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <hr>
+
+                <h2>O Elemento &lt;label&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;label&gt;</code> define um rótulo para vários elementos de formulário.</p>
+                <p>O elemento <code style="color:#0059ff">&lt;label&gt;</code> é útil para usuários com leitores de tela, porque o leitor de tela lerá o
+                    rótulo em voz alta quando o usuário focar no elemento de entrada.</p>
+                <p>Além disso, o elemento <code style="color:#0059ff">&lt;label&gt;</code> ajuda usuários com dificuldade para clicar em áreas pequenas
+                    (como botões de rádio ou caixas de seleção), pois ao clicar no texto dentro do <code style="color:#0059ff">&lt;label&gt;</code>, ele
+                    alterna o botão de rádio/caixa de seleção.</p>
+                <p>O atributo <em>for</em> do <code style="color:#0059ff">&lt;label&gt;</code> deve ser igual ao atributo <em>id</em> do elemento
+                    <code style="color:#0059ff">&lt;input&gt;</code> para vinculá-los.</p>
+                <hr>
+
+                <h2>O Elemento &lt;select&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;select&gt;</code> define uma lista suspensa:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">cars</span>"<span class="html-tag">&gt;</span>Escolha um carro:<span class="html-tag">&lt;/label&gt;</span>
+     <span class="html-tag">&lt;select</span> <span class="html-attribute">id</span>="<span class="html-value">cars</span>" <span class="html-attribute">name</span>="<span class="html-value">cars</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">volvo</span>"<span class="html-tag">&gt;</span>Volvo<span class="html-tag">&lt;/option&gt;</span>
+        <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">saab</span>"<span class="html-tag">&gt;</span>Saab<span class="html-tag">&lt;/option&gt;</span>
+        <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">fiat</span>"<span class="html-tag">&gt;</span>Fiat<span class="html-tag">&lt;/option&gt;</span>
+        <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">audi</span>"<span class="html-tag">&gt;</span>Audi<span class="html-tag">&lt;/option&gt;</span>
+     <span class="html-tag">&lt;/select&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <label for="cars">Escolha um carro:</label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <hr>
+
+                <h2>O Elemento &lt;textarea&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;textarea&gt;</code> define um campo de entrada de várias linhas (uma área de texto):</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;textarea</span> <span class="html-attribute">name</span>="<span class="html-value">message</span>" <span class="html-attribute">rows</span>="<span class="html-value">10</span>" <span class="html-attribute">cols</span>="<span class="html-value">30</span>" <span class="html-tag">&gt;</span>O gato estava brincando no jardim.<span class="html-tag">&lt;/textarea&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <textarea name="message" rows="10" cols="30">O gato estava brincando no jardim.</textarea>
+                </div>
+                <hr>
+
+                <h2>O Elemento &lt;button&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;button&gt;</code> define um botão clicável:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;button</span> <span class="html-attribute">type</span>="<span class="html-value">button</span>" <span class="html-attribute">onclick</span>="<span class="html-value">alert('Olá Mundo!')</span>"<span class="html-tag">&gt;</span>Clique em mim!<span class="html-tag">&lt;/button&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <button type="button" onclick="alert('Olá Mundo!')">Clique em mim!</button>
+                </div>
+                <hr>
+
+                <h2>O Elemento &lt;fieldset&gt; e &lt;legend&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;fieldset&gt;</code> é usado para agrupar dados relacionados em um formulário.</p>
+                <p>O elemento <code style="color:#0059ff">&lt;legend&gt;</code> define uma legenda para o elemento <code style="color:#0059ff">&lt;fieldset&gt;</code>.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;fieldset&gt;</span>
+            <span class="html-tag">&lt;legend&gt;</span>Informações Pessoais:<span class="html-tag">&lt;/legend&gt;</span>
+            <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+            <span class="html-tag">&lt;br&gt;</span>
+            <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">value</span>="<span class="html-value">John</span>"<span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;br&gt;</span>
+            <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span><span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">value</span>="<span class="html-value">Doe</span>"<span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+            <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;/fieldset&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <fieldset>
+                            <legend>Informações Pessoais:</legend>
+                            <label for="fname">Primeiro nome:</label><br>
+                            <input type="text" id="fname" name="fname" value="John"><br>
+                            <label for="lname">Último nome:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                            <input type="submit" value="Enviar">
+                        </fieldset>
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Elemento &lt;datalist&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;datalist&gt;</code> especifica uma lista de opções pré-definidas para um elemento
+                    &lt;input&gt;.</p>
+                <p>Os usuários verão uma lista suspensa de opções pré-definidas conforme inserem dados.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">list</span>="<span class="html-value">browsers</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;datalist</span> <span class="html-attribute">id</span>="<span class="html-value">browsers</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Edge</span>"<span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Firefox</span>"<span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Chrome</span>"<span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Opera</span>"<span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Safari</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;/datalist&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Elemento &lt;output&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;output&gt;</code> representa o resultado de um cálculo (como um executado por um script).</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">oninput</span>="<span class="html-value">x.value=parseInt(a.value) + parseInt(b.value)</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">range</span>" <span class="html-attribute">id</span>="<span class="html-value">a</span>" <span class="html-attribute">name</span>="<span class="html-value">a</span>" <span class="html-attribute">value</span>="<span class="html-value">50</span>"<span class="html-tag">/&gt;</span> + 
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">number</span>" <span class="html-attribute">id</span>="<span class="html-value">b</span>" <span class="html-attribute">name</span>="<span class="html-value">b</span>" <span class="html-attribute">value</span>="<span class="html-value">50</span>"<span class="html-tag">/&gt;</span> = 
+        <span class="html-tag">&lt;output</span> <span class="html-attribute">name</span>="<span class="html-value">x</span>" <span class="html-attribute">for</span>="<span class="html-value">a b</span>"<span class="html-tag">&gt;&lt;/output&gt;</span>
+        <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                        <input type="range" id="a" name="a" value="50"> +
+                        <input type="number" id="b" name="b" value="50"> =
+                        <output name="x" for="a b"></output>
+                        <br><br>
+                        <input type="submit">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>Elementos de Formulários em HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;form&gt;</code></td>
+                        <td>Define um formulário HTML para entrada de usuário</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;input&gt;</code></td>
+                        <td>Define um controle de entrada</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;textarea&gt;</code></td>
+                        <td>Define um controle de entrada multiline (área de texto)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;label&gt;</code></td>
+                        <td>Define um rótulo para um elemento &lt;input&gt;</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;fieldset&gt;</code></td>
+                        <td>Agrupa elementos relacionados em um formulário</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;legend&gt;</code></td>
+                        <td>Define uma legenda para um elemento &lt;fieldset&gt;</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;select&gt;</code></td>
+                        <td>Define uma lista suspensa</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;option&gt;</code></td>
+                        <td>Define uma opção em uma lista suspensa</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;button&gt;</code></td>
+                        <td>Define um botão clicável</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;datalist&gt;</code></td>
+                        <td>Especifica uma lista de opções pré-definidas para controles de entrada</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;output&gt;</code></td>
+                        <td>Define o resultado de um cálculo</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

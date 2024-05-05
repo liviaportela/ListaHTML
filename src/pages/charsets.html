@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Charsets</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Charsets">
+                <h1>O Atributo charset no HTML</h1>
+                <p>Para exibir uma página HTML corretamente, um navegador da Web deve saber qual conjunto de caracteres
+                    usar.</p>
+                <p>A especificação do HTML5 incentiva os desenvolvedores da web a usar o conjunto de caracteres UTF-8.
+                </p>
+                <p>O UTF-8 cobre quase todos os caracteres e símbolos no mundo!</p>
+                <p>O conjunto de caracteres é especificado na tag <code style="color:#0059ff">&lt;meta&gt;:</code></p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;code&gt;</span>&lt;meta charset="UTF-8"&gt;<span class="html-tag">&lt;/code&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Esse site foi feito utilizando o &lt;meta charset="UTF-8"&gt;</p>
+                </div>
+                <hr>
+
+                <h2>O Conjunto de Caracteres ASCII</h2>
+                <p>O ASCII foi o primeiro padrão de codificação de caracteres para a web. Ele definiu 128 caracteres
+                    diferentes que poderiam ser usados na internet:</p>
+                <p>Letras em inglês (A-Z)</p>
+                <p>Números (0-9)</p>
+                <p>Caracteres especiais como ! $ + - ( ) @ &lt; &gt;</p>
+                <hr>
+
+                <h2>O Conjunto de Caracteres ANSI</h2>
+                <p>ANSI (Windows-1252) foi o conjunto de caracteres original do Windows:</p>
+                <p>Idêntico ao ASCII para os primeiros 127 caracteres</p>
+                <p>Caracteres especiais de 128 a 159</p>
+                <p>Idêntico ao UTF-8 de 160 a 255</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;code&gt;</span>&lt;meta charset="Windows-1252"&gt;<span class="html-tag">&lt;/code&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <hr>
+
+                <h2>O Conjunto de Caracteres ISO-8859-1</h2>
+                <p>ISO-8859-1 foi o conjunto de caracteres padrão para HTML 4. Este conjunto suportava 256 códigos
+                    diferentes de caracteres. HTML 4 também suportava UTF-8.</p>
+                <p>Idêntico ao ASCII para os primeiros 127 caracteres</p>
+                <p>Não usa caracteres de 128 a 159</p>
+                <p>Idêntico ao ANSI e UTF-8 de 160 a 255</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;code&gt;</span>&lt;meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"&gt;<span class="html-tag">&lt;/code&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+
+                <hr>
+
+                <h2>O Conjunto de Caracteres UTF-8</h2>
+                <p>Idêntico ao ASCII para valores de 0 a 127</p>
+                <p>Não usa caracteres de 128 a 159</p>
+                <p>Idêntico ao ANSI e ISO-8859-1 de 160 a 255</p>
+                <p>Continua de 256 até mais de 10.000 caracteres</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;code&gt;</span>&lt;meta charset="UTF-8"&gt;<span class="html-tag">&lt;/code&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <hr>
+
+                <h2>Diferenças Entre Conjuntos de Caracteres</h2>
+                <p>A tabela a seguir mostra as diferenças entre os conjuntos de caracteres descritos acima:</p>
+                <table border="1">
+                    <tr>
+                        <th>Número</th>
+                        <th>ASCII</th>
+                        <th>ANSI</th>
+                        <th>ISO-8859-1</th>
+                        <th>UTF‑8</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td>espaço</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>!</td>
+                        <td>!</td>
+                        <td>!</td>
+                        <td>!</td>
+                        <td>exclamação</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>"</td>
+                        <td>"</td>
+                        <td>"</td>
+                        <td>"</td>
+                        <td>aspas duplas</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>cerquilha</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>$</td>
+                        <td>$</td>
+                        <td>$</td>
+                        <td>$</td>
+                        <td>sinal de dólar</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>%</td>
+                        <td>%</td>
+                        <td>%</td>
+                        <td>%</td>
+                        <td>porcentagem</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>&amp;</td>
+                        <td>&amp;</td>
+                        <td>&amp;</td>
+                        <td>&amp;</td>
+                        <td>ampersand</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>'</td>
+                        <td>'</td>
+                        <td>'</td>
+                        <td>'</td>
+                        <td>apóstrofe</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>(</td>
+                        <td>(</td>
+                        <td>(</td>
+                        <td>(</td>
+                        <td>parêntese esquerdo</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>)</td>
+                        <td>)</td>
+                        <td>)</td>
+                        <td>)</td>
+                        <td>parêntese direito</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>*</td>
+                        <td>asterisco</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>sinal de mais</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>,</td>
+                        <td>,</td>
+                        <td>,</td>
+                        <td>,</td>
+                        <td>vírgula</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>hífen</td>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>.</td>
+                        <td>ponto final</td>
+                    </tr>
+                    <tr>
+                        <td>47</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>barra</td>
+                    </tr>
+                    <tr>
+                        <td>48</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>dígito zero</td>
+                    </tr>
+                    <tr>
+                        <td>49</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>dígito um</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>dígito dois</td>
+                    </tr>
+                    <tr>
+                        <td>51</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>dígito três</td>
+                    </tr>
+                    <tr>
+                        <td>52</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>dígito quatro</td>
+                    </tr>
+                    <tr>
+                        <td>53</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>dígito cinco</td>
+                    </tr>
+                    <tr>
+                        <td>54</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>dígito seis</td>
+                    </tr>
+                    <tr>
+                        <td>55</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>dígito sete</td>
+                    </tr>
+                    <tr>
+                        <td>56</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>dígito oito</td>
+                    </tr>
+                    <tr>
+                        <td>57</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>dígito nove</td>
+                    </tr>
+                    <tr>
+                        <td>58</td>
+                        <td>:</td>
+                        <td>:</td>
+                        <td>:</td>
+                        <td>:</td>
+                        <td>dois pontos</td>
+                    </tr>
+                    <tr>
+                        <td>59</td>
+                        <td>;</td>
+                        <td>;</td>
+                        <td>;</td>
+                        <td>;</td>
+                        <td>ponto e vírgula</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>&lt;</td>
+                        <td>&lt;</td>
+                        <td>&lt;</td>
+                        <td>&lt;</td>
+                        <td>sinal de menor que</td>
+                    </tr>
+                    <tr>
+                        <td>61</td>
+                        <td>=</td>
+                        <td>=</td>
+                        <td>=</td>
+                        <td>=</td>
+                        <td>sinal de igualdade</td>
+                    </tr>
+                    <tr>
+                        <td>62</td>
+                        <td>&gt;</td>
+                        <td>&gt;</td>
+                        <td>&gt;</td>
+                        <td>&gt;</td>
+                        <td>sinal de maior que</td>
+                    </tr>
+                    <tr>
+                        <td>63</td>
+                        <td>?</td>
+                        <td>?</td>
+                        <td>?</td>
+                        <td>?</td>
+                        <td>interrogação</td>
+                    </tr>
+                    <tr>
+                        <td>64</td>
+                        <td>@</td>
+                        <td>@</td>
+                        <td>@</td>
+                        <td>@</td>
+                        <td>arroba</td>
+                    </tr>
+                    <tr>
+                        <td>65</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>Letra A</td>
+                    </tr>
+                    <tr>
+                        <td>66</td>
+                        <td>B</td>
+                        <td>B</td>
+                        <td>B</td>
+                        <td>B</td>
+                        <td>Letra B</td>
+                    </tr>
+                    <tr>
+                        <td>67</td>
+                        <td>C</td>
+                        <td>C</td>
+                        <td>C</td>
+                        <td>C</td>
+                        <td>Letra C</td>
+                    </tr>
+                    <tr>
+                        <td>68</td>
+                        <td>D</td>
+                        <td>D</td>
+                        <td>D</td>
+                        <td>D</td>
+                        <td>Letra D</td>
+                    </tr>
+                    <tr>
+                        <td>69</td>
+                        <td>E</td>
+                        <td>E</td>
+                        <td>E</td>
+                        <td>E</td>
+                        <td>Letra E</td>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>Letra F</td>
+                    </tr>
+                    <tr>
+                        <td>71</td>
+                        <td>G</td>
+                        <td>G</td>
+                        <td>G</td>
+                        <td>G</td>
+                        <td>Letra G</td>
+                    </tr>
+                    <tr>
+                        <td>72</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>Letra H</td>
+                    </tr>
+                    <tr>
+                        <td>73</td>
+                        <td>I</td>
+                        <td>I</td>
+                        <td>I</td>
+                        <td>I</td>
+                        <td>Letra I</td>
+                    </tr>
+                    <tr>
+                        <td>74</td>
+                        <td>J</td>
+                        <td>J</td>
+                        <td>J</td>
+                        <td>J</td>
+                        <td>Letra J</td>
+                    </tr>
+                    <tr>
+                        <td>75</td>
+                        <td>K</td>
+                        <td>K</td>
+                        <td>K</td>
+                        <td>K</td>
+                        <td>Letra K</td>
+                    </tr>
+                    <tr>
+                        <td>76</td>
+                        <td>L</td>
+                        <td>L</td>
+                        <td>L</td>
+                        <td>L</td>
+                        <td>Letra L</td>
+                    </tr>
+                    <tr>
+                        <td>77</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td>Letra M</td>
+                    </tr>
+                    <tr>
+                        <td>78</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>Letra N</td>
+                    </tr>
+                    <tr>
+                        <td>79</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>Letra O</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>Letra P</td>
+                    </tr>
+                    <tr>
+                        <td>81</td>
+                        <td>Q</td>
+                        <td>Q</td>
+                        <td>Q</td>
+                        <td>Q</td>
+                        <td>Letra Q</td>
+                    </tr>
+                    <tr>
+                        <td>82</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>Letra R</td>
+                    </tr>
+                    <tr>
+                        <td>83</td>
+                        <td>S</td>
+                        <td>S</td>
+                        <td>S</td>
+                        <td>S</td>
+                        <td>Letra S</td>
+                    </tr>
+                    <tr>
+                        <td>84</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>Letra T</td>
+                    </tr>
+                    <tr>
+                        <td>85</td>
+                        <td>U</td>
+                        <td>U</td>
+                        <td>U</td>
+                        <td>U</td>
+                        <td>Letra U</td>
+                    </tr>
+                    <tr>
+                        <td>86</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>Letra V</td>
+                    </tr>
+                    <tr>
+                        <td>87</td>
+                        <td>W</td>
+                        <td>W</td>
+                        <td>W</td>
+                        <td>W</td>
+                        <td>Letra W</td>
+                    </tr>
+                    <tr>
+                        <td>88</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>Letra X</td>
+                    </tr>
+                    <tr>
+                        <td>89</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Letra Y</td>
+                    </tr>
+                    <tr>
+                        <td>90</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Letra Z</td>
+                    </tr>
+                    <tr>
+                        <td>91</td>
+                        <td>[</td>
+                        <td>[</td>
+                        <td>[</td>
+                        <td>[</td>
+                        <td>colchete esquerdo</td>
+                    </tr>
+                    <tr>
+                        <td>92</td>
+                        <td>\</td>
+                        <td>\</td>
+                        <td>\</td>
+                        <td>\</td>
+                        <td>barra invertida</td>
+                    </tr>
+                    <tr>
+                        <td>93</td>
+                        <td>]</td>
+                        <td>]</td>
+                        <td>]</td>
+                        <td>]</td>
+                        <td>colchete direito</td>
+                    </tr>
+                    <tr>
+                        <td>94</td>
+                        <td>^</td>
+                        <td>^</td>
+                        <td>^</td>
+                        <td>^</td>
+                        <td>circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>95</td>
+                        <td>_</td>
+                        <td>_</td>
+                        <td>_</td>
+                        <td>_</td>
+                        <td>linha baixa</td>
+                    </tr>
+                    <tr>
+                        <td>96</td>
+                        <td>`</td>
+                        <td>`</td>
+                        <td>`</td>
+                        <td>`</td>
+                        <td>acentuação grave</td>
+                    </tr>
+                    <tr>
+                        <td>97</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>Letra a minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>98</td>
+                        <td>b</td>
+                        <td>b</td>
+                        <td>b</td>
+                        <td>b</td>
+                        <td>Letra b minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>99</td>
+                        <td>c</td>
+                        <td>c</td>
+                        <td>c</td>
+                        <td>c</td>
+                        <td>Letra c minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>d</td>
+                        <td>d</td>
+                        <td>d</td>
+                        <td>d</td>
+                        <td>Letra d minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>e</td>
+                        <td>e</td>
+                        <td>e</td>
+                        <td>e</td>
+                        <td>Letra e minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>f</td>
+                        <td>f</td>
+                        <td>f</td>
+                        <td>f</td>
+                        <td>Letra f minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>g</td>
+                        <td>g</td>
+                        <td>g</td>
+                        <td>g</td>
+                        <td>Letra g minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>h</td>
+                        <td>h</td>
+                        <td>h</td>
+                        <td>h</td>
+                        <td>Letra h minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>i</td>
+                        <td>i</td>
+                        <td>i</td>
+                        <td>i</td>
+                        <td>Letra i minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>106</td>
+                        <td>j</td>
+                        <td>j</td>
+                        <td>j</td>
+                        <td>j</td>
+                        <td>Letra j minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>107</td>
+                        <td>k</td>
+                        <td>k</td>
+                        <td>k</td>
+                        <td>k</td>
+                        <td>Letra k minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>108</td>
+                        <td>l</td>
+                        <td>l</td>
+                        <td>l</td>
+                        <td>l</td>
+                        <td>Letra l minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>109</td>
+                        <td>m</td>
+                        <td>m</td>
+                        <td>m</td>
+                        <td>m</td>
+                        <td>Letra m minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>110</td>
+                        <td>n</td>
+                        <td>n</td>
+                        <td>n</td>
+                        <td>n</td>
+                        <td>Letra n minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>111</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>o</td>
+                        <td>Letra o minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>112</td>
+                        <td>p</td>
+                        <td>p</td>
+                        <td>p</td>
+                        <td>p</td>
+                        <td>Letra p minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>113</td>
+                        <td>q</td>
+                        <td>q</td>
+                        <td>q</td>
+                        <td>q</td>
+                        <td>Letra q minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>114</td>
+                        <td>r</td>
+                        <td>r</td>
+                        <td>r</td>
+                        <td>r</td>
+                        <td>Letra r minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>115</td>
+                        <td>s</td>
+                        <td>s</td>
+                        <td>s</td>
+                        <td>s</td>
+                        <td>Letra s minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>116</td>
+                        <td>t</td>
+                        <td>t</td>
+                        <td>t</td>
+                        <td>t</td>
+                        <td>Letra t minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>117</td>
+                        <td>u</td>
+                        <td>u</td>
+                        <td>u</td>
+                        <td>u</td>
+                        <td>Letra u minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>118</td>
+                        <td>v</td>
+                        <td>v</td>
+                        <td>v</td>
+                        <td>v</td>
+                        <td>Letra v minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>119</td>
+                        <td>w</td>
+                        <td>w</td>
+                        <td>w</td>
+                        <td>w</td>
+                        <td>Letra w minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>120</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>Letra x minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>121</td>
+                        <td>y</td>
+                        <td>y</td>
+                        <td>y</td>
+                        <td>y</td>
+                        <td>Letra y minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>122</td>
+                        <td>z</td>
+                        <td>z</td>
+                        <td>z</td>
+                        <td>z</td>
+                        <td>Letra z minúscula</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>{</td>
+                        <td>{</td>
+                        <td>{</td>
+                        <td>{</td>
+                        <td>chave esquerda</td>
+                    </tr>
+                    <tr>
+                        <td>124</td>
+                        <td>|</td>
+                        <td>|</td>
+                        <td>|</td>
+                        <td>|</td>
+                        <td>barra vertical</td>
+                    </tr>
+                    <tr>
+                        <td>125</td>
+                        <td>}</td>
+                        <td>}</td>
+                        <td>}</td>
+                        <td>}</td>
+                        <td>chave direita</td>
+                    </tr>
+                    <tr>
+                        <td>126</td>
+                        <td>~</td>
+                        <td>~</td>
+                        <td>~</td>
+                        <td>~</td>
+                        <td>til</td>
+                    </tr>
+                    <tr>
+                        <td>127</td>
+                        <td>DEL</td>
+                        <td>DEL</td>
+                        <td>DEL</td>
+                        <td>DEL</td>
+                        <td>Caractere de controle DELETE</td>
+                    </tr>
+                    <tr>
+                        <td>128</td>
+                        <td></td>
+                        <td>€</td>
+                        <td></td>
+                        <td>€</td>
+                        <td>Euro</td>
+                    </tr>
+                    <tr>
+                        <td>129</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Não utilizado</td>
+                    </tr>
+                    <tr>
+                        <td>130</td>
+                        <td></td>
+                        <td>‚</td>
+                        <td></td>
+                        <td>‚</td>
+                        <td>Aspas baixas de nove pés</td>
+                    </tr>
+                    <tr>
+                        <td>131</td>
+                        <td></td>
+                        <td>ƒ</td>
+                        <td></td>
+                        <td>ƒ</td>
+                        <td>Latin small f com gancho</td>
+                    </tr>
+                    <tr>
+                        <td>132</td>
+                        <td></td>
+                        <td>„</td>
+                        <td></td>
+                        <td>„</td>
+                        <td>Aspas baixas duplas</td>
+                    </tr>
+                    <tr>
+                        <td>133</td>
+                        <td></td>
+                        <td>…</td>
+                        <td></td>
+                        <td>…</td>
+                        <td>Elipse horizontal</td>
+                    </tr>
+                    <tr>
+                        <td>134</td>
+                        <td></td>
+                        <td>†</td>
+                        <td></td>
+                        <td>†</td>
+                        <td>Adaga</td>
+                    </tr>
+                    <tr>
+                        <td>135</td>
+                        <td></td>
+                        <td>‡</td>
+                        <td></td>
+                        <td>‡</td>
+                        <td>Dupla adaga</td>
+                    </tr>
+                    <tr>
+                        <td>136</td>
+                        <td></td>
+                        <td>ˆ</td>
+                        <td></td>
+                        <td>ˆ</td>
+                        <td>Acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>137</td>
+                        <td></td>
+                        <td>‰</td>
+                        <td></td>
+                        <td>‰</td>
+                        <td>Sinal de per mille</td>
+                    </tr>
+                    <tr>
+                        <td>138</td>
+                        <td></td>
+                        <td>Š</td>
+                        <td></td>
+                        <td>Š</td>
+                        <td>Lá com caron</td>
+                    </tr>
+                    <tr>
+                        <td>139</td>
+                        <td></td>
+                        <td>‹</td>
+                        <td></td>
+                        <td>‹</td>
+                        <td>Aspas angulares esquerda simples</td>
+                    </tr>
+                    <tr>
+                        <td>140</td>
+                        <td></td>
+                        <td>Œ</td>
+                        <td></td>
+                        <td>Œ</td>
+                        <td>Ligatura OE maiúscula latina</td>
+                    </tr>
+                    <tr>
+                        <td>141</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Não utilizado</td>
+                    </tr>
+                    <tr>
+                        <td>142</td>
+                        <td></td>
+                        <td>Ž</td>
+                        <td></td>
+                        <td>Ž</td>
+                        <td>Lá maiúsculo latino com caron</td>
+                    </tr>
+                    <tr>
+                        <td>143</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Não utilizado</td>
+                    </tr>
+                    <tr>
+                        <td>144</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Não utilizado</td>
+                    </tr>
+                    <tr>
+                        <td>145</td>
+                        <td></td>
+                        <td>‘</td>
+                        <td></td>
+                        <td>‘</td>
+                        <td>Aspas angulares esquerda simples</td>
+                    </tr>
+                    <tr>
+                        <td>146</td>
+                        <td></td>
+                        <td>’</td>
+                        <td></td>
+                        <td>’</td>
+                        <td>Aspas angulares direita simples</td>
+                    </tr>
+                    <tr>
+                        <td>147</td>
+                        <td></td>
+                        <td>“</td>
+                        <td></td>
+                        <td>“</td>
+                        <td>Aspas angulares esquerda duplas</td>
+                    </tr>
+                    <tr>
+                        <td>148</td>
+                        <td></td>
+                        <td>”</td>
+                        <td></td>
+                        <td>”</td>
+                        <td>Aspas angulares direita duplas</td>
+                    </tr>
+                    <tr>
+                        <td>149</td>
+                        <td></td>
+                        <td>•</td>
+                        <td></td>
+                        <td>•</td>
+                        <td>Bala</td>
+                    </tr>
+                    <tr>
+                        <td>150</td>
+                        <td></td>
+                        <td>–</td>
+                        <td></td>
+                        <td>–</td>
+                        <td>Traço (en dash)</td>
+                    </tr>
+                    <tr>
+                        <td>151</td>
+                        <td></td>
+                        <td>—</td>
+                        <td></td>
+                        <td>—</td>
+                        <td>Traço longo (em dash)</td>
+                    </tr>
+                    <tr>
+                        <td>152</td>
+                        <td></td>
+                        <td>˜</td>
+                        <td></td>
+                        <td>˜</td>
+                        <td>Til</td>
+                    </tr>
+                    <tr>
+                        <td>153</td>
+                        <td></td>
+                        <td>™</td>
+                        <td></td>
+                        <td>™</td>
+                        <td>Símbolo de marca registrada (trademark)</td>
+                    </tr>
+                    <tr>
+                        <td>154</td>
+                        <td></td>
+                        <td>š</td>
+                        <td></td>
+                        <td>š</td>
+                        <td>S latino minúsculo com caron</td>
+                    </tr>
+                    <tr>
+                        <td>155</td>
+                        <td></td>
+                        <td>›</td>
+                        <td></td>
+                        <td>›</td>
+                        <td>aspas angulares simples para a direita</td>
+                    </tr>
+                    <tr>
+                        <td>156</td>
+                        <td></td>
+                        <td>œ</td>
+                        <td></td>
+                        <td>œ</td>
+                        <td>Ligadura OE minúscula latina</td>
+                    </tr>
+                    <tr>
+                        <td>157</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Não utilizado</td>
+                    </tr>
+                    <tr>
+                        <td>158</td>
+                        <td></td>
+                        <td>ž</td>
+                        <td></td>
+                        <td>ž</td>
+                        <td>Z minúsculo latino com caron</td>
+                    </tr>
+                    <tr>
+                        <td>159</td>
+                        <td></td>
+                        <td>Ÿ</td>
+                        <td></td>
+                        <td>Ÿ</td>
+                        <td>Y maiúsculo latino com trema</td>
+                    </tr>
+                    <tr>
+                        <td>160</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Espaço não-quebrável</td>
+                    </tr>
+                    <tr>
+                        <td>161</td>
+                        <td>¡</td>
+                        <td>¡</td>
+                        <td>¡</td>
+                        <td>¡</td>
+                        <td>Ponto de exclamação invertido</td>
+                    </tr>
+                    <tr>
+                        <td>162</td>
+                        <td>¢</td>
+                        <td>¢</td>
+                        <td>¢</td>
+                        <td>¢</td>
+                        <td>Símbolo de centavo</td>
+                    </tr>
+                    <tr>
+                        <td>163</td>
+                        <td>£</td>
+                        <td>£</td>
+                        <td>£</td>
+                        <td>£</td>
+                        <td>Símbolo de libra esterlina</td>
+                    </tr>
+                    <tr>
+                        <td>164</td>
+                        <td>¤</td>
+                        <td>¤</td>
+                        <td>¤</td>
+                        <td>¤</td>
+                        <td>Símbolo de moeda genérica</td>
+                    </tr>
+                    <tr>
+                        <td>165</td>
+                        <td>¥</td>
+                        <td>¥</td>
+                        <td>¥</td>
+                        <td>¥</td>
+                        <td>Símbolo de iene</td>
+                    </tr>
+                    <tr>
+                        <td>166</td>
+                        <td>¦</td>
+                        <td>¦</td>
+                        <td>¦</td>
+                        <td>¦</td>
+                        <td>Barra vertical quebrada</td>
+                    </tr>
+                    <tr>
+                        <td>167</td>
+                        <td>§</td>
+                        <td>§</td>
+                        <td>§</td>
+                        <td>§</td>
+                        <td>Símbolo de seção</td>
+                    </tr>
+                    <tr>
+                        <td>168</td>
+                        <td>¨</td>
+                        <td>¨</td>
+                        <td>¨</td>
+                        <td>¨</td>
+                        <td>Trema</td>
+                    </tr>
+                    <tr>
+                        <td>169</td>
+                        <td>©</td>
+                        <td>©</td>
+                        <td>©</td>
+                        <td>©</td>
+                        <td>Símbolo de copyright</td>
+                    </tr>
+                    <tr>
+                        <td>170</td>
+                        <td>ª</td>
+                        <td>ª</td>
+                        <td>ª</td>
+                        <td>ª</td>
+                        <td>Indicador ordinal feminino</td>
+                    </tr>
+                    <tr>
+                        <td>171</td>
+                        <td>«</td>
+                        <td>«</td>
+                        <td>«</td>
+                        <td>«</td>
+                        <td>Aspas angulares duplas esquerda</td>
+                    </tr>
+                    <tr>
+                        <td>172</td>
+                        <td>¬</td>
+                        <td>¬</td>
+                        <td>¬</td>
+                        <td>¬</td>
+                        <td>Símbolo de negação</td>
+                    </tr>
+                    <tr>
+                        <td>173</td>
+                        <td>­</td>
+                        <td>­</td>
+                        <td>­</td>
+                        <td>­</td>
+                        <td>Hífen suave</td>
+                    </tr>
+                    <tr>
+                        <td>174</td>
+                        <td>®</td>
+                        <td>®</td>
+                        <td>®</td>
+                        <td>®</td>
+                        <td>Símbolo de marca registrada</td>
+                    </tr>
+                    <tr>
+                        <td>175</td>
+                        <td>¯</td>
+                        <td>¯</td>
+                        <td>¯</td>
+                        <td>¯</td>
+                        <td>Macron</td>
+                    </tr>
+                    <tr>
+                        <td>176</td>
+                        <td>°</td>
+                        <td>°</td>
+                        <td>°</td>
+                        <td>°</td>
+                        <td>Símbolo de grau</td>
+                    </tr>
+                    <tr>
+                        <td>177</td>
+                        <td>±</td>
+                        <td>±</td>
+                        <td>±</td>
+                        <td>±</td>
+                        <td>Sinal de mais ou menos</td>
+                    </tr>
+                    <tr>
+                        <td>178</td>
+                        <td>²</td>
+                        <td>²</td>
+                        <td>²</td>
+                        <td>²</td>
+                        <td>Expoente dois (quadrado)</td>
+                    </tr>
+                    <tr>
+                        <td>179</td>
+                        <td>³</td>
+                        <td>³</td>
+                        <td>³</td>
+                        <td>³</td>
+                        <td>Expoente três (cubo)</td>
+                    </tr>
+                    <tr>
+                        <td>180</td>
+                        <td>´</td>
+                        <td>´</td>
+                        <td>´</td>
+                        <td>´</td>
+                        <td>Acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>181</td>
+                        <td>µ</td>
+                        <td>µ</td>
+                        <td>µ</td>
+                        <td>µ</td>
+                        <td>Símbolo de micro</td>
+                    </tr>
+                    <tr>
+                        <td>182</td>
+                        <td>¶</td>
+                        <td>¶</td>
+                        <td>¶</td>
+                        <td>¶</td>
+                        <td>Símbolo de parágrafo (pilcrow)</td>
+                    </tr>
+                    <tr>
+                        <td>183</td>
+                        <td>·</td>
+                        <td>·</td>
+                        <td>·</td>
+                        <td>·</td>
+                        <td>Ponto médio</td>
+                    </tr>
+                    <tr>
+                        <td>184</td>
+                        <td>¸</td>
+                        <td>¸</td>
+                        <td>¸</td>
+                        <td>¸</td>
+                        <td>Cedilha</td>
+                    </tr>
+                    <tr>
+                        <td>185</td>
+                        <td>¹</td>
+                        <td>¹</td>
+                        <td>¹</td>
+                        <td>¹</td>
+                        <td>Expoente um</td>
+                    </tr>
+                    <tr>
+                        <td>186</td>
+                        <td>º</td>
+                        <td>º</td>
+                        <td>º</td>
+                        <td>º</td>
+                        <td>Indicador ordinal masculino</td>
+                    </tr>
+                    <tr>
+                        <td>187</td>
+                        <td>»</td>
+                        <td>»</td>
+                        <td>»</td>
+                        <td>»</td>
+                        <td>Aspas angulares duplas para a direita</td>
+                    </tr>
+                    <tr>
+                        <td>188</td>
+                        <td>¼</td>
+                        <td>¼</td>
+                        <td>¼</td>
+                        <td>¼</td>
+                        <td>Frações vulgares (um quarto)</td>
+                    </tr>
+                    <tr>
+                        <td>189</td>
+                        <td>½</td>
+                        <td>½</td>
+                        <td>½</td>
+                        <td>½</td>
+                        <td>Frações vulgares (meio)</td>
+                    </tr>
+                    <tr>
+                        <td>190</td>
+                        <td>¾</td>
+                        <td>¾</td>
+                        <td>¾</td>
+                        <td>¾</td>
+                        <td>Frações vulgares (três quartos)</td>
+                    </tr>
+                    <tr>
+                        <td>191</td>
+                        <td>¿</td>
+                        <td>¿</td>
+                        <td>¿</td>
+                        <td>¿</td>
+                        <td>Ponto de interrogação invertido</td>
+                    </tr>
+                    <tr>
+                        <td>192</td>
+                        <td>À</td>
+                        <td>À</td>
+                        <td>À</td>
+                        <td>À</td>
+                        <td>Latino A com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>193</td>
+                        <td>Á</td>
+                        <td>Á</td>
+                        <td>Á</td>
+                        <td>Á</td>
+                        <td>Latino A com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>194</td>
+                        <td>Â</td>
+                        <td>Â</td>
+                        <td>Â</td>
+                        <td>Â</td>
+                        <td>Latino A com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>195</td>
+                        <td>Ã</td>
+                        <td>Ã</td>
+                        <td>Ã</td>
+                        <td>Ã</td>
+                        <td>Latino A com til</td>
+                    </tr>
+                    <tr>
+                        <td>196</td>
+                        <td>Ä</td>
+                        <td>Ä</td>
+                        <td>Ä</td>
+                        <td>Ä</td>
+                        <td>Latino A com trema</td>
+                    </tr>
+                    <tr>
+                        <td>197</td>
+                        <td>Å</td>
+                        <td>Å</td>
+                        <td>Å</td>
+                        <td>Å</td>
+                        <td>Latino A com anel</td>
+                    </tr>
+                    <tr>
+                        <td>198</td>
+                        <td>Æ</td>
+                        <td>Æ</td>
+                        <td>Æ</td>
+                        <td>Æ</td>
+                        <td>Ligadura AE</td>
+                    </tr>
+                    <tr>
+                        <td>199</td>
+                        <td>Ç</td>
+                        <td>Ç</td>
+                        <td>Ç</td>
+                        <td>Ç</td>
+                        <td>Latino C com cedilha</td>
+                    </tr>
+                    <tr>
+                        <td>200</td>
+                        <td>È</td>
+                        <td>È</td>
+                        <td>È</td>
+                        <td>È</td>
+                        <td>Latino E com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>É</td>
+                        <td>É</td>
+                        <td>É</td>
+                        <td>É</td>
+                        <td>Latino E com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>202</td>
+                        <td>Ê</td>
+                        <td>Ê</td>
+                        <td>Ê</td>
+                        <td>Ê</td>
+                        <td>Latino E com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>203</td>
+                        <td>Ë</td>
+                        <td>Ë</td>
+                        <td>Ë</td>
+                        <td>Ë</td>
+                        <td>Latino E com trema</td>
+                    </tr>
+                    <tr>
+                        <td>204</td>
+                        <td>Ì</td>
+                        <td>Ì</td>
+                        <td>Ì</td>
+                        <td>Ì</td>
+                        <td>Latino I com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>205</td>
+                        <td>Í</td>
+                        <td>Í</td>
+                        <td>Í</td>
+                        <td>Í</td>
+                        <td>Latino I com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>206</td>
+                        <td>Î</td>
+                        <td>Î</td>
+                        <td>Î</td>
+                        <td>Î</td>
+                        <td>Latino I com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>207</td>
+                        <td>Ï</td>
+                        <td>Ï</td>
+                        <td>Ï</td>
+                        <td>Ï</td>
+                        <td>Latino I com trema</td>
+                    </tr>
+                    <tr>
+                        <td>208</td>
+                        <td>Ð</td>
+                        <td>Ð</td>
+                        <td>Ð</td>
+                        <td>Ð</td>
+                        <td>Letra eth latina</td>
+                    </tr>
+                    <tr>
+                        <td>209</td>
+                        <td>Ñ</td>
+                        <td>Ñ</td>
+                        <td>Ñ</td>
+                        <td>Ñ</td>
+                        <td>Latino N com til</td>
+                    </tr>
+                    <tr>
+                        <td>210</td>
+                        <td>Ò</td>
+                        <td>Ò</td>
+                        <td>Ò</td>
+                        <td>Ò</td>
+                        <td>Latino O com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>211</td>
+                        <td>Ó</td>
+                        <td>Ó</td>
+                        <td>Ó</td>
+                        <td>Ó</td>
+                        <td>Latino O com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>212</td>
+                        <td>Ô</td>
+                        <td>Ô</td>
+                        <td>Ô</td>
+                        <td>Ô</td>
+                        <td>Latino O com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>213</td>
+                        <td>Õ</td>
+                        <td>Õ</td>
+                        <td>Õ</td>
+                        <td>Õ</td>
+                        <td>Latino O com til</td>
+                    </tr>
+                    <tr>
+                        <td>214</td>
+                        <td>Ö</td>
+                        <td>Ö</td>
+                        <td>Ö</td>
+                        <td>Ö</td>
+                        <td>Latino O com trema</td>
+                    </tr>
+                    <tr>
+                        <td>215</td>
+                        <td>×</td>
+                        <td>×</td>
+                        <td>×</td>
+                        <td>×</td>
+                        <td>Sinal de multiplicação</td>
+                    </tr>
+                    <tr>
+                        <td>216</td>
+                        <td>Ø</td>
+                        <td>Ø</td>
+                        <td>Ø</td>
+                        <td>Ø</td>
+                        <td>Latino O com barra</td>
+                    </tr>
+                    <tr>
+                        <td>217</td>
+                        <td>Ù</td>
+                        <td>Ù</td>
+                        <td>Ù</td>
+                        <td>Ù</td>
+                        <td>Latino U com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>218</td>
+                        <td>Ú</td>
+                        <td>Ú</td>
+                        <td>Ú</td>
+                        <td>Ú</td>
+                        <td>Latino U com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>219</td>
+                        <td>Û</td>
+                        <td>Û</td>
+                        <td>Û</td>
+                        <td>Û</td>
+                        <td>Latino U com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>220</td>
+                        <td>Ü</td>
+                        <td>Ü</td>
+                        <td>Ü</td>
+                        <td>Ü</td>
+                        <td>Latino U com trema</td>
+                    </tr>
+                    <tr>
+                        <td>221</td>
+                        <td>Ý</td>
+                        <td>Ý</td>
+                        <td>Ý</td>
+                        <td>Ý</td>
+                        <td>Latino Y com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>222</td>
+                        <td>Þ</td>
+                        <td>Þ</td>
+                        <td>Þ</td>
+                        <td>Þ</td>
+                        <td>Letra thorn latina</td>
+                    </tr>
+                    <tr>
+                        <td>223</td>
+                        <td>ß</td>
+                        <td>ß</td>
+                        <td>ß</td>
+                        <td>ß</td>
+                        <td>Eszett ou sharp S latino</td>
+                    </tr>
+                    <tr>
+                        <td>224</td>
+                        <td>à</td>
+                        <td>à</td>
+                        <td>à</td>
+                        <td>à</td>
+                        <td>Latino a com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>225</td>
+                        <td>á</td>
+                        <td>á</td>
+                        <td>á</td>
+                        <td>á</td>
+                        <td>Latino a com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>226</td>
+                        <td>â</td>
+                        <td>â</td>
+                        <td>â</td>
+                        <td>â</td>
+                        <td>Latino a com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>227</td>
+                        <td>ã</td>
+                        <td>ã</td>
+                        <td>ã</td>
+                        <td>ã</td>
+                        <td>Latino a com til</td>
+                    </tr>
+                    <tr>
+                        <td>228</td>
+                        <td>ä</td>
+                        <td>ä</td>
+                        <td>ä</td>
+                        <td>ä</td>
+                        <td>Latino a com trema</td>
+                    </tr>
+                    <tr>
+                        <td>229</td>
+                        <td>å</td>
+                        <td>å</td>
+                        <td>å</td>
+                        <td>å</td>
+                        <td>Latino a com anel</td>
+                    </tr>
+                    <tr>
+                        <td>230</td>
+                        <td>æ</td>
+                        <td>æ</td>
+                        <td>æ</td>
+                        <td>æ</td>
+                        <td>Ligadura ae</td>
+                    </tr>
+                    <tr>
+                        <td>231</td>
+                        <td>ç</td>
+                        <td>ç</td>
+                        <td>ç</td>
+                        <td>ç</td>
+                        <td>Latino c com cedilha</td>
+                    </tr>
+                    <tr>
+                        <td>232</td>
+                        <td>è</td>
+                        <td>è</td>
+                        <td>è</td>
+                        <td>è</td>
+                        <td>Latino e com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>233</td>
+                        <td>é</td>
+                        <td>é</td>
+                        <td>é</td>
+                        <td>é</td>
+                        <td>Latino e com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>234</td>
+                        <td>ê</td>
+                        <td>ê</td>
+                        <td>ê</td>
+                        <td>ê</td>
+                        <td>Latino e com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>235</td>
+                        <td>ë</td>
+                        <td>ë</td>
+                        <td>ë</td>
+                        <td>ë</td>
+                        <td>Latino e com trema</td>
+                    </tr>
+                    <tr>
+                        <td>236</td>
+                        <td>ì</td>
+                        <td>ì</td>
+                        <td>ì</td>
+                        <td>ì</td>
+                        <td>Latino i com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>237</td>
+                        <td>í</td>
+                        <td>í</td>
+                        <td>í</td>
+                        <td>í</td>
+                        <td>Latino i com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>238</td>
+                        <td>î</td>
+                        <td>î</td>
+                        <td>î</td>
+                        <td>î</td>
+                        <td>Latino i com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>239</td>
+                        <td>ï</td>
+                        <td>ï</td>
+                        <td>ï</td>
+                        <td>ï</td>
+                        <td>Latino i com trema</td>
+                    </tr>
+                    <tr>
+                        <td>240</td>
+                        <td>ð</td>
+                        <td>ð</td>
+                        <td>ð</td>
+                        <td>ð</td>
+                        <td>Letra eth latina</td>
+                    </tr>
+                    <tr>
+                        <td>241</td>
+                        <td>ñ</td>
+                        <td>ñ</td>
+                        <td>ñ</td>
+                        <td>ñ</td>
+                        <td>Latino n com til</td>
+                    </tr>
+                    <tr>
+                        <td>242</td>
+                        <td>ò</td>
+                        <td>ò</td>
+                        <td>ò</td>
+                        <td>ò</td>
+                        <td>Latino o com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>243</td>
+                        <td>ó</td>
+                        <td>ó</td>
+                        <td>ó</td>
+                        <td>ó</td>
+                        <td>Latino o com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>244</td>
+                        <td>ô</td>
+                        <td>ô</td>
+                        <td>ô</td>
+                        <td>ô</td>
+                        <td>Latino o com acento circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>245</td>
+                        <td>õ</td>
+                        <td>õ</td>
+                        <td>õ</td>
+                        <td>õ</td>
+                        <td>Latino o com til</td>
+                    </tr>
+                    <tr>
+                        <td>246</td>
+                        <td>ö</td>
+                        <td>ö</td>
+                        <td>ö</td>
+                        <td>ö</td>
+                        <td>Latino o com trema</td>
+                    </tr>
+                    <tr>
+                        <td>247</td>
+                        <td>÷</td>
+                        <td>÷</td>
+                        <td>÷</td>
+                        <td>÷</td>
+                        <td>Sinal de divisão</td>
+                    </tr>
+                    <tr>
+                        <td>248</td>
+                        <td>ø</td>
+                        <td>ø</td>
+                        <td>ø</td>
+                        <td>ø</td>
+                        <td>Latino o com barra</td>
+                    </tr>
+                    <tr>
+                        <td>249</td>
+                        <td>ù</td>
+                        <td>ù</td>
+                        <td>ù</td>
+                        <td>ù</td>
+                        <td>Latino u com acento grave</td>
+                    </tr>
+                    <tr>
+                        <td>250</td>
+                        <td>ú</td>
+                        <td>ú</td>
+                        <td>ú</td>
+                        <td>ú</td>
+                        <td>Letra U com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>251</td>
+                        <td>û</td>
+                        <td>û</td>
+                        <td>û</td>
+                        <td>û</td>
+                        <td>Letra U com circunflexo</td>
+                    </tr>
+                    <tr>
+                        <td>252</td>
+                        <td>ü</td>
+                        <td>ü</td>
+                        <td>ü</td>
+                        <td>ü</td>
+                        <td>Letra U com trema</td>
+                    </tr>
+                    <tr>
+                        <td>253</td>
+                        <td>ý</td>
+                        <td>ý</td>
+                        <td>ý</td>
+                        <td>ý</td>
+                        <td>Letra Y com acento agudo</td>
+                    </tr>
+                    <tr>
+                        <td>254</td>
+                        <td>þ</td>
+                        <td>þ</td>
+                        <td>þ</td>
+                        <td>þ</td>
+                        <td>Letra Thorn</td>
+                    </tr>
+                    <tr>
+                        <td>255</td>
+                        <td>ÿ</td>
+                        <td>ÿ</td>
+                        <td>ÿ</td>
+                        <td>ÿ</td>
+                        <td>Letra Y com trema</td>
+                    </tr>
+                </table>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

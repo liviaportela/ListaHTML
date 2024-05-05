@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Table">
+                <h1>Tabelas em HTML</h1>
+                <p>Tabelas em HTML permitem que desenvolvedores da web organizem dados em linhas e colunas.</p>
+
+                <h3>Exemplo de Tabela Simples</h3>
+                <pre>
+                    <span class="html-tag">&lt;table</span> <span class="html-attribute">border</span>=<span class="html-value">"1"</span>&gt;
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">Empresa</span><span class="html-tag">&lt;/th&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">Contato</span><span class="html-tag">&lt;/th&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">País</span><span class="html-tag">&lt;/th&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Alfreds Futterkiste</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Maria Anders</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Alemanha</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Centro comercial Moctezuma</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Francisco Chang</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">México</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+     <span class="html-tag">&lt;/table&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <table border="1">
+                        <tr>
+                            <th>Empresa</th>
+                            <th>Contato</th>
+                            <th>País</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Alemanha</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>México</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                
+                <h2>Células da Tabela</h2>
+                <p>Cada célula da tabela é definida pelas tags <code style="color:#0059ff">&lt;td&gt;</code> e <code style="color:#0059ff">&lt;/td&gt;</code>. "td"
+                    significa "table data" (dados da tabela).</p>
+
+                <h3>Exemplo de Células</h3>
+                <pre>
+                    <span class="html-tag">&lt;table</span> <span class="html-attribute">border</span>=<span class="html-value">"1"</span>&gt;
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Emil</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Tobias</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Linus</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+     <span class="html-tag">&lt;/table&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <table border="1">
+                        <tr>
+                            <td>Emil</td>
+                            <td>Tobias</td>
+                            <td>Linus</td>
+                        </tr>
+                     </table>
+                </div>
+                <p><strong>Nota:</strong> Uma célula de tabela pode conter vários tipos de elementos HTML: texto,
+                    imagens, listas, links, outras tabelas, etc.
+                </p>
+                <hr>
+
+                <h2>Linhas da Tabela</h2>
+                <p>Cada linha da tabela começa com uma tag <code style="color:#0059ff">&lt;tr&gt;</code> e termina com uma tag
+                    <code style="color:#0059ff">&lt;/tr&gt;</code>. "tr" significa "table row" (linha da tabela).</p>
+
+                <h3>Exemplo de Linhas</h3>
+                <pre>
+                    <span class="html-tag">&lt;table</span> <span class="html-attribute">border</span>=<span class="html-value">"1"</span>&gt;
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Emil</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Tobias</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Linus</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">16</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">14</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">10</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+     <span class="html-tag">&lt;/table&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <table border="1">
+                        <tr>
+                            <td>Emil</td>
+                            <td>Tobias</td>
+                            <td>Linus</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                     </table>
+                </div>
+                
+                <p>Você pode ter quantas linhas desejar em uma tabela; apenas certifique-se de que o número de células
+                    seja o mesmo em cada linha.
+                </p>
+                <hr>
+
+                <h2>Headers de Tabela</h2>
+                <p>Às vezes, você quer que algumas células sejam cabeçalhos de tabela. Nesse caso, use a tag
+                    <code style="color:#0059ff">&lt;th&gt;</code> em vez de <code style="color:#0059ff">&lt;td&gt;</code>. "th" significa "table header" (cabeçalho
+                    da tabela).</p>
+
+                <h3>Exemplo de Cabeçalhos de Tabela</h3>
+                <pre>
+                    <span class="html-tag">&lt;table</span> <span class="html-attribute">border</span>=<span class="html-value">"1"</span>&gt;
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">Pessoa 1</span><span class="html-tag">&lt;/th&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">Pessoa 2</span><span class="html-tag">&lt;/th&gt;</span>
+            <span class="html-tag">&lt;th&gt;</span><span class="html-text">Pessoa 3</span><span class="html-tag">&lt;/th&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Emil</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Tobias</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">Linus</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+        <span class="html-tag">&lt;tr&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">16</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">14</span><span class="html-tag">&lt;/td&gt;</span>
+            <span class="html-tag">&lt;td&gt;</span><span class="html-text">10</span><span class="html-tag">&lt;/td&gt;</span>
+        <span class="html-tag">&lt;/tr&gt;</span>
+     <span class="html-tag">&lt;/table&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <table border="1">
+                        <tr>
+                            <th>Pessoa 1</th>
+                            <th>Pessoa 2</th>
+                            <th>Pessoa 3</th>
+                        </tr>
+                        <tr>
+                            <td>Emil</td>
+                            <td>Tobias</td>
+                            <td>Linus</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                     </table>
+                </div>
+                <p>Por padrão, o texto nos elementos <code style="color:#0059ff">&lt;th&gt;</code> é negrito e centralizado, mas isso pode ser
+                    alterado com CSS.
+                </p>
+                <hr>
+
+                <h2>Tags de Tabela em HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Define uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;th&gt;</code></td>
+                        <td>Define uma célula de cabeçalho em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tr&gt;</code></td>
+                        <td>Define uma linha em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;td&gt;</code></td>
+                        <td>Define uma célula em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;caption&gt;</code></td>
+                        <td>Define uma legenda para a tabela</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;colgroup&gt;</code></td>
+                        <td>Especifica um grupo de uma ou mais colunas em uma tabela para formatação</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;col&gt;</code></td>
+                        <td>Especifica propriedades de coluna para cada coluna dentro de um elemento
+                            <code>&lt;colgroup&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;thead&gt;</code></td>
+                        <td>Agrupa o conteúdo do cabeçalho em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tbody&gt;</code></td>
+                        <td>Agrupa o conteúdo do corpo em uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tfoot&gt;</code></td>
+                        <td>Agrupa o conteúdo do rodapé em uma tabela</td>
+                    </tr>
+                </table>
+
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

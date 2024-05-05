@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SVG</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML SVG">
+                <h1>HTML SVG</h1>
+                <p>SVG significa Scalable Vector Graphics e é usado para definir gráficos vetoriais para a Web.</p>
+                <p>Os gráficos SVG são escaláveis e não perdem qualidade ao serem ampliados ou redimensionados.</p>
+                <hr>
+
+                <h2>Características do SVG</h2>
+                <p>SVG define gráficos em formato XML.</p>
+                <p>Cada elemento e atributo em arquivos SVG podem ser animados.</p>
+                <p>SVG é uma recomendação W3C.</p>
+                <p>SVG se integra com outros padrões como CSS, DOM, XSL e JavaScript.</p>
+                <hr>
+
+                <h2>O Elemento &lt;svg&gt;</h2>
+                <p>O elemento HTML <code>&lt;svg&gt;</code> é um contêiner para gráficos SVG (Scalable Vector Graphics).
+                </p>
+                <p>SVG é uma tecnologia que permite desenhar gráficos vetoriais diretamente nas páginas HTML. Ela
+                    oferece várias formas de criar gráficos complexos, incluindo caminhos, retângulos, círculos,
+                    polígonos, texto e muito mais.</p>
+                <hr>
+
+                <h2>Exemplos de Elementos SVG</h2>
+                <h3>Circulo SVG</h3>
+                <pre>
+                    <span class="html-tag">&lt;svg</span> <span class="html-attribute">width</span>="<span class="html-value">100</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;circle</span> <span class="html-attribute">cx</span>="<span class="html-value">50</span>" <span class="html-attribute">cy</span>="<span class="html-value">50</span>" <span class="html-attribute">r</span>="<span class="html-value">40</span>" <span class="html-attribute">stroke</span>="<span class="html-value">green</span>" <span class="html-attribute">stroke-width</span>="<span class="html-value">4</span>" <span class="html-attribute">fill</span>="<span class="html-value">yellow</span>" <span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/svg&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    </svg>
+                </div>
+                <hr>
+
+                <h3>Retângulo SVG</h3>
+                <pre>
+                    <span class="html-tag">&lt;svg</span> <span class="html-attribute">width</span>="<span class="html-value">220</span>" <span class="html-attribute">height</span>="<span class="html-value">120</span>"<span class="html-tag">&gt;</span>
+         <span class="html-tag">&lt;rect</span> <span class="html-attribute">x</span>="<span class="html-value">10</span>" <span class="html-attribute">y</span>="<span class="html-value">10</span>" <span class="html-attribute">width</span>="<span class="html-value">200</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>" <span class="html-attribute">stroke</span>="<span class="html-value">red</span>" <span class="html-attribute">stroke-width</span>="<span class="html-value">6</span>" <span class="html-attribute">fill</span>="<span class="html-value">blue</span>" <span class="html-tag">/&gt;</span> 
+     <span class="html-tag">&lt;/svg&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <svg width="220" height="120">
+                        <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+                    </svg>
+                </div>
+                <hr>
+
+                <h3>Retângulo SVG com Opacidade e Cantos Arredondados</h3>
+                <pre>
+                        <span class="html-tag">&lt;svg</span> <span class="html-attribute">width</span>="<span class="html-value">220</span>" <span class="html-attribute">height</span>="<span class="html-value">180</span>"<span class="html-tag">&gt;</span>
+         <span class="html-tag">&lt;rect</span> <span class="html-attribute">x</span>="<span class="html-value">50</span>" <span class="html-attribute">y</span>="<span class="html-value">20</span>" <span class="html-attribute">rx</span>="<span class="html-value">20</span>" <span class="html-attribute">ry</span>="<span class="html-value">20</span>" <span class="html-attribute">width</span>="<span class="html-value">150</span>" <span class="html-attribute">height</span>="<span class="html-value">150</span>" <span class="html-attribute">style</span>="<span class="html-value">fill: red; stroke: black; stroke-width: 5; opacity: 0.5</span>" <span class="html-tag">/&gt;</span> 
+     <span class="html-tag">&lt;/svg&gt;</span>                 
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <svg width="220" height="180">
+                        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+                            style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+                    </svg>
+                </div>
+                <hr>
+
+                <h3>Estrela SVG</h3>
+                <pre>
+                    <span class="html-tag">&lt;svg</span> <span class="html-attribute">width</span>="<span class="html-value">220</span>" <span class="html-attribute">height</span>="<span class="html-value">200</span>"<span class="html-tag">&gt;</span>
+         <span class="html-tag">&lt;polygon</span> <span class="html-attribute">points</span>="<span class="html-value">100,10 40,198 190,78 10,78 160,198</span>" <span class="html-attribute">style</span>="<span class="html-value">fill: lime; stroke: purple; stroke-width: 5; fill-rule: evenodd;</span>" <span class="html-tag">/&gt;</span> 
+     <span class="html-tag">&lt;/svg&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <svg width="220" height="200">
+                        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+                    </svg>
+                </div>
+                <hr>
+
+                <h3>Elipse e Texto com Gradiente SVG</h3>
+                <pre>
+                    <span class="html-tag">&lt;svg</span> <span class="html-attribute">height</span>="<span class="html-value">130</span>" <span class="html-attribute">width</span>="<span class="html-value">220</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;defs&gt;</span>
+            <span class="html-tag">&lt;linearGradient</span> <span class="html-attribute">id</span>="<span class="html-value">grad1</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;stop</span> <span class="html-attribute">offset</span>="<span class="html-value">0%</span>" <span class="html-attribute">stop-color</span>="<span class="html-value">yellow</span>" <span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;stop</span> <span class="html-attribute">offset</span>="<span class="html-value">100%</span>" <span class="html-attribute">stop-color</span>="<span class="html-value">red</span>" <span class="html-tag">/&gt;</span>
+            <span class="html-tag">&lt;/linearGradient&gt;</span>
+        <span class="html-tag">&lt;/defs&gt;</span>
+
+        <span class="html-tag">&lt;ellipse</span> <span class="html-attribute">cx</span>="<span class="html-value">100</span>" <span class="html-attribute">cy</span>="<span class="html-value">70</span>" <span class="html-attribute">rx</span>="<span class="html-value">85</span>" <span class="html-attribute">ry</span>="<span class="html-value">55</span>" <span class="html-attribute">fill</span>="<span class="html-value">url(#grad1)</span>" <span class="html-tag">/&gt;</span>
+
+        <span class="html-tag">&lt;text</span> <span class="html-attribute">fill</span>="<span class="html-value">#ffffff</span>" <span class="html-attribute">font-size</span>="<span class="html-value">45</span>" <span class="html-attribute">font-family</span>="<span class="html-value">Verdana</span>" <span class="html-attribute">x</span>="<span class="html-value">50</span>" <span class="html-attribute">y</span>="<span class="html-value">86</span>"<span class="html-tag">&gt;</span><span class="html-text">SVG</span><span class="html-tag">&lt;/text&gt;</span>
+        <span class="html-text">Desculpe, seu navegador não suporta SVG inline.</span>
+     <span class="html-tag">&lt;/svg&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <svg height="130" width="220">
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="0%" stop-color="yellow" />
+                                <stop offset="100%" stop-color="red" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+                        <p>Desculpe, seu navegador não suporta SVG embutido.</p>
+                    </svg>
+                </div>
+                <hr>
+
+                <div style="margin: 20px 0px;">
+                    <h2>Diferenças Entre SVG e Canvas</h2>
+                    <p>SVG é uma linguagem para descrever gráficos 2D em XML, enquanto Canvas desenha gráficos 2D na
+                        hora
+                        usando JavaScript.</p>
+
+                    <h3>Características do SVG</h3>
+                    <ul>
+                        <li>SVG é baseado em XML, permitindo anexar manipuladores de eventos JavaScript.</li>
+                        <li>SVG lembra cada forma desenhada como um objeto. Se atributos de um objeto SVG forem
+                            alterados, o
+                            navegador pode re-renderizar automaticamente a forma.</li>
+                    </ul>
+
+                    <h3>Características do Canvas</h3>
+                    <ul>
+                        <li>Canvas é renderizado pixel a pixel.</li>
+                        <li>Se a posição de um gráfico Canvas for alterada, a cena inteira precisa ser redesenhada,
+                            incluindo os objetos cobertos pelo gráfico.</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <h3>Comparação entre SVG e Canvas</h3>
+                <table border="1">
+                    <tr>
+                        <th>SVG</th>
+                        <th>Canvas</th>
+                    </tr>
+                    <tr>
+                        <td>Independente da resolução</td>
+                        <td>Dependente da resolução</td>
+                    </tr>
+                    <tr>
+                        <td>Suporte a manipuladores de eventos</td>
+                        <td>Sem suporte para manipuladores de eventos</td>
+                    </tr>
+                    <tr>
+                        <td>Boa capacidade de renderização de texto</td>
+                        <td>Baixa capacidade de renderização de texto</td>
+                    </tr>
+                    <tr>
+                        <td>Lento para renderizações complexas</td>
+                        <td>Bem adaptado para jogos gráficos intensivos</td>
+                    </tr>
+                    <tr>
+                        <td>Não é adequado para aplicativos de jogos</td>
+                        <td>Pode salvar imagens como .png ou .jpg</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

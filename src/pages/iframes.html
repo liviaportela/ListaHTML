@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML IFrames</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Iframes">
+                <h1>Uso do Iframe em HTML</h1>
+                <p>O elemento <code style="color:#0059ff">&lt;iframe&gt;</code> em HTML é usado para exibir uma página da web dentro de outra
+                    página da web.</p>
+                <div class="exemplo">
+                    <iframe src="https://www.example.com" width="300" height="200"></iframe>
+                </div>
+                <hr>
+
+                <h2>Sintaxe do Iframe</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;iframe&gt;</code> especifica um frame (quadro) inline. Um frame inline é usado
+                    para incorporar outro documento dentro do documento HTML atual.</p>
+                <p>A sintaxe básica é:</p>
+                <pre>
+                    <span class="html-tag">&lt;iframe</span> <span class="html-attribute">src</span>="<span class="html-value">url</span>" <span class="html-attribute">title</span>="<span class="html-text">descrição</span>"<span class="html-tag">&gt;&lt;/iframe&gt;</span>
+                </pre>
+                <p><strong>Dica:</strong> É uma boa prática sempre incluir o atributo <code style="color:#f0b400">title</code> no
+                    <code style="color:#0059ff">&lt;iframe&gt;</code>. Isso é usado por leitores de tela para ler o conteúdo do iframe.
+                </p>
+                <hr>
+
+                <h2>Iframe - Definir Altura e Largura</h2>
+                <p>Use os atributos <code style="color:#f0b400">height</code> (altura) e <code style="color:#f0b400">width</code> (largura) para especificar o
+                    tamanho do iframe. Por padrão, a altura e a largura são especificadas em pixels:</p>
+
+                <h3>Exemplo de Altura e Largura do Iframe</h3>
+                <pre>
+                    <span class="html-tag">&lt;iframe</span> <span class="html-attribute">src</span>="<span class="html-value">id.html</span>" <span class="html-attribute">height</span>="<span class="html-value">200</span>" <span class="html-attribute">width</span>="<span class="html-value">300</span>" <span class="html-attribute">title</span>="<span class="html-text">Exemplo de Iframe</span>"<span class="html-tag">&gt;&lt;/iframe&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo" style="overflow: hidden;">
+                    <div style="width: auto;">
+                        <iframe src="id.html" height="200" width="300" title="Exemplo de Iframe"></iframe>
+                    </div>
+                </div>
+
+                <p>Ou você pode adicionar o atributo <code style="color:#f0b400">style</code> e usar as propriedades CSS <code style="color:#7bff5e">height</code> e
+                    <code style="color:#7bff5e">width</code>:
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;iframe</span> <span class="html-attribute">src</span>="<span class="html-value">https://www.example.com</span>" <span class="html-attribute">style</span>="<span class="html-value">height: 200px; width: 300px;</span>" <span class="html-attribute">title</span>="<span class="html-text">Exemplo de Iframe</span>"<span class="html-tag">&gt;&lt;/iframe&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo" style="overflow: hidden;">
+                    <iframe src="https://www.example.com" style="height: 200px; width: 300px;"
+                        title="Exemplo de Iframe"></iframe>
+                </div>
+                <hr>
+
+                <h2>Iframe - Remover a Borda</h2>
+                <p>Por padrão, um iframe tem uma borda ao redor. Para remover a borda, adicione o atributo
+                    <code style="color:#f0b400">style</code> e use a propriedade CSS <code style="color:#7bff5e">border</code>:
+                </p>
+
+                <h3>Exemplo de Iframe sem Borda</h3>
+                <p>Com CSS, você também pode mudar o tamanho, estilo e cor da borda do iframe:</p>
+                <pre>
+                    <span class="html-tag">&lt;iframe</span> <span class="html-attribute">src</span>="<span class="html-value">basic.html</span>" <span class="html-attribute">style</span>="<span class="html-value">border: none;</span>" <span class="html-attribute">title</span>="<span class="html-text">Exemplo de Iframe</span>"<span class="html-tag">&gt;&lt;/iframe&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <iframe src="basic.html" style="border: none;" title="Exemplo de Iframe"></iframe>
+                </div>
+
+                <h3>Exemplo de Iframe com Borda Personalizada</h3>
+                <pre>
+                    <span class="html-tag">&lt;iframe</span> <span class="html-attribute">src</span>="<span class="html-value">attributes.html</span>" <span class="html-attribute">style</span>="<span class="html-value">border: 2px solid red;</span>" <span class="html-attribute">title</span>="<span class="html-text">Exemplo de Iframe</span>"<span class="html-tag">&gt;&lt;/iframe&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <iframe src="attributes.html" style="border: 2px solid red;" title="Exemplo de Iframe"></iframe>
+                </div>
+                <hr>
+
+                <h2>Iframe - Destino para um Link</h2>
+                <p>Um iframe pode ser usado como destino para um link. O atributo <code style="color:#f0b400">target</code> do link deve se
+                    referir ao atributo <code style="color:#f0b400">name</code> do iframe:</p>
+
+                <h3>Exemplo de Iframe como Destino para um Link</h3>
+                <pre>
+                    <span class="html-tag">&lt;iframe</span> <span class="html-attribute">src</span>="<span class="html-value">emojis.html</span>" <span class="html-attribute">name</span>="<span class="html-value">iframe_a</span>" <span class="html-attribute">title</span>="<span class="html-text">Exemplo de Iframe</span>"<span class="html-tag">&gt;&lt;/iframe&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Visite</span> <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">/ListaHTML/src/pages/symbols.html</span>" <span class="html-attribute">target</span>="<span class="html-value">iframe_a</span>"<span class="html-tag">&gt;</span><span class="html-text">Símbolos HTML</span><span class="html-tag">&lt;/a&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                   
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <iframe src="emojis.html" name="iframe_a" title="Exemplo de Iframe"></iframe>
+                    <p>Visite <a href="/ListaHTML/src/pages/symbols.html" target="iframe_a">Símbolos HTML</a></p>
+                </div>
+                <hr>
+
+                <h2>Tag HTML do Iframe</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>Define um frame inline</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

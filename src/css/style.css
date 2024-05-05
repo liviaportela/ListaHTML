@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: auto;
+}
+
+header {
+    padding: 10px;
+    background: #161616;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.8em;
+    padding: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    font-weight: bold;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    border-right: 1px solid #ccc;
+    background: white;
+    position: sticky;
+    overflow-y: auto;
+    z-index: 1000;
+    height: 100vh;
+    width: 275px;
+    top: 0;
+}
+
+nav > h2 {
+    padding: 15px 35px 10px;
+    text-align: start;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav > ul > li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    gap: 145px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    width: 100%;
+    color: gray;
+    font-size: 16px;
+    padding: 5px 0px 10px 40px;
+}
+
+nav a:hover {
+    background-color: #bebebe;
+    color: white;
+}
+
+@keyframes rainbow-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.rainbow-animated {
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right, #ff007f, #ff6600, #ffee00, #33ff00, #00e1ff, #4400ff, #ff00ff);
+    background-size: 200% 200%;
+    animation: rainbow-animation 5s linear infinite;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+}
+
+main {
+    text-align: center;
+    margin: 25px;
+    overflow: hidden;
+    flex: 1;
+}
+
+li h2,
+li h3 {
+    margin: 15px 0;
+}
+
+li p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+main > iframe {
+    width: 100%;
+    border: none;
+}
+
+code {
+    font-size: 16px;
+}
+
+/* Estilo para seções de código com fundo escuro para realce */
+pre {
+    background-color: #191830;
+    color: #abb2bf;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    text-align: justify;
+    margin: 1em 0px;
+    color: white;
+}
+
+/* Numeração de linhas */
+pre .line-numbers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #191830;
+    color: #7870ab;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid #3e3a60;
+}
+
+pre .line-numbers div {
+    line-height: 1.6;
+}
+
+/* Realce de sintaxe */
+.html-tag {
+    color: #9effff;
+}
+
+.html-attribute {
+    color: #fac21f;
+}
+
+.html-value {
+    color: #a5ff90;
+}
+
+.html-text {
+    color: white;
+}
+
+.html-comment {
+    color: #b362ff;
+    font-style: italic;
+}
+
+.js-keyword {
+    color: #e385e2;
+}
+
+.js-var {
+    color: #eb8a12;
+}
+
+.js-number {
+    color: #e55365;
+}
+
+/* Ajustando para numeração de linhas */
+pre code {
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.exemplo {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+video {
+    border-radius: 10px;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: gray;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin: 5px 0px;
+    border: 0;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 10px;
+    background-color: #161616;
+    text-align: center;
+    font-size: 16px;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width: 525px) {
+    nav {
+        max-width: 100%;
+    }
+}

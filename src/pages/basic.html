@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Basic">
+                <h1>HTML Básico</h1>
+                <p>Todos os documentos HTML devem começar com uma declaração de tipo de documento:
+                    <code style="color:#0059ff">&lt;!DOCTYPE html&gt;</code>.
+                </p>
+                <p>O próprio documento HTML começa com <code style="color:#0059ff">&lt;html&gt;</code> e termina com
+                    <code style="color:#0059ff">&lt;/html&gt;</code>.
+                </p>
+                <p>A parte visível do documento HTML está entre <code style="color:#0059ff">&lt;body&gt;</code> e <code
+                        style="color:#0059ff">&lt;/body&gt;</code>.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                <span class="html-tag">&lt;!DOCTYPE</span> <span class="html-attribute">html</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;html</span> <span class="html-attribute">lang</span>=<span class="html-value">"pt-BR"</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;body&gt;</span>
+            <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Meu primeiro título</span><span class="html-tag">&lt;/h1&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">Meu primeiro parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/body&gt;</span>
+        <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <!DOCTYPE html>
+                    <html lang="pt-BR">
+                    <body>
+                        <h1>Meu primeiro título</h1>
+                        <p>Meu primeiro parágrafo.</p>
+                    </body>
+                    </html>
+                </div>
+                <hr>
+
+                <h2>A Declaração &lt;!DOCTYPE&gt;</h2>
+                <p>A declaração <code style="color:#0059ff">&lt;!DOCTYPE&gt;</code> representa o tipo de documento e
+                    ajuda os navegadores a
+                    exibirem corretamente as páginas da web.
+                </p>
+                <p>Deve aparecer apenas uma vez, no topo da página (antes de qualquer tag HTML).</p>
+                <p>A declaração <code style="color:#0059ff">&lt;!DOCTYPE&gt;</code> não diferencia maiúsculas de
+                    minúsculas.</p>
+                <p>A declaração <code style="color:#0059ff">&lt;!DOCTYPE&gt;</code> para HTML5 é:</p>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE</span> <span class="html-attribute">html</span><span class="html-tag">&gt;</span>
+                </pre>
+                <hr>
+
+                <h2>Títulos HTML</h2>
+                <p>Os títulos HTML são definidos com as tags <code style="color:#0059ff">&lt;h1&gt;</code> a <code
+                        style="color:#0059ff">&lt;h6&gt;</code>.</p>
+                <p>
+                    <code style="color:#0059ff">&lt;h1&gt;</code> define o título mais importante. <code
+                        style="color:#0059ff">&lt;h6&gt;</code> define o
+                    título menos importante.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1&gt;</span>Este é o título 1<span class="html-tag">&lt;/h1&gt;</span>
+      <span class="html-tag">&lt;h2&gt;</span>Este é o título 2<span class="html-tag">&lt;/h2&gt;</span>
+      <span class="html-tag">&lt;h3&gt;</span>Este é o título 3<span class="html-tag">&lt;/h3&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h1 style="margin-bottom: 0;">Este é o título 1</h1>
+                    <h2 style="margin: 0;">Este é o título 2</h2>
+                    <h3 style="margin: 0;">Este é o título 3</h3>
+                </div>
+                <hr>
+
+                <h2>Parágrafos HTML</h2>
+                <p>Parágrafos HTML são definidos com a tag <code style="color:#0059ff">&lt;p&gt;</code>.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é outro parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um parágrafo.</p>
+                    <p>Este é outro parágrafo.</p>
+                </div>
+                <hr>
+
+                <h2>Links HTML</h2>
+                <p>Links HTML são definidos com a tag <code style="color:#0059ff">&lt;a&gt;</code>.</p>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://example.com"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Link para Example.com</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://example.com" target="_blank">Link para Example.com</a>
+                </div>
+                <p>O destino do link é especificado no atributo href.</p>
+                <hr>
+
+                <h2>Imagens HTML</h2>
+                <p>Imagens HTML são definidas com a tag <code style="color:#0059ff">&lt;img&gt;</code>.</p>
+                <p>O arquivo de origem (src), texto alternativo (alt), largura (width) e altura (height) são fornecidos
+                    como atributos:
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/Dog.png"</span> <span class="html-attribute">alt</span>=<span class="html-value">"Cachorro"</span> <span class="html-attribute">width</span>=<span class="html-value">"300"</span> <span class="html-attribute">height</span>=<span class="html-value">"300"</span><span class="html-tag">&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <img src="../media/Dog.png" alt="Cachorro" width="300" height="300">
+                </div>
+                <hr>
+
+                <h2>Como Visualizar o Código Fonte HTML</h2>
+                <p>Já viu uma página da Web e se perguntou "Como eles fizeram isso?"</p>
+
+                <h3>Visualizar o Código Fonte HTML:</h3>
+                <p>Clique em CTRL + U em uma página HTML, ou clique com o botão direito na página e selecione
+                    "Exibir
+                    Código-fonte da Página". Isso abrirá uma nova guia contendo o código-fonte HTML da página.
+                </p>
+
+                <h3>Inspecionar um Elemento HTML:</h3>
+                <p>Clique com o botão direito em um elemento (ou em uma área em branco) e escolha "Inspecionar" para ver
+                    de
+                    quais elementos ele é composto (você verá tanto o HTML quanto o CSS). Você também pode editar o HTML
+                    ou
+                    CSS rapidamente no painel Elementos ou Estilos que se abre.
+                </p>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

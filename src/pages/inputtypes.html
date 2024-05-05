@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Input Types">
+                <h1>Tipos de Elemento &lt;input&gt;</h1>
+                <p>Os tipos de entrada controlam o tipo de dados que o campo de entrada pode aceitar.</p>
+                <p>Os tipos de entrada do elemento <code style="color:#0059ff">&lt;input&gt;</code> no HTML são diversos. Vamos explorar
+                    alguns dos tipos mais comuns:</p>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>Tipo de Entrada</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="button"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="checkbox"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="color"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="date"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="datetime-local"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="email"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="file"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="hidden"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="image"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="month"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="number"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="password"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="radio"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="range"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="reset"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="search"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="submit"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="tel"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="text"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="time"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="url"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="week"&gt;</td>
+                    </tr>
+                </table>
+                <p>Dica: O valor padrão para o atributo "type" é "text".</p>
+                <hr>
+
+                <h3>Tipo de Entrada Texto</h3>
+                <p><code style="color:#0059ff">&lt;input type="text"&gt;</code> define um campo de entrada de linha única para texto:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label for="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label para="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Senha</h3>
+                <p><code style="color:#0059ff">&lt;input type="password"&gt;</code> define um campo de entrada para senha, onde os caracteres
+                    são mascarados:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">username</span>"<span class="html-tag">&gt;</span>Nome de usuário:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">username</span>" <span class="html-attribute">name</span>="<span class="html-value">username</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">pwd</span>"<span class="html-tag">&gt;</span>Senha:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">password</span>" <span class="html-attribute">id</span>="<span class="html-value">pwd</span>" <span class="html-attribute">name</span>="<span class="html-value">pwd</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="username">Nome de usuário:</label><br>
+                        <input type="text" id="username" name="username"><br>
+                        <label para="pwd">Senha:</label><br>
+                        <input type="password" id="pwd" name="pwd">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Enviar</h3>
+                <p><code style="color:#0059ff">&lt;input type="submit"&gt;</code> define um botão para enviar dados do formulário a um
+                    manipulador de formulários:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">value</span>="<span class="html-value">John</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">value</span>="<span class="html-value">Doe</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <label para="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label para="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Redefinir</h3>
+                <p><code style="color:#0059ff">&lt;input type="reset"&gt;</code> define um botão para redefinir todos os valores do formulário
+                    para seus valores padrão:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">value</span>="<span class="html-value">John</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">value</span>="<span class="html-value">Doe</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">reset</span>" <span class="html-attribute">value</span>="<span class="html-value">Redefinir</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <label para="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label para="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Redefinir">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Rádio</h3>
+                <p><code style="color:#0059ff">&lt;input type="radio"&gt;</code> define um botão de rádio para permitir ao usuário selecionar
+                    uma opção entre várias:</p>
+                <p>Escolha seu idioma favorito para a Web:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">radio</span>" <span class="html-attribute">id</span>="<span class="html-value">html</span>" <span class="html-attribute">name</span>="<span class="html-value">fav_language</span>" <span class="html-attribute">value</span>="<span class="html-value">HTML</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">html</span>"<span class="html-tag">&gt;</span>HTML<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">radio</span>" <span class="html-attribute">id</span>="<span class="html-value">css</span>" <span class="html-attribute">name</span>="<span class="html-value">fav_language</span>" <span class="html-attribute">value</span>="<span class="html-value">CSS</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">css</span>"<span class="html-tag">&gt;</span>CSS<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">radio</span>" <span class="html-attribute">id</span>="<span class="html-value">javascript</span>" <span class="html-attribute">name</span>="<span class="html-value">fav_language</span>" <span class="html-attribute">value</span>="<span class="html-value">JavaScript</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">javascript</span>"<span class="html-tag">&gt;</span>JavaScript<span class="html-tag">&lt;/label&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label para="html">HTML</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label para="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label para="javascript">JavaScript</label>
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Caixa de Seleção</h3>
+                <p><code style="color:#0059ff">&lt;input type="checkbox"&gt;</code> define uma caixa de seleção que permite ao usuário
+                    selecionar uma ou mais opções entre várias:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">checkbox</span>" <span class="html-attribute">id</span>="<span class="html-value">vehicle1</span>" <span class="html-attribute">name</span>="<span class="html-value">vehicle1</span>" <span class="html-attribute">value</span>="<span class="html-value">Bike</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">vehicle1</span>"<span class="html-tag">&gt;</span>Eu tenho uma bicicleta<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">checkbox</span>" <span class="html-attribute">id</span>="<span class="html-value">vehicle2</span>" <span class="html-attribute">name</span>="<span class="html-value">vehicle2</span>" <span class="html-attribute">value</span>="<span class="html-value">Car</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">vehicle2</span>"<span class="html-tag">&gt;</span>Eu tenho um carro<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">checkbox</span>" <span class="html-attribute">id</span>="<span class="html-value">vehicle3</span>" <span class="html-attribute">name</span>="<span class="html-value">vehicle3</span>" <span class="html-attribute">value</span>="<span class="html-value">Boat</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">vehicle3</span>"<span class="html-tag">&gt;</span>Eu tenho um barco<span class="html-tag">&lt;/label&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label para="vehicle1"> Eu tenho uma bicicleta</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label para="vehicle2"> Eu tenho um carro</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label para="vehicle3"> Eu tenho um barco</label>
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Botão</h3>
+                <p><code style="color:#0059ff">&lt;input type="button"&gt;</code> define um botão clicável:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">button</span>" <span class="html-attribute">onclick</span>="<span class="html-value">alert('Olá Mundo!')</span>" <span class="html-attribute">value</span>="<span class="html-value">Clique Aqui</span>"<span class="html-tag">/&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <input type="button" onclick="alert('Olá Mundo!')" value="Clique Aqui">
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Cor</h3>
+                <p><code style="color:#0059ff">&lt;input type="color"&gt;</code> é usado para campos de entrada que devem conter uma cor.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">favcolor</span>"<span class="html-tag">&gt;</span>Selecione sua cor favorita:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">color</span>" <span class="html-attribute">id</span>="<span class="html-value">favcolor</span>" <span class="html-attribute">name</span>="<span class="html-value">favcolor</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="favcolor">Selecione sua cor favorita:</label>
+                        <input type="color" id="favcolor" name="favcolor">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Data</h3>
+                <p><code style="color:#0059ff">&lt;input type="date"&gt;</code> é usado para campos de entrada que devem conter uma data.
+                    Dependendo do suporte do navegador, um seletor de data pode ser exibido.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">birthday</span>"<span class="html-tag">&gt;</span>Data de Nascimento:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">date</span>" <span class="html-attribute">id</span>="<span class="html-value">birthday</span>" <span class="html-attribute">name</span>="<span class="html-value">birthday</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="birthday">Data de Nascimento:</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Data e Hora</h3>
+                <p><code style="color:#0059ff">&lt;input type="datetime-local"&gt;</code> especifica um campo de entrada de data e hora, sem
+                    fuso horário.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">birthdaytime</span>"<span class="html-tag">&gt;</span>Data e hora de nascimento:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">datetime-local</span>" <span class="html-attribute">id</span>="<span class="html-value">birthdaytime</span>" <span class="html-attribute">name</span>="<span class="html-value">birthdaytime</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="birthdaytime">Data e hora de nascimento:</label>
+                        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada E-mail</h3>
+                <p><code style="color:#0059ff">&lt;input type="email"&gt;</code> é usado para campos de entrada que devem conter um endereço
+                    de e-mail. Dependendo do suporte do navegador, o campo de e-mail pode ser automaticamente validado.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">email</span>"<span class="html-tag">&gt;</span>Digite seu e-mail:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">email</span>" <span class="html-attribute">id</span>="<span class="html-value">email</span>" <span class="html-attribute">name</span>="<span class="html-value">email</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="email">Digite seu e-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Imagem</h3>
+                <p><code style="color:#0059ff">&lt;input type="image"&gt;</code> define uma imagem como um botão de envio.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">image</span>" <span class="html-attribute">src</span>="../media/Dog.png" <span class="html-attribute">alt</span>="<span class="html-value">Enviar</span>" <span class="html-attribute">width</span>="<span class="html-value">48</span>" <span class="html-attribute">height</span>="<span class="html-value">48</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <input type="image" src="../media/Dog.png" alt="Enviar" width="48" height="48">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Arquivo</h3>
+                <p><code style="color:#0059ff">&lt;input type="file"&gt;</code> define um campo de seleção de arquivos com um botão "Procurar"
+                    para carregamento de arquivos.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">myfile</span>"<span class="html-tag">&gt;</span>Selecione um arquivo:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">file</span>" <span class="html-attribute">id</span>="<span class="html-value">myfile</span>" <span class="html-attribute">name</span>="<span class="html-value">myfile</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="myfile">Selecione um arquivo:</label>
+                        <input type="file" id="myfile" name="myfile">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Oculta</h3>
+                <p><code style="color:#0059ff">&lt;input type="hidden"&gt;</code> define um campo de entrada oculto (não visível para um
+                    usuário). Um campo oculto permite que desenvolvedores da web incluam dados que não podem ser vistos
+                    ou modificados por usuários ao enviar um formulário.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">hidden</span>" <span class="html-attribute">id</span>="<span class="html-value">custId</span>" <span class="html-attribute">name</span>="<span class="html-value">custId</span>" <span class="html-attribute">value</span>="<span class="html-value">3487</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="hidden" id="custId" name="custId" value="3487">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Mês</h3>
+                <p><code style="color:#0059ff">&lt;input type="month"&gt;</code> permite que o usuário selecione um mês e um ano.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">bdaymonth</span>"<span class="html-tag">&gt;</span>Data de Nascimento (mês e ano):<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">month</span>" <span class="html-attribute">id</span>="<span class="html-value">bdaymonth</span>" <span class="html-attribute">name</span>="<span class="html-value">bdaymonth</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="bdaymonth">Data de Nascimento (mês e ano):</label>
+                        <input type="month" id="bdaymonth" name="bdaymonth">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Número</h3>
+                <p><code style="color:#0059ff">&lt;input type="number"&gt;</code> define um campo de entrada numérico.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">quantity</span>"<span class="html-tag">&gt;</span>Quantidade (entre 1 e 5):<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">number</span>" <span class="html-attribute">id</span>="<span class="html-value">quantity</span>" <span class="html-attribute">name</span>="<span class="html-value">quantity</span>" <span class="html-attribute">min</span>="<span class="html-value">1</span>" <span class="html-attribute">max</span>="<span class="html-value">5</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="quantity">Quantidade (entre 1 e 5):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Intervalo</h3>
+                <p><code style="color:#0059ff">&lt;input type="range"&gt;</code> define um controle para entrada de número, como um controle
+                    deslizante (slider).</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">vol</span>"<span class="html-tag">&gt;</span>Volume (entre 0 e 50):<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">range</span>" <span class="html-attribute">id</span>="<span class="html-value">vol</span>" <span class="html-attribute">name</span>="<span class="html-value">vol</span>" <span class="html-attribute">min</span>="<span class="html-value">0</span>" <span class="html-attribute">max</span>="<span class="html-value">50</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="vol">Volume (entre 0 e 50):</label>
+                        <input type="range" id="vol" name="vol" min="0" max="50">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Buscar</h3>
+                <p><code style="color:#0059ff">&lt;input type="search"&gt;</code> é usado para campos de busca.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">gsearch</span>"<span class="html-tag">&gt;</span>Buscar no Google:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">search</span>" <span class="html-attribute">id</span>="<span class="html-value">gsearch</span>" <span class="html-attribute">name</span>="<span class="html-value">gsearch</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="gsearch">Buscar no Google:</label>
+                        <input type="search" id="gsearch" name="gsearch">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Telefone</h3>
+                <p><code style="color:#0059ff">&lt;input type="tel"&gt;</code> é usado para campos de entrada que devem conter um número de
+                    telefone.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">phone</span>"<span class="html-tag">&gt;</span>Digite seu número de telefone:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">tel</span>" <span class="html-attribute">id</span>="<span class="html-value">phone</span>" <span class="html-attribute">name</span>="<span class="html-value">phone</span>" <span class="html-attribute">pattern</span>="<span class="html-value">[0-9]{3}-[0-9]{2}-[0-9]{3}</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="phone">Digite seu número de telefone:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Hora</h3>
+                <p><code style="color:#0059ff">&lt;input type="time"&gt;</code> permite que o usuário selecione uma hora (sem fuso horário).
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">appt</span>"<span class="html-tag">&gt;</span>Selecione um horário:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">time</span>" <span class="html-attribute">id</span>="<span class="html-value">appt</span>" <span class="html-attribute">name</span>="<span class="html-value">appt</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="appt">Selecione um horário:</label>
+                        <input type="time" id="appt" name="appt">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada URL</h3>
+                <p><code style="color:#0059ff">&lt;input type="url"&gt;</code> é usado para campos de entrada que devem conter um endereço de
+                    URL.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">homepage</span>"<span class="html-tag">&gt;</span>Adicione sua página inicial:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">url</span>" <span class="html-attribute">id</span>="<span class="html-value">homepage</span>" <span class="html-attribute">name</span>="<span class="html-value">homepage</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="homepage">Adicione sua página inicial:</label>
+                        <input type="url" id="homepage" name="homepage">
+                    </form>
+                </div>
+                <hr>
+
+                <h3>Tipo de Entrada Semana</h3>
+                <p><code style="color:#0059ff">&lt;input type="week"&gt;</code> permite que o usuário selecione uma semana e um ano.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">week</span>"<span class="html-tag">&gt;</span>Selecione uma semana:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">week</span>" <span class="html-attribute">id</span>="<span class="html-value">week</span>" <span class="html-attribute">name</span>="<span class="html-value">week</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="week">Selecione uma semana:</label>
+                        <input type="week" id="week" name="week">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

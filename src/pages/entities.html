@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Entities">
+                <h1>Entidades em HTML</h1>
+
+                <p>Alguns caracteres são reservados em HTML.</p>
+                <p>Se você usar sinais de menor que (<) ou maior que (>) no
+                        seu texto HTML, o navegador pode confundi-los com tags.</p>
+                <p>Para exibir caracteres reservados, você pode usar nomes de entidade ou números de entidade.</p>
+
+                <p>Exemplos de Nomes de Entidade</p>
+                <pre>
+                    <span class="html-entity">&amp;entity_name;</span>
+                </pre>
+                <p>Exemplo de Números de Entidade</p>
+                <pre>
+                    <span class="html-entity">&amp;#entity_number;</span>
+                </pre>
+                <p>Para exibir um sinal de maior que (>), use: <code>&gt; ou &#62;</code></p>
+                <hr>
+
+                <h2>Espaço Não Quebrável</h2>
+                <p>Uma entidade HTML comumente usada é o espaço não quebrável: <code>&amp;nbsp;</code>.</p>
+
+                <p>Um espaço não quebrável é um espaço que não quebra para uma nova linha. Duas palavras separadas por
+                    um espaço não quebrável permanecerão juntas (não quebrarão em uma nova linha). Isso é útil quando
+                    quebrar palavras pode ser inconveniente ou perturbador.</p>
+
+                <p>Exemplos:</p>
+
+                <pre>
+                    10 & #167;
+     10 & #107;& #109;& #47;& #104;
+     10 & #80;& #77;
+                </pre>
+                <ul style="list-style: circle;">
+                    <li>10 &#167;</li>
+                    <li>10 &#107;&#109;&#47;&#104;</li>
+                    <li>10 &#80;&#77;</li>
+                </ul>
+
+                <p>Outro uso comum do espaço não quebrável é evitar que navegadores truncem espaços em páginas HTML. Se
+                    você escrever múltiplos espaços em uma linha, o navegador normalmente irá reduzir para apenas um.
+                    Para adicionar espaços reais ao seu texto, use a entidade <code>&amp;nbsp;</code>.</p>
+                <hr>
+
+                <h2>Entidades de Caractere Úteis em HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Resultado</th>
+                        <th>Descrição</th>
+                        <th>Nome</th>
+                        <th>Número</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Espaço não quebrável</td>
+                        <td>&nbsp;</td>
+                        <td>&#160;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Menor que</td>
+                        <td>&lt;</td>
+                        <td>&#60;</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Maior que</td>
+                        <td>&gt;</td>
+                        <td>&#62;</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>E comercial</td>
+                        <td>&amp;</td>
+                        <td>&#38;</td>
+                    </tr>
+                    <tr>
+                        <td>&quot;</td>
+                        <td>Aspas duplas</td>
+                        <td>&quot;</td>
+                        <td>&#34;</td>
+                    </tr>
+                    <tr>
+                        <td>&apos;</td>
+                        <td>Aspas simples</td>
+                        <td>&apos;</td>
+                        <td>&#39;</td>
+                    </tr>
+                    <tr>
+                        <td>&cent;</td>
+                        <td>Cêntimo</td>
+                        <td>&cent;</td>
+                        <td>&#162;</td>
+                    </tr>
+                    <tr>
+                        <td>&pound;</td>
+                        <td>Libras</td>
+                        <td>&pound;</td>
+                        <td>&#163;</td>
+                    </tr>
+                    <tr>
+                        <td>&yen;</td>
+                        <td>Yen</td>
+                        <td>&yen;</td>
+                        <td>&#165;</td>
+                    </tr>
+                    <tr>
+                        <td>&euro;</td>
+                        <td>Euro</td>
+                        <td>&euro;</td>
+                        <td>&#8364;</td>
+                    </tr>
+                    <tr>
+                        <td>&copy;</td>
+                        <td>Direitos autorais</td>
+                        <td>&copy;</td>
+                        <td>&#169;</td>
+                    </tr>
+                    <tr>
+                        <td>&reg;</td>
+                        <td>Marca registrada</td>
+                        <td>&reg;</td>
+                        <td>&#174;</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <h2>Combinação de Marcas Diacríticas</h2>
+                <p>Uma marca diacrítica é um "glifo" adicionado a uma letra.</p>
+                <p>Algumas marcas diacríticas, como o acento grave ( ̀) e o acento agudo ( ́), podem ser usadas em
+                    combinação com caracteres alfanuméricos para
+                    produzir um caractere que não está presente no conjunto de caracteres usado na página.</p>
+
+                <h3>Exemplos de Combinações de Marcas Diacríticas</h3>
+                <table border="1">
+                    <tr>
+                        <th>Marca</th>
+                        <th>Caractere</th>
+                        <th>Construção</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td> ̀</td>
+                        <td>a</td>
+                        <td>a & #768;</td>
+                        <td>à</td>
+                    </tr>
+                    <tr>
+                        <td> ́</td>
+                        <td>a</td>
+                        <td>a & #769;</td>
+                        <td>á</td>
+                    </tr>
+                    <tr>
+                        <td>̂</td>
+                        <td>a</td>
+                        <td>a & #770;</td>
+                        <td>â</td>
+                    </tr>
+                    <tr>
+                        <td> ̃</td>
+                        <td>a</td>
+                        <td>a & #771;</td>
+                        <td>ã</td>
+                    </tr>
+                    <tr>
+                        <td> ̀</td>
+                        <td>O</td>
+                        <td>O & #768;</td>
+                        <td>Ò</td>
+                    </tr>
+                    <tr>
+                        <td> ́</td>
+                        <td>O</td>
+                        <td>O & #769;</td>
+                        <td>Ó</td>
+                    </tr>
+                    <tr>
+                        <td>̂</td>
+                        <td>O</td>
+                        <td>O & #770;</td>
+                        <td>Ô</td>
+                    </tr>
+                    <tr>
+                        <td> ̃</td>
+                        <td>O</td>
+                        <td>O & #771;</td>
+                        <td>Õ</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

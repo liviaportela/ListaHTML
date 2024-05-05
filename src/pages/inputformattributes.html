@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Form Attributes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="Input Form Attributes">
+
+                <h1>Atributos do Elemento &lt;input&gt; em &lt;form&gt;</h1>
+
+                <h2>O Atributo form</h2>
+                <p>O atributo <code style="color:#f0b400">form</code> especifica a qual formulário o elemento <code
+                        style="color:#0059ff">&lt;input&gt;</code>
+                    pertence.
+                </p>
+                <p>O valor deste atributo deve ser igual ao atributo <code style="color:#f0b400">id</code> do elemento
+                    <code style="color:#0059ff">&lt;form&gt;</code>
+                    ao qual pertence.
+                </p>
+                <h3>Exemplo</h3>
+                <p>Um campo de entrada localizado fora do formulário HTML (mas ainda parte do formulário):</p>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">id</span>="<span class="html-value">form1</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+
+     <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span>
+     <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">form</span>="<span class="html-value">form1</span>"<span class="html-tag">/&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" id="form1">
+                        <label for="fname">Primeiro nome:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <label for="lname">Último nome:</label>
+                    <input type="text" id="lname" name="lname" form="form1">
+                </div>
+                <hr>
+
+
+                <h2>O Atributo formaction</h2>
+                <p>O atributo <code style="color:#f0b400">formaction</code> especifica a URL do arquivo que processará
+                    os dados quando o
+                    formulário for enviado.</p>
+                <p>Nota: Este atributo substitui o atributo <code style="color:#f0b400">action</code> do elemento <code
+                        style="color:#0059ff">&lt;form&gt;</code>.
+                </p>
+
+                <h3>Exemplo</h3>
+                <p>Um formulário HTML com dois botões de envio, com ações diferentes:</p>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">formaction</span>="<span class="html-value">/action_page2.php</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar como Admin</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <label for="fname">Primeiro nome:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Último nome:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="submit" formaction="/action_page2.php" value="Enviar como Admin">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo formenctype</h2>
+                <p>O atributo <code style="color:#f0b400">formenctype</code> especifica como os dados do formulário
+                    devem ser codificados ao
+                    serem
+                    enviados (apenas para formulários com método <code style="color:#7bff5e">post</code>).</p>
+                <p>Nota: Este atributo substitui o atributo <code style="color:#f0b400">enctype</code> do elemento <code
+                        style="color:#0059ff">&lt;form&gt;</code>.
+                </p>
+                <h3>Exemplo</h3>
+                <p>Um formulário com dois botões de envio. O primeiro envia os dados do formulário com a codificação
+                    padrão, e o segundo envia os dados do formulário codificados como "multipart/form-data":</p>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page_binary.asp</span>" <span class="html-attribute">method</span>="<span class="html-value">post</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">formenctype</span>="<span class="html-value">multipart/form-data</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar como Multipart/form-data</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page_binary.asp" method="post">
+                        <label for="fname">Primeiro nome:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="submit" formenctype="multipart/form-data" value="Enviar como Multipart/form-data">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo formmethod</h2>
+                <p>O atributo <code style="color:#f0b400">formmethod</code> define o método HTTP para enviar os dados do
+                    formulário para a URL
+                    de
+                    ação.</p>
+                <p>Nota: Este atributo substitui o atributo <code style="color:#f0b400">method</code> do elemento <code
+                        style="color:#0059ff">&lt;form&gt;</code>.
+                </p>
+                <h3>Exemplo</h3>
+                <p>Um formulário com dois botões de envio. O primeiro usa o método "get" e o segundo usa o método
+                    "post":</p>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">method</span>="<span class="html-value">get</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar usando GET</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">formmethod</span>="<span class="html-value">post</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar usando POST</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" method="get">
+                        <label for="fname">Primeiro nome:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Último nome:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Enviar usando GET">
+                        <input type="submit" formmethod="post" value="Enviar usando POST">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo formtarget</h2>
+                <p>O atributo <code style="color:#f0b400">formtarget</code> especifica um nome ou palavra-chave que
+                    indica onde exibir a
+                    resposta
+                    recebida após enviar o formulário.</p>
+                <p>Nota: Este atributo substitui o atributo <code style="color:#f0b400">target</code> do elemento <code
+                        style="color:#0059ff">&lt;form&gt;</code>.
+                </p>
+                <h3>Exemplo</h3>
+                <p>Um formulário com dois botões de envio, com diferentes destinos:</p>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">formtarget</span>="_blank" <span class="html-attribute">value</span>="<span class="html-value">Enviar para uma nova aba/janela</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <label for="fname">Primeiro nome:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Último nome:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="submit" formtarget="_blank" value="Enviar para uma nova aba/janela">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo formnovalidate</h2>
+                <p>O atributo <code style="color:#f0b400">formnovalidate</code> especifica que um elemento <code
+                        style="color:#0059ff">&lt;input&gt;</code> não deve
+                    ser
+                    validado ao ser enviado.</p>
+                <p>Nota: Este atributo substitui o atributo <code style="color:#f0b400">novalidate</code> do elemento
+                    <code style="color:#0059ff">&lt;form&gt;</code>.
+                </p>
+                <h3>Exemplo</h3>
+                <p>Um formulário com dois botões de envio, com e sem validação:</p>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">email</span>"<span class="html-tag">&gt;</span>Digite seu e-mail:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">email</span>" <span class="html-attribute">id</span>="<span class="html-value">email</span>" <span class="html-attribute">name</span>="<span class="html-value">email</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">formnovalidate</span>="<span class="html-value">formnovalidate</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar sem validação</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <label for="email">Digite seu e-mail:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="submit" formnovalidate="formnovalidate" value="Enviar sem validação">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo novalidate</h2>
+                <p>O atributo <code style="color:#f0b400">&lt;form&gt;</code> chamado <code
+                        style="color:#f0b400">novalidate</code> especifica que todos os dados do
+                    formulário não devem ser validados ao serem enviados.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">novalidate</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">email</span>"<span class="html-tag">&gt;</span>Digite seu e-mail:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">email</span>" <span class="html-attribute">id</span>="<span class="html-value">email</span>" <span class="html-attribute">name</span>="<span class="html-value">email</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" novalidate>
+                        <label for="email">Digite seu e-mail:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attributes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Form Attributes">
+                <h1>Atributos do Elemento &lt;form&gt;</h1>
+                <p>Os atributos de formulário controlam seu comportamento, como método de envio e destino.</p>
+                <hr>
+
+                <h2>O Atributo Action</h2>
+                <p>O atributo <code style="color:#f0b400">action</code> define a ação a ser realizada quando o formulário é enviado.</p>
+                <p>Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica
+                    no botão de envio.</p>
+                <p>No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado "action_page.php".
+                    Este arquivo contém um script do lado do servidor que processa os dados do formulário:</p>
+                <h3>Exemplo</h3>
+                <pre>
+                        <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span><span class="html-text">Nome:</span><span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>"<span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">value</span>="<span class="html-value">John</span>" <span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span><span class="html-text">Sobrenome:</span><span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">value</span>="<span class="html-value">Doe</span>" <span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>" <span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php">
+                        <label for="fname">Nome:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br><br>
+                        <label for="lname">Sobrenome:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+
+                <p>Dica: Se o atributo <code style="color:#f0b400">action</code> for omitido, a ação será definida para a página atual.</p>
+                <hr>
+
+                <h2>O Atributo Target</h2>
+                <p>O atributo <code style="color:#f0b400">target</code> especifica onde exibir a resposta recebida após o envio do formulário.
+                </p>
+                <p>O atributo <code style="color:#f0b400">target</code> pode ter um dos seguintes valores:</p>
+                <table border="1">
+                    <tr>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>_blank</td>
+                        <td>A resposta é exibida em uma nova janela ou aba</td>
+                    </tr>
+                    <tr>
+                        <td>_self</td>
+                        <td>A resposta é exibida na janela atual</td>
+                    </tr>
+                    <tr>
+                        <td>_parent</td>
+                        <td>A resposta é exibida no frame pai</td>
+                    </tr>
+                    <tr>
+                        <td>_top</td>
+                        <td>A resposta é exibida no corpo completo da janela</td>
+                    </tr>
+                </table>
+                <p>O valor padrão é <code style="color:#7bff5e">_self</code>, o que significa que a resposta será aberta na janela atual.</p>
+
+                <h3>Exemplo:</h3>
+                <p>Aqui, o resultado enviado será aberto em uma nova aba do navegador:</p>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">target</span>="<span class="html-value">_blank</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" target="_blank"><input type="submit" value="Enviar"></form>
+                </div>
+                <hr>
+
+                <h2>O Atributo Method</h2>
+                <p>O atributo method especifica o método HTTP a ser usado ao enviar dados do formulário.</p>
+                <p>Os dados do formulário podem ser enviados como variáveis de URL (com method="get") ou como uma
+                    transação HTTP post (com method="post").</p>
+                <p>O método HTTP padrão ao enviar dados do formulário é GET.</p>
+
+                <h3>Exemplo com GET:</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">method</span>="<span class="html-value">get</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" method="get">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+
+                <h3>Exemplo com POST:</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">method</span>="<span class="html-value">post</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" method="post">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+
+                <p><strong>Notas sobre GET:</strong></p>
+                <ul style="text-align: start;">
+                    <li>Anexa os dados do formulário à URL, em pares de nome/valor</li>
+                    <li>NUNCA use GET para enviar dados sensíveis! (os dados enviados pelo formulário ficam visíveis na
+                        URL)</li>
+                    <li>O comprimento de uma URL é limitado (2048 caracteres)</li>
+                    <li>Útil para envios de formulário em que um usuário deseja adicionar aos favoritos</li>
+                    <li>GET é bom para dados não seguros, como strings de consulta no Google</li>
+                </ul>
+
+                <p><strong>Notas sobre POST:</strong></p>
+                <ul style="text-align: start;">
+                    <li>Anexa os dados do formulário no corpo da solicitação HTTP (os dados enviados pelo formulário não
+                        são mostrados na URL)</li>
+                    <li>POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados
+                    </li>
+                    <li>Envios de formulário com POST não podem ser adicionados aos favoritos</li>
+                </ul>
+                <p>Dica: Sempre use POST se os dados do formulário contiverem informações sensíveis ou pessoais!</p>
+                <hr>
+
+                <h2>O Atributo Autocomplete</h2>
+                <p>O atributo autocomplete especifica se um formulário deve ter preenchimento automático ligado ou
+                    desligado.</p>
+                <p>Quando o autocomplete está ativado, o navegador completa automaticamente os valores com base em
+                    valores que o usuário inseriu anteriormente.</p>
+
+                <h3>Exemplo com autocomplete ligado:</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">autocomplete</span>="<span class="html-value">on</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" autocomplete="on">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo Novalidate</h2>
+                <p>O atributo novalidate é um atributo booleano.</p>
+                <p>Quando presente, ele especifica que os dados do formulário (entrada) não devem ser validados ao serem
+                    enviados.</p>
+                <h3>Exemplo com novalidate:</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">novalidate</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" novalidate>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>Lista de Todos os Atributos &lt;form&gt;</h2>
+                <table border="1">
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>accept-charset</code></td>
+                        <td>Especifica as codificações de caracteres usadas para envio do formulário</td>
+                    </tr>
+                    <tr>
+                        <td><code>action</code></td>
+                        <td>Especifica para onde enviar os dados do formulário ao enviar o formulário</td>
+                    </tr>
+                    <tr>
+                        <td><code>autocomplete</code></td>
+                        <td>Especifica se um formulário deve ter preenchimento automático ligado ou desligado</td>
+                    </tr>
+                    <tr>
+                        <td><code>enctype</code></td>
+                        <td>Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor
+                            (apenas para method="post")</td>
+                    </tr>
+                    <tr>
+                        <td><code>method</code></td>
+                        <td>Especifica o método HTTP a ser usado ao enviar dados do formulário</td>
+                    </tr>
+                    <tr>
+                        <td><code>name</code></td>
+                        <td>Especifica o nome do formulário</td>
+                    </tr>
+                    <tr>
+                        <td><code>novalidate</code></td>
+                        <td>Especifica que o formulário não deve ser validado ao ser enviado</td>
+                    </tr>
+                    <tr>
+                        <td><code>rel</code></td>
+                        <td>Especifica a relação entre um recurso vinculado e o documento atual</td>
+                    </tr>
+                    <tr>
+                        <td><code>target</code></td>
+                        <td>Especifica onde exibir a resposta recebida após o envio do formulário</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

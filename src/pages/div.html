@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Div</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <main>
+    <ul>
+      <li id="HTML Div">
+        <h1>O Elemento &lt;div&gt; em HTML</h1>
+        <p>O elemento <code style="color:#0059ff">&lt;div&gt;</code> é usado como um contêiner para outros elementos HTML.</p>
+
+        <p>Por padrão, é um elemento de bloco, o que significa que ocupa toda a largura disponível e vem com quebras de
+          linha antes e depois.</p>
+
+        <h2>Exemplo de Elemento &lt;div&gt;</h2>
+        <p>Um elemento <code style="color:#0059ff">&lt;div&gt;</code> ocupa toda a largura disponível:</p>
+        <h3>Exemplo</h3>
+        <pre>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Exemplo: Lorem Ipsum</span> <span class="html-tag">&lt;div&gt;</span><span class="html-text">Eu sou uma div</span><span class="html-tag">&lt;/div&gt;</span> <span class="html-text">dolor sit amet.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+        <h3>Resultado</h3>
+        <div class="exemplo">
+          <p>Exemplo: Lorem Ipsum
+          <div>Eu sou uma div</div> dolor sit amet.</p>
+        </div>
+        <hr>
+
+        <h2>&lt;div&gt; como um Contêiner</h2>
+        <p>O elemento <code style="color:#0059ff">&lt;div&gt;</code> é frequentemente usado para agrupar seções de uma página da web.</p>
+        <h3>Exemplo</h3>
+        <pre>
+                    <span class="html-tag">&lt;div&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres tem mais de 13 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+                </pre>
+        <h3>Resultado</h3>
+        <div class="exemplo">
+          <div style="background-color: #FFF4A3; padding: 10px;">
+            <h2>Londres</h2>
+            <p>Londres é a capital da Inglaterra.</p>
+            <p>Londres tem mais de 13 milhões de habitantes.</p>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Vários Elementos &lt;div&gt;</h2>
+        <p>Você pode ter muitos contêineres <code style="color:#0059ff">&lt;div&gt;</code> na mesma página:</p>
+        <h3>Exemplo</h3>
+        <pre>
+          <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFF4A3;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres tem mais de 13 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFC0C7;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Oslo</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo é a capital da Noruega.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo tem mais de 600.000 habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #D9EEE1;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Roma</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma é a capital da Itália.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma tem quase 3 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+        </pre>
+        <h3>Resultado</h3>
+        <div class="exemplo">
+          <div style="background-color: #FFF4A3;width: 100%;text-align: left;">
+            <h2>Londres</h2>
+            <p>Londres é a capital da Inglaterra.</p>
+            <p>Londres tem mais de 13 milhões de habitantes.</p>
+          </div>
+          <div style="background-color: #FFC0C7;width: 100%;text-align: left;">
+            <h2>Oslo</h2>
+            <p>Oslo é a capital da Noruega.</p>
+            <p>Oslo tem mais de 600.000 habitantes.</p>
+          </div>
+          <div style="background-color: #D9EEE1;width: 100%;text-align: left;">
+            <h2>Roma</h2>
+            <p>Roma é a capital da Itália.</p>
+            <p>Roma tem quase 3 milhões de habitantes.</p>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Alinhando Elementos &lt;div&gt; Lado a Lado</h2>
+        <p>Ao construir páginas da web, muitas vezes você deseja ter dois ou mais elementos <code style="color:#0059ff">&lt;div&gt;</code>
+          lado a lado.</p>
+
+        <h2>Alinhamento com Float</h2>
+        <p>O método de alinhamento com a propriedade CSS <code style="color:#f0b400">float</code>:</p>
+        <h3>Exemplo</h3>
+        <pre>
+          <span class="html-tag">&lt;style&gt;</span>
+      <span class="html-attribute">.mycontainer</span> {
+        <span class="html-attribute">width</span>:<span class="html-value">100%</span>;
+        <span class="html-attribute">overflow</span>:<span class="html-value">auto</span>;
+      }
+      <span class="html-attribute">.mycontainer div</span> {
+        <span class="html-attribute">width</span>:<span class="html-value">33%</span>;
+        <span class="html-attribute">float</span>:<span class="html-value">left</span>;
+      }
+     <span class="html-tag">&lt;/style&gt;</span>          
+              
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">mycontainer</span>"<span class="html-tag">&gt;</span>
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFF4A3;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres tem mais de 13 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFC0C7;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Oslo</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo é a capital da Noruega.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo tem mais de 600.000 habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #D9EEE1;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Roma</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma é a capital da Itália.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma tem quase 3 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+        </pre>
+        <h3>Resultado</h3>
+        <div class="exemplo">
+          <style>
+            .mycontainer {
+              width: 100%;
+              overflow: auto;
+            }
+
+            .mycontainer div {
+              width: 33%;
+              float: left;
+            }
+          </style>
+
+          <div class="mycontainer">
+            <div style="background-color: #FFF4A3;">
+              <h2>Londres</h2>
+              <p>Londres é a capital da Inglaterra.</p>
+              <p>Londres tem mais de 13 milhões de habitantes.</p>
+            </div>
+            <div style="background-color: #FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo é a capital da Noruega.</p>
+              <p>Oslo tem mais de 600.000 habitantes.</p>
+            </div>
+            <div style="background-color: #D9EEE1;">
+              <h2>Roma</h2>
+              <p>Roma é a capital da Itália.</p>
+              <p>Roma tem quase 3 milhões de habitantes.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Alinhamento com Inline-Block</h2>
+        <p>O método de alinhamento com a propriedade CSS <code style="color:#0059ff">display: inline-block</code>:</p>
+        <h3>Exemplo</h3>
+        <pre>
+          <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">.bloco</span> {
+          <span class="html-attribute">width</span>: <span class="html-value">30%</span>;  
+          <span class="html-attribute">display</span>: <span class="html-value">inline-block</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+          
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">bloco</span>" <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFF4A3;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres tem mais de 13 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+    
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">bloco</span>" <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFC0C7;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Oslo</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo é a capital da Noruega.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo tem mais de 600.000 habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+    
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">bloco</span>" <span class="html-attribute">style</span>="<span class="html-value">background-color: #D9EEE1;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Roma</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma é a capital da Itália.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma tem quase 3 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+        </pre>
+        <h3>Resultado</h3>
+        <div class="exemplo">
+          <div>
+            <style>
+              .bloco {
+                width: 30%;
+                display: inline-block;
+              }
+            </style>
+
+            <div class="bloco" style="background-color: #FFF4A3;">
+              <h2>Londres</h2>
+              <p>Londres é a capital da Inglaterra.</p>
+              <p>Londres tem mais de 13 milhões de habitantes.</p>
+            </div>
+
+            <div class="bloco" style="background-color: #FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo é a capital da Noruega.</p>
+              <p>Oslo tem mais de 600.000 habitantes.</p>
+            </div>
+
+            <div class="bloco" style="background-color: #D9EEE1;">
+              <h2>Roma</h2>
+              <p>Roma é a capital da Itália.</p>
+              <p>Roma tem quase 3 milhões de habitantes.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Alinhamento com Flex</h2>
+        <p>O método de alinhamento com o módulo CSS Flexbox:</p>
+        <h3>Exemplo</h3>
+        <pre>
+          <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">.mycontainer</span> {
+          <span class="html-attribute">display</span>: <span class="html-value">flex</span>;
+        }
+        <span class="html-tag">.mycontainer &gt; div</span> {
+          <span class="html-attribute">width</span>: <span class="html-value">33%</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+    
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">mycontainer</span>"<span class="html-tag">&gt;</span>
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFF4A3;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres tem mais de 13 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+      
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFC0C7;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Oslo</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo é a capital da Noruega.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo tem mais de 600.000 habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+      
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #D9EEE1;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Roma</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma é a capital da Itália.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma tem quase 3 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+        </pre>
+        <h3>Resultado</h3>
+        <div class="exemplo">
+          <style>
+            .mycontainer {
+              display: flex;
+            }
+
+            .mycontainer>div {
+              width: 33%;
+            }
+          </style>
+
+          <div class="mycontainer">
+            <div style="background-color: #FFF4A3;">
+              <h2>Londres</h2>
+              <p>Londres é a capital da Inglaterra.</p>
+              <p>Londres tem mais de 13 milhões de habitantes.</p>
+            </div>
+
+            <div style="background-color: #FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo é a capital da Noruega.</p>
+              <p>Oslo tem mais de 600.000 habitantes.</p>
+            </div>
+
+            <div style="background-color: #D9EEE1;">
+              <h2>Roma</h2>
+              <p>Roma é a capital da Itália.</p>
+              <p>Roma tem quase 3 milhões de habitantes.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Alinhamento com Grid</h2>
+        <p>O método de alinhamento com o módulo CSS Grid Layout:</p>
+        <h3>Exemplo</h3>
+        <pre>
+          <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">.grid-container</span> {
+          <span class="html-attribute">display</span>: <span class="html-value">grid</span>;
+          <span class="html-attribute">grid-template-columns</span>: <span class="html-value">33% 33% 33%</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+          
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">grid-container</span>"<span class="html-tag">&gt;</span>
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFF4A3;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres tem mais de 13 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+    
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #FFC0C7;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Oslo</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo é a capital da Noruega.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Oslo tem mais de 600.000 habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+    
+      <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>="<span class="html-value">background-color: #D9EEE1;</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Roma</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma é a capital da Itália.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Roma tem quase 3 milhões de habitantes.</span><span class="html-tag">&lt;/p&gt;</span>
+      <span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+        </pre>
+        <h3>Resultado</h3>
+        <div class="exemplo">
+          <style>
+            .grid-container {
+              display: grid;
+              grid-template-columns: 33% 33% 33%;
+            }
+          </style>
+
+          <div class="grid-container">
+            <div style="background-color: #FFF4A3;">
+              <h2>Londres</h2>
+              <p>Londres é a capital da Inglaterra.</p>
+              <p>Londres tem mais de 13 milhões de habitantes.</p>
+            </div>
+
+            <div style="background-color: #FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo é a capital da Noruega.</p>
+              <p>Oslo tem mais de 600.000 habitantes.</p>
+            </div>
+
+            <div style="background-color: #D9EEE1;">
+              <h2>Roma</h2>
+              <p>Roma é a capital da Itália.</p>
+              <p>Roma tem quase 3 milhões de habitantes.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Tags de HTML</h2>
+        <table border="1">
+          <tr>
+            <th>Tag</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td><code>&lt;div&gt;</code></td>
+            <td>Define uma seção em um documento (nível de bloco)</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+  </main>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

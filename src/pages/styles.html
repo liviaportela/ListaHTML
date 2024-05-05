@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Styles">
+                <h1>Estilos HTML</h1>
+                <p>
+                    O atributo <code style="color:#0059ff">&lt;style&gt;</code> é usado para adicionar estilos a um
+                    elemento, como cor, fonte, tamanho, e mais.
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"color: red;"</span><span class="html-tag">&gt;</span><span class="html-text">Eu sou vermelho</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"color: blue;"</span><span class="html-tag">&gt;</span><span class="html-text">Eu sou azul</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"font-size:30px;"</span><span class="html-tag">&gt;</span><span class="html-text">Eu sou grande</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p style="color:red;margin-bottom: 0;">Eu sou vermelho</p>
+                    <p style="color:blue;margin-bottom: 0;">Eu sou azul</p>
+                    <p style="font-size:30px;margin-top: 0;">Eu sou grande</p>
+                </div>
+                <hr>
+
+                <h2>Definição do Atributo Style</h2>
+                <p>Para definir o estilo de um elemento HTML, usamos o atributo <code style="color:#f0b400">style</code>. Ele segue a seguinte sintaxe:
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;nome_da_tag</span> <span class="html-attribute">style</span>=<span class="html-value">"propriedade:valor;"</span><span class="html-tag">&gt;</span>
+                </pre>
+                <p>A <b>propriedade</b> é uma propriedade CSS e o <b>valor</b> é um valor CSS.</p>
+                <hr>
+
+                <h2>Cor de Fundo</h2>
+                <p>A propriedade CSS <code style="color:#7bff5e">background-color</code> define a cor de fundo para um elemento HTML.</p>
+
+                <h3>Exemplo</h3>
+                <p>Define a cor de fundo de uma div como azul claro:</p>
+                <pre>
+                    <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:powderblue;"</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span>Este é um título<span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>Este é um parágrafo.<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="background-color:powderblue;">
+                        <h1>Este é um título</h1>
+                        <p>Este é um parágrafo.</p>
+                    </div>
+                </div>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;div&gt;</span>
+        <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:powderblue;"</span><span class="html-tag">&gt;</span>Este é um título<span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:tomato;"</span><span class="html-tag">&gt;</span>Este é um parágrafo.<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div>
+                        <h1 style="background-color:powderblue;">Este é um título</h1>
+                        <p style="background-color:tomato;">Este é um parágrafo.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>Cor do Texto</h2>
+                <p>A propriedade CSS <code style="color:#f0b400">color</code> define a cor do texto para um elemento HTML:</p>
+
+                <h3>Exemplo de Cor do Texto</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"color:blue;"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um título</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"color:red;"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h1 style="color:blue;">Este é um título</h1>
+                    <p style="color:red;">Este é um parágrafo.</p>
+                </div>
+                <hr>
+
+                <h2>Fontes</h2>
+                <p>A propriedade CSS <code style="color:#7bff5e">font-family</code> define a fonte a ser usada para um elemento HTML:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"font-family:Verdana;"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um título</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"font-family:Courier;"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h1 style="font-family:Verdana;">Este é um título</h1>
+                    <p style="font-family:Courier;">Este é um parágrafo.</p>
+                </div>
+                <hr>
+
+                <h2>Tamanho do Texto</h2>
+                <p>A propriedade CSS <code style="color:#7bff5e">font-size</code> define o tamanho do texto para um elemento HTML:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"font-size:300%;"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um título</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"font-size:160%;"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h1 style="font-size:300%;">Este é um título</h1>
+                    <p style="font-size:160%;">Este é um parágrafo.</p>
+                </div>
+                <hr>
+
+                <h2>Alinhamento do Texto</h2>
+                <p>A propriedade CSS <code style="color:#7bff5e">text-align</code> define o alinhamento horizontal do texto para um elemento HTML:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;h1</span> <span class="html-attribute">style</span>=<span class="html-value">"text-align:left;"</span><span class="html-tag">&gt;</span><span class="html-text">Título alinhado à esquerda</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"text-align:left;"</span><span class="html-tag">&gt;</span><span class="html-text">Parágrafo alinhado à esquerda.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo" style="align-items: normal;">
+                    <h1 style="text-align:left;">Título alinhado à esquerda</h1>
+                    <p style="text-align:left;">Parágrafo alinhado à esquerda.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

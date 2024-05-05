@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Drag/Drop</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Drag/Drop">
+                <h1>HTML Drag/Drop</h1>
+                <p>Em HTML, qualquer elemento pode ser arrastado e solto.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">#div1</span>, <span class="html-tag">#div2</span> {
+            <span class="html-attribute">float</span>: <span class="html-value">left</span>;
+            <span class="html-attribute">width</span>: <span class="html-value">100px</span>;
+            <span class="html-attribute">height</span>: <span class="html-value">35px</span>;
+            <span class="html-attribute">margin</span>: <span class="html-value">10px</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">10px</span>;
+            <span class="html-attribute">border</span>: <span class="html-value">1px solid black</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="js-var">function</span> <span class="js-var">allowDrop</span>(<span class="js-var">ev</span>) {
+            <span class="js-var">ev.preventDefault</span>();
+        }
+
+        <span class="js-var">function</span> <span class="js-var">drag</span>(<span class="js-var">ev</span>) {
+            <span class="js-var">ev.dataTransfer.setData</span>("text", <span class="js-var">ev.target.id</span>);
+        }
+
+        <span class="js-var">function</span> <span class="js-var">drop</span>(<span class="js-var">ev</span>) {
+            <span class="js-var">ev.preventDefault</span>();
+            <span class="js-var">var</span> <span class="js-var">data</span> = <span class="js-var">ev.dataTransfer.getData</span>("text");
+            <span class="js-var">ev.target.appendChild</span>(<span class="js-var">document.getElementById</span>(<span class="js-var">data</span>));
+        }
+     <span class="html-tag">&lt;/script&gt;</span>
+
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">id</span>="<span class="html-value">div1</span>" <span class="html-attribute">ondrop</span>="<span class="html-value">drop(event)</span>" <span class="html-attribute">ondragover</span>="<span class="html-value">allowDrop(event)</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>="<span class="html-value">../media/Dog.png</span>" <span class="html-attribute">draggable</span>="<span class="html-value">true</span>" <span class="html-attribute">ondragstart</span>="<span class="html-value">drag(event)</span>" <span class="html-attribute">id</span>="<span class="html-value">drag1</span>" <span class="html-attribute">width</span>="<span class="html-value">88</span>" <span class="html-attribute">height</span>="<span class="html-value">31</span>" <span class="html-tag">/&gt;</span> 
+     <span class="html-tag">&lt;/div&gt;</span>
+
+     <span class="html-tag">&lt;div</span> <span class="html-attribute">id</span>="<span class="html-value">div2</span>" <span class="html-attribute">ondrop</span>="<span class="html-value">drop(event)</span>" <span class="html-attribute">ondragover</span>="<span class="html-value">allowDrop(event)</span>"<span class="html-tag">&gt;&lt;/div&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <style>
+                        #div1,
+                        #div2 {
+                            float: left;
+                            width: 100px;
+                            height: 35px;
+                            margin: 10px;
+                            padding: 10px;
+                            border: 1px solid black;
+                        }
+                    </style>
+
+                    <script>
+                        function allowDrop(ev) {
+                            ev.preventDefault();
+                        }
+
+                        function drag(ev) {
+                            ev.dataTransfer.setData("text", ev.target.id);
+                        }
+
+                        function drop(ev) {
+                            ev.preventDefault();
+                            var data = ev.dataTransfer.getData("text");
+                            ev.target.appendChild(document.getElementById(data));
+                        }
+                    </script>
+
+                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img src="../media/Dog.png" draggable="true" ondragstart="drag(event)" id="drag1"
+                            width="88" height="31" />
+                    </div>
+
+                    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <hr>
+
+                <h2>Tornar um elemento arrastável</h2>
+                <p>Primeiro de tudo: Para tornar um elemento arrastável, defina o atributo como true:draggable</p>
+                <pre>
+                    <span class="html-tag">&lt;img</span> <span class="html-attribute">draggable</span>="<span class="html-value">true</span>"<span class="html-tag">/&gt;</span>
+                </pre>
+                <hr>
+
+                <h2>O que arrastar - ondragstart e setData()</h2>
+                <p>Em seguida, especifique o que deve acontecer quando o elemento for arrastado.</p>
+
+                <p>No exemplo acima, o atributo chama uma função, drag(event), que especifica quais dados serão
+                    arrastados.ondragstart</p>
+
+                <p>O método define o tipo de dados e o valor do Dados arrastados:dataTransfer.setData()</p>
+                <pre>
+                    <span class="js-keyword">function</span> <span class="js-var">drag</span>(<span class="js-var">ev</span>) {
+        <span class="js-var">ev.dataTransfer.setData</span>(<span class="js-var">"text"</span>, <span class="js-var">ev.target.id</span>);
+     }                      
+                </pre>
+                <p>Nesse caso, o tipo de dados é "text" e o valor é o id do elemento arrastável ("drag1").</p>
+                <hr>
+
+                <h2>Onde soltar - ondragover</h2>
+                <p>O evento especifica onde os dados arrastados podem ser soltos.ondragover</p>
+                <p>Por padrão, os dados/elementos não podem ser descartados em outros elementos. Para permitir uma
+                    queda, devemos evitar o tratamento padrão do elemento.</p>
+                <p>Isso é feito chamando o método para o evento ondragover:event.preventDefault()</p>
+                <pre>
+                    <span class="js-var">event.preventDefault</span>()  
+                </pre>
+                <hr>
+
+                <h2>Faça o Drop - ondrop</h2>
+                <p>Quando os dados arrastados são soltos, ocorre um evento drop.</p>
+                <p>No exemplo acima, o atributo ondrop chama uma função, drop(event):</p>
+                <pre>
+                    <span class="js-keyword">function</span> <span class="js-var">drop</span>(<span class="js-var">ev</span>) {
+        <span class="js-var">ev.preventDefault</span>();
+        <span class="html-tag">var</span> <span class="js-var">data</span> = <span class="js-var">ev.dataTransfer.getData</span>(<span class="js-var">"text"</span>);
+        <span class="js-var">ev.target.appendChild</span>(<span class="js-var">document.getElementById</span>(<span class="js-var">data</span>));
+     }
+                  </pre>
+                <p>Código explicado:</p>
+
+                <p>Chame preventDefault() para impedir que o navegador manipule os dados padrão (o padrão é abrir como
+                    link no drop)</p>
+                <p> Obtenha os dados arrastados com o método dataTransfer.getData().</p>
+                <p>Esse método retornará todos os dados que foram definidos para o mesmo tipo no método setData()
+                    Os dados arrastados são o id do elemento arrastado ("drag1")</p>
+                <p>Acrescentar o elemento arrastado ao elemento de soltar</p>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

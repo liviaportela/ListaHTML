@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Video">
+                <h1>HTML Vídeo</h1>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;video&gt;</code> é usado para exibir um vídeo em uma
+                    página da web.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;video</span> <span class="html-attribute">width</span>=<span class="html-value">"440"</span> <span class="html-attribute">height</span>=<span class="html-value">"440"</span> <span class="html-attribute">controls</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;source</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/residentEvil.mp4"</span> <span class="html-attribute">type</span>=<span class="html-value">"video/mp4"</span><span class="html-tag">&gt;</span>
+        Seu navegador não suporta a tag de vídeo.
+     <span class="html-tag">&lt;/video&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <video width="440" height="440" controls>
+                        <source src="../media/residentEvil.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+
+                <h2>Como Funciona</h2>
+                <p>O atributo <code style="color:#f0b400">controls</code> adiciona controles de vídeo, como play, pause
+                    e volume.</p>
+                <p>É uma boa prática sempre incluir os atributos <code style="color:#f0b400">width</code> e <code
+                        style="color:#f0b400">height</code>. Se a largura
+                    e a altura não forem definidas, a página pode piscar enquanto o vídeo é carregado.</p>
+                <p>O elemento <code style="color:#0059ff">&lt;source&gt;</code> permite especificar arquivos de vídeo
+                    alternativos que o
+                    navegador pode escolher. O navegador usará o primeiro formato reconhecido.</p>
+                <p>O texto entre as tags <code style="color:#0059ff">&lt;video&gt;</code> e <code
+                        style="color:#0059ff">&lt;/video&gt;</code> será exibido apenas em
+                    navegadores que não suportam o elemento <code style="color:#0059ff">&lt;video&gt;</code>.</p>
+
+                <h2>HTML &lt;video&gt; Autoplay</h2>
+                <p>Para iniciar um vídeo automaticamente, use o atributo <code style="color:#f0b400">autoplay</code>:
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;video</span> <span class="html-attribute">width</span>=<span class="html-value">"440"</span> <span class="html-attribute">height</span>=<span class="html-value">"440"</span> <span class="html-attribute">autoplay</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;source</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/residentEvil.mp4"</span> <span class="html-attribute">type</span>=<span class="html-value">"video/mp4"</span><span class="html-tag">&gt;</span>
+        Seu navegador não suporta a tag de vídeo.
+     <span class="html-tag">&lt;/video&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <video width="440" height="440" autoplay>
+                        <source src="../media/residentEvil.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+
+                <p><strong>Nota:</strong> Navegadores baseados em Chromium geralmente não permitem autoplay na maioria
+                    dos casos. No entanto, autoplay com mudo é sempre permitido.
+                </p>
+                <p>Adicione o atributo <code>muted</code> após <code>autoplay</code> para permitir que seu vídeo comece
+                    a tocar automaticamente (mas sem som):
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                        <span class="html-tag">&lt;video</span> <span class="html-attribute">width</span>=<span class="html-value">"440"</span> <span class="html-attribute">height</span>=<span class="html-value">"440"</span> <span class="html-attribute">autoplay</span> <span class="html-attribute">muted</span><span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;source</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/residentEvil.mp4"</span> <span class="html-attribute">type</span>=<span class="html-value">"video/mp4"</span><span class="html-tag">&gt;</span>
+            Seu navegador não suporta a tag de vídeo.
+         <span class="html-tag">&lt;/video&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <video width="440" height="440" autoplay muted>
+                        <source src="../media/residentEvil.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+                <hr>
+
+                <h2>HTML Vídeo - Tipos de Mídia</h2>
+                <table border="1">
+                    <tr>
+                        <th>Formato do Arquivo</th>
+                        <th>Tipo de Mídia</th>
+                    </tr>
+                    <tr>
+                        <td>MP4</td>
+                        <td>video/mp4</td>
+                    </tr>
+                    <tr>
+                        <td>WebM</td>
+                        <td>video/webm</td>
+                    </tr>
+                    <tr>
+                        <td>Ogg</td>
+                        <td>video/ogg</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <h2>HTML Vídeo - Métodos, Propriedades e Eventos</h2>
+                <p>O HTML DOM define métodos, propriedades e eventos para o elemento <code style="color:#0059ff">&lt;video&gt;</code>.</p>
+                <p>Isso permite carregar, reproduzir e pausar vídeos, bem como definir duração e volume.</p>
+                <p>Existem também eventos DOM que podem notificá-lo quando um vídeo começa a tocar, é pausado, etc.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                        <span class="html-tag">&lt;button</span> <span class="html-attribute">onclick</span>=<span class="html-value">"playPause()"</span><span class="html-tag">&gt;</span>Play/Pause<span class="html-tag">&lt;/button&gt;</span>
+     <span class="html-tag">&lt;button</span> <span class="html-attribute">onclick</span>=<span class="html-value">"makeBig()"</span><span class="html-tag">&gt;</span>Big<span class="html-tag">&lt;/button&gt;</span>
+     <span class="html-tag">&lt;button</span> <span class="html-attribute">onclick</span>=<span class="html-value">"makeSmall()"</span><span class="html-tag">&gt;</span>Small<span class="html-tag">&lt;/button&gt;</span>
+     <span class="html-tag">&lt;button</span> <span class="html-attribute">onclick</span>=<span class="html-value">"makeNormal()"</span><span class="html-tag">&gt;</span>Normal<span class="html-tag">&lt;/button&gt;</span>
+
+     <span class="html-tag">&lt;video</span> <span class="html-attribute">id</span>=<span class="html-value">"video1"</span> <span class="html-attribute">width</span>=<span class="html-value">"440"</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;source</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/residentEvil.mp4"</span> <span class="html-attribute">type</span>=<span class="html-value">"video/mp4"</span><span class="html-tag">&gt;</span>
+        Seu navegador não suporta a tag de vídeo.
+     <span class="html-tag">&lt;/video&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="js-var">var</span> <span class="html-tag">myVideo</span> = <span class="html-tag">document</span>.<span class="html-attribute">getElementById</span>(<span class="html-value">"video1"</span>);
+
+        <span class="js-keyword">function</span> <span class="html-attribute">playPause() {</span>
+            <span class="js-var">if</span> <span class="js-keyword">(</span><span class="html-tag">myVideo</span>.<span class="html-attribute">paused</span><span class="js-keyword">)</span> <span class="html-attribute">{</span>
+                <span class="html-tag">myVideo</span>.<span class="html-attribute">play</span><span class="js-keyword">()</span>;
+            <span class="html-attribute">}</span> <span class="js-var">else</span> <span class="html-attribute">{</span>
+                <span class="html-tag">myVideo</span>.<span class="html-attribute">pause</span><span class="js-keyword">()</span>;
+            <span class="html-attribute">}</span>
+        <span class="html-attribute">}</span>
+
+        <span class="js-keyword">function</span> <span class="html-attribute">makeBig() {</span>
+            <span class="html-tag">myVideo</span>.<span class="html-attribute">width</span> = <span class="js-number">560</span>;
+        <span class="html-attribute">}</span>
+
+        <span class="js-keyword">function</span> <span class="html-attribute">makeSmall() {</span>
+            <span class="html-tag">myVideo</span>.<span class="html-attribute">width</span> = <span class="js-number">320</span>;
+        <span class="html-attribute">}</span>
+
+        <span class="js-keyword">function</span> <span class="html-attribute">makeNormal() {</span>
+            <span class="html-tag">myVideo</span>.<span class="html-attribute">width</span> = <span class="js-number">420</span>;
+        <span class="html-attribute">}</span>
+    <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="display: flex;flex-direction: row; margin-bottom: 15px; gap: 5px;">
+                        <button onclick="playPause()">Play/Pause</button>
+                        <button onclick="makeBig()">Big</button>
+                        <button onclick="makeSmall()">Small</button>
+                        <button onclick="makeNormal()">Normal</button>
+                    </div>
+                    <video id="video1" width="420">
+                        <source src="../media/residentEvil.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+
+                <script>
+                    var myVideo = document.getElementById("video1");
+
+                    function playPause() {
+                        if (myVideo.paused)
+                            myVideo.play();
+                        else
+                            myVideo.pause();
+                    }
+
+                    function makeBig() {
+                        myVideo.width = 560;
+                    }
+
+                    function makeSmall() {
+                        myVideo.width = 320;
+                    }
+
+                    function makeNormal() {
+                        myVideo.width = 420;
+                    } 
+                </script>
+                <hr>
+
+                <h2>Tags de Vídeo HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;video&gt;</code></td>
+                        <td>Define um vídeo ou filme</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;source&gt;</code></td>
+                        <td>Define múltiplos recursos de mídia para elementos de mídia, como <code>&lt;video&gt;</code>
+                            e <code>&lt;audio&gt;</code>.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;track&gt;</code></td>
+                        <td>Define faixas de texto em players de mídia.</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

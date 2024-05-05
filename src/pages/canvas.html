@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Canvas">
+                <h1>HTML Canvas</h1>
+                <p>
+                    O elemento HTML <code style="color:#0059ff">&lt;canvas&gt;</code> é usado para desenhar gráficos em tempo real, via
+                    JavaScript.
+                </p>
+                <p>
+                    O elemento <code style="color:#0059ff">&lt;canvas&gt;</code> é apenas um contêiner para gráficos. Você deve usar
+                    JavaScript para realmente desenhar os gráficos.
+                </p>
+                <p>
+                    O Canvas possui vários métodos para desenhar caminhos, caixas, círculos, texto e adicionar imagens.
+                </p>
+                <p>
+                    O Canvas é suportado por todos os principais navegadores.
+                </p>
+                <hr>
+
+                <h2>Exemplo de Canvas</h2>
+                <p>Um canvas é uma área retangular em uma página HTML. Por padrão, um canvas não tem borda nem conteúdo.
+                </p>
+
+                <p>O código para um canvas é assim:</p>
+                <pre>
+                    <span class="html-tag">&lt;canvas</span> <span class="html-attribute">id</span>="<span class="html-value">myCanvas</span>"<span class="html-attribute">width</span>="<span class="html-value">200</span>"<span class="html-attribute">height</span>="<span class="html-value">100</span>"<span class="html-tag">&gt;&lt;/canvas&gt;</span>
+                </pre>
+
+                <p>
+                    Nota: Sempre especifique um atributo <code style="color:#f0b400">id</code> para ser referido em um script, e atributos
+                    <code style="color:#f0b400">width</code> e <code style="color:#f0b400">height</code> para definir o tamanho do canvas. Para adicionar uma borda,
+                    use o atributo <code style="color:#f0b400">style</code>.
+                </p>
+
+                <h3>Exemplo de um Canvas Básico</h3>
+                <div class="exemplo">
+                    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                </div>
+                <hr>
+
+                <h2>Desenhar uma Linha no Canvas</h2>
+                <p>Depois de criar a área do canvas retangular, você deve adicionar um código JavaScript para fazer o
+                    desenho.</p>
+
+                <p>Aqui está um exemplo de como desenhar uma linha:</p>
+
+                <pre>
+                    <span class="html-tag">&lt;canvas</span> <span class="html-attribute">id</span>="<span class="html-value">myCanvas2</span>" <span class="html-attribute">width</span>="<span class="html-value">200</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>" <span class="html-attribute">style</span>="<span class="html-value">border: 1px solid #000000;</span>"<span class="html-tag">&gt;&lt;/canvas&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="html-tag">var</span> <span class="js-var">c</span> = <span class="js-var">document.getElementById</span>("myCanvas2");
+        <span class="html-tag">var</span> <span class="js-var">ctx</span> = <span class="js-var">c.getContext</span>("2d");  
+        <span class="js-var">ctx.moveTo</span>(0, 0);  <span class="html-comment">// Define o ponto de início da linha</span>
+        <span class="js-var">ctx.lineTo</span>(200, 100);  <span class="html-comment">// Define o ponto final da linha</span>
+        <span class="js-var">ctx.stroke</span>();  <span class="html-comment">// Desenha a linha</span>
+     <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas2");
+                        var ctx = c.getContext("2d");
+                        ctx.moveTo(0, 0);  // Define o ponto de início da linha
+                        ctx.lineTo(200, 100);  // Define o ponto final da linha
+                        ctx.stroke();  // Desenha a linha
+                    </script>
+                </div>
+                <hr>
+
+                <h2>Desenhar um Círculo no Canvas</h2>
+                <p>Este exemplo mostra como desenhar um círculo no canvas usando JavaScript.</p>
+                <pre>
+                    <span class="html-tag">&lt;canvas</span> <span class="html-attribute">id</span>="<span class="html-value">myCanvas3</span>" <span class="html-attribute">width</span>="<span class="html-value">200</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>" <span class="html-attribute">style</span>="<span class="html-value">border: 1px solid #000000;</span>"<span class="html-tag">&gt;&lt;/canvas&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="js-var">var</span> <span class="js-var">c</span> = <span class="js-var">document.getElementById</span>("myCanvas3");
+        <span class="js-var">var</span> <span class="js-var">ctx</span> = <span class="js-var">c.getContext</span>("2d");
+        <span class="js-var">ctx.beginPath</span>();  <span class="html-comment">// Inicia o caminho para desenhar</span>
+        <span class="js-var">ctx.arc</span>(95, 50, 40, 0, 2 * <span class="js-var">Math.PI</span>);  <span class="html-comment">// Desenha um círculo</span>
+        <span class="js-var">ctx.stroke</span>();  <span class="html-comment">// Desenha a borda do círculo</span>
+     <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas3");
+                        var ctx = c.getContext("2d");
+                        ctx.beginPath();  // Inicia o caminho para desenhar
+                        ctx.arc(95, 50, 40, 0, 2 * Math.PI);  // Desenha um círculo
+                        ctx.stroke();  // Desenha a borda do círculo
+                    </script>
+                </div>
+                <hr>
+
+                <h2>Desenhar Texto no Canvas</h2>
+                <p>Este exemplo mostra como desenhar texto no canvas usando JavaScript.</p>
+                <pre>
+                    <span class="html-tag">&lt;canvas</span> <span class="html-attribute">id</span>="<span class="html-value">myCanvas4</span>" <span class="html-attribute">width</span>="<span class="html-value">200</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>" <span class="html-attribute">style</span>="<span class="html-value">border: 1px solid #000000;</span>"<span class="html-tag">&gt;&lt;/canvas&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="js-var">var</span> <span class="js-var">c</span> = <span class="js-var">document.getElementById</span>("myCanvas4");
+        <span class="js-var">var</span> <span class="js-var">ctx</span> = <span class="js-var">c.getContext</span>("2d");
+        <span class="html-comment">// Define a fonte e o tamanho do texto</span>
+        <span class="js-var">ctx.font</span> = <span class="js-var">"30px Arial"</span>;
+        <span class="html-comment">// Desenha o texto "Hello World" na posição (10, 50) do canvas</span>
+        <span class="js-var">ctx.fillText</span>(<span class="js-var">"Hello World"</span>, <span class="js-var">10</span>, <span class="js-var">50</span>);
+     <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <canvas id="myCanvas4" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas4");
+                        var ctx = c.getContext("2d");
+
+                        // Define a fonte e o tamanho do texto
+                        ctx.font = "30px Arial";
+
+                        // Desenha o texto "Hello World" na posição (10, 50) do canvas
+                        ctx.fillText("Hello World", 10, 50);
+                    </script>
+                </div>
+                <hr>
+
+                <h2>Contorno de Texto no Canvas</h2>
+                <p>Este exemplo mostra como desenhar texto com contorno no canvas usando JavaScript.</p>
+                <pre>
+                    <span class="html-tag">&lt;canvas</span> <span class="html-attribute">id</span>="<span class="html-value">myCanvas5</span>" <span class="html-attribute">width</span>="<span class="html-value">200</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>" <span class="html-attribute">style</span>="<span class="html-value">border: 1px solid #000000;</span>"<span class="html-tag">&gt;&lt;/canvas&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="js-var">var</span> <span class="js-var">c</span> = <span class="js-var">document.getElementById</span>("myCanvas5");
+        <span class="js-var">var</span> <span class="js-var">ctx</span> = <span class="js-var">c.getContext</span>("2d");
+        <span class="html-comment">// Define a fonte e o tamanho do texto</span>
+        <span class="js-var">ctx.font</span> = <span class="js-var">"30px Arial"</span>;
+        <span class="html-comment">// Desenha o contorno do texto "Hello World" na posição (10, 50) do canvas</span>
+        <span class="js-var">ctx.strokeText</span>(<span class="js-var">"Hello World"</span>, <span class="js-var">10</span>, <span class="js-var">50</span>);
+     <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <canvas id="myCanvas5" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas5");
+                        var ctx = c.getContext("2d");
+
+                        // Define a fonte e o tamanho do texto
+                        ctx.font = "30px Arial";
+
+                        // Desenha o contorno do texto "Hello World" na posição (10, 50) do canvas
+                        ctx.strokeText("Hello World", 10, 50);
+                    </script>
+                </div>
+                <hr>
+
+                <h2>Gradiente Linear no Canvas</h2>
+                <p>Este exemplo mostra como desenhar um retângulo com gradiente linear no canvas usando JavaScript.</p>
+                <pre>
+                    <span class="html-tag">&lt;canvas</span> <span class="html-attribute">id</span>="<span class="html-value">myCanvas6</span>" <span class="html-attribute">width</span>="<span class="html-value">200</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>" <span class="html-attribute">style</span>="<span class="html-value">border: 1px solid #000000;</span>"<span class="html-tag">&gt;&lt;/canvas&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="js-var">var</span> <span class="js-var">c</span> = <span class="js-var">document.getElementById</span>("myCanvas6");
+        <span class="js-var">var</span> <span class="js-var">ctx</span> = <span class="js-var">c.getContext</span>("2d");
+        <span class="html-comment">// Cria um gradiente linear</span>
+        <span class="js-var">var</span> <span class="js-var">grd</span> = <span class="js-var">ctx.createLinearGradient</span>(0, 0, 200, 0);
+        <span class="js-var">grd.addColorStop</span>(0, "red");  <span class="html-comment">// Cor inicial do gradiente</span>
+        <span class="js-var">grd.addColorStop</span>(1, "white");  <span class="html-comment">// Cor final do gradiente</span>
+        <span class="html-comment">// Define o estilo de preenchimento como o gradiente criado</span>
+        <span class="js-var">ctx.fillStyle</span> = <span class="js-var">grd</span>;
+        <span class="html-comment">// Desenha um retângulo preenchido com o gradiente</span>
+        <span class="js-var">ctx.fillRect</span>(10, 10, 150, 80);
+     <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+
+                <div class="exemplo">
+                    <canvas id="myCanvas6" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas6");
+                        var ctx = c.getContext("2d");
+
+                        // Cria um gradiente linear
+                        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                        grd.addColorStop(0, "red");  // Cor inicial do gradiente
+                        grd.addColorStop(1, "white");  // Cor final do gradiente
+
+                        // Define o estilo de preenchimento como o gradiente criado
+                        ctx.fillStyle = grd;
+
+                        // Desenha um retângulo preenchido com o gradiente
+                        ctx.fillRect(10, 10, 150, 80);
+                    </script>
+                </div>
+                <hr>
+
+                <h2>Gradiente Circular no Canvas</h2>
+                <p>Este exemplo mostra como desenhar um retângulo com gradiente circular no canvas usando JavaScript.
+                </p>
+                <pre>
+                    <span class="html-tag">&lt;canvas</span> <span class="html-attribute">id</span>="<span class="html-value">myCanvas7</span>" <span class="html-attribute">width</span>="<span class="html-value">200</span>" <span class="html-attribute">height</span>="<span class="html-value">100</span>" <span class="html-attribute">style</span>="<span class="html-value">border: 1px solid #000000;</span>"<span class="html-tag">&gt;&lt;/canvas&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="js-var">var</span> <span class="js-var">c</span> = <span class="js-var">document.getElementById</span>("myCanvas7");
+        <span class="js-var">var</span> <span class="js-var">ctx</span> = <span class="js-var">c.getContext</span>("2d");
+        <span class="html-comment">// Cria um gradiente circular</span>
+        <span class="js-var">var</span> <span class="js-var">grd</span> = <span class="js-var">ctx.createRadialGradient</span>(75, 50, 5, 90, 60, 100);
+        <span class="js-var">grd.addColorStop</span>(0, "red");   <span class="html-comment">// Cor do centro do gradiente</span>
+        <span class="js-var">grd.addColorStop</span>(1, "white"); <span class="html-comment">// Cor da borda do gradiente</span>
+        <span class="html-comment">// Define o estilo de preenchimento como o gradiente criado</span>
+        <span class="js-var">ctx.fillStyle</span> = <span class="js-var">grd</span>;
+        <span class="html-comment">// Desenha um retângulo preenchido com o gradiente circular</span>
+        <span class="js-var">ctx.fillRect</span>(10, 10, 150, 80);
+     <span class="html-tag">&lt;/script&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <canvas id="myCanvas7" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas7");
+                        var ctx = c.getContext("2d");
+
+                        // Cria um gradiente circular
+                        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+                        grd.addColorStop(0, "red");   // Cor do centro do gradiente
+                        grd.addColorStop(1, "white"); // Cor da borda do gradiente
+
+                        // Define o estilo de preenchimento como o gradiente criado
+                        ctx.fillStyle = grd;
+
+                        // Desenha um retângulo preenchido com o gradiente circular
+                        ctx.fillRect(10, 10, 150, 80);
+                    </script>
+                </div>
+                <hr>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

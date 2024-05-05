@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formatting</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Formatting">
+                <h1>Elementos de Formatação HTML</h1>
+                <p>O HTML contém vários elementos para definir texto com um significado especial.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;b&gt;</span><span class="html-text">Este texto é em negrito</span><span class="html-tag">&lt;/b&gt;</span>
+     <span class="html-tag">&lt;i&gt;</span><span class="html-text">Este texto é em itálico</span><span class="html-tag">&lt;/i&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é subescrito e sobrescrito: H</span><span class="html-tag">&lt;sub&gt;</span>2<span class="html-tag">&lt;/sub&gt;</span><span class="html-text">O é água, e 1</span><span class="html-tag">&lt;sup&gt;</span>º<span class="html-tag">&lt;/sup&gt;</span><span class="html-text"> é primeiro.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <b>Este texto é em negrito</b>
+                    <i>Este texto é em itálico</i>
+                    <p style="margin: 0;">Este é subescrito e sobrescrito: H<sub>2</sub>O é água, e 1<sup>º</sup> é
+                        primeiro.</p>
+                </div>
+                <hr>
+
+                <h2>Elementos de Formatação HTML</h2>
+                <p>Os elementos de formatação foram projetados para exibir tipos especiais de texto:</p>
+
+                <ul style="margin-bottom: 20px;">
+                    <li><code>&lt;b&gt;</code> - Texto em negrito</li>
+                    <li><code>&lt;strong&gt;</code> - Texto importante</li>
+                    <li><code>&lt;i&gt;</code> - Texto em itálico</li>
+                    <li><code>&lt;em&gt;</code> - Texto enfatizado</li>
+                    <li><code>&lt;mark&gt;</code> - Texto marcado/destacado</li>
+                    <li><code>&lt;small&gt;</code> - Texto menor</li>
+                    <li><code>&lt;del&gt;</code> - Texto deletado</li>
+                    <li><code>&lt;ins&gt;</code> - Texto inserido</li>
+                    <li><code>&lt;sub&gt;</code> - Texto subescrito</li>
+                    <li><code>&lt;sup&gt;</code> - Texto sobrescrito</li>
+                </ul>
+                <hr>
+
+                <h2>Elementos &lt;b&gt; e &lt;strong&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;b&gt;</code> define texto em negrito, sem qualquer importância adicional.
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;b&gt;</span><span class="html-text">Este texto é em negrito</span><span class="html-tag">&lt;/b&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><b>Este texto é em negrito</b></p>
+                </div>
+
+                <p>O elemento HTML <code style="color:#0059ff">&lt;strong&gt;</code> define texto com forte importância. O conteúdo é
+                    geralmente exibido em negrito.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;strong&gt;</span><span class="html-text">Este texto é importante!</span><span class="html-tag">&lt;/strong&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><strong>Este texto é importante!</strong></p>
+                </div>
+
+                <h2>Elementos &lt;i&gt; e &lt;em&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;i&gt;</code> define uma parte do texto em uma voz ou tom alternativo,
+                    geralmente exibido em itálico.</p>
+                <p><strong>Dica:</strong> A tag <code style="color:#0059ff">&lt;i&gt;</code> é frequentemente usada para indicar um termo
+                    técnico, uma frase de outro idioma, um pensamento, ou nome de um navio.</p>
+                <h3>Exemplo</h3>
+                <pre><span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;i&gt;</span><span class="html-text">Este texto é em itálico</span><span class="html-tag">&lt;/i&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><i>Este texto é em itálico</i></p>
+                </div>
+
+                <p>O elemento HTML <code style="color:#0059ff">&lt;em&gt;</code> define texto enfatizado, geralmente exibido em itálico.</p>
+                <p><strong>Dica:</strong> Um leitor de tela pronunciará as palavras com ênfase ao encontrar o elemento
+                    <code style="color:#0059ff">&lt;em&gt;</code>.
+                </p>
+                <h3>Exemplo</h3>
+                <pre><span class="html-tag">&lt;p&gt;</span><span class="html-tag">&lt;em&gt;</span><span class="html-text">Este texto é enfatizado</span><span class="html-tag">&lt;/em&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><em>Este texto é enfatizado</em></p>
+                </div>
+                <hr>
+
+                <h2>Elemento &lt;small&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;small&gt;</code> define texto menor:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um texto </span><span class="html-tag">&lt;small&gt;</span><span class="html-text">menor.</span><span class="html-tag">&lt;/small&gt;</span></span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um texto <small>menor.</small></p>
+                </div>
+                <hr>
+
+                <h2>Elemento &lt;mark&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;mark&gt;</code> define texto que deve ser marcado ou destacado:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Não se esqueça de comprar </span><span class="html-tag">&lt;mark&gt;</span><span class="html-text">leite</span><span class="html-tag">&lt;/mark&gt;</span></span> <span class="html-text">hoje.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Não se esqueça de comprar <mark>leite</mark> hoje.</p>
+                </div>
+                <hr>
+
+                <h2>Elemento &lt;del&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;del&gt;</code> define texto que foi deletado de um documento. Os
+                    navegadores geralmente exibem texto deletado com uma linha através dele.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Minha cor favorita é </span><span class="html-tag">&lt;del&gt;</span><span class="html-text">azul</span><span class="html-tag">&lt;/del&gt;</span></span> <span class="html-text">vermelho.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Minha cor favorita é <del>azul</del> vermelho.</p>
+                </div>
+                <hr>
+
+                <h2>Elemento &lt;ins&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;ins&gt;</code> define texto que foi inserido em um documento. Os
+                    navegadores geralmente sublinham texto inserido.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Minha cor favorita é </span><span class="html-tag">&lt;del&gt;</span><span class="html-text">azul</span><span class="html-tag">&lt;/del&gt;</span></span> <span class="html-tag">&lt;ins&gt;</span><span class="html-text">vermelho</span><span class="html-tag">&lt;/ins&gt;</span>.<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Minha cor favorita é <del>azul</del> <ins>vermelho</ins>.</p>
+                </div>
+                <hr>
+
+                <h2>Elemento &lt;sub&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;sub&gt;</code> define texto subescrito, que aparece meio caractere abaixo
+                    da linha normal e às vezes é renderizado em uma fonte menor. Ele pode ser usado para fórmulas
+                    químicas, como H<sub>2</sub>O.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um texto </span><span class="html-tag">&lt;sub&gt;</span><span class="html-text">subescrito</span><span class="html-tag">&lt;/sub&gt;</span>.<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um texto <sub>subescrito</sub>.</p>
+                </div>
+                <hr>
+
+                <h2>Elemento &lt;sup&gt;</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;sup&gt;</code> define texto sobrescrito, que aparece meio caractere acima
+                    da linha normal e também pode ser menor. Ele pode ser usado para notas de rodapé, como
+                    WWW<sup>[1]</sup>.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um texto </span><span class="html-tag">&lt;sup&gt;</span><span class="html-text">sobrescrito</span><span class="html-tag">&lt;/sup&gt;</span>.<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é um texto <sup>sobrescrito</sup>.</p>
+                </div>
+                <hr>
+
+                <h2>Referência dos Elementos de Formatação HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;b&gt;</code></td>
+                        <td>Define texto em negrito</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;em&gt;</code></td>
+                        <td>Define texto enfatizado</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;i&gt;</code></td>
+                        <td>Define parte do texto em uma voz ou tom alternativo</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;small&gt;</code></td>
+                        <td>Define texto menor</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;strong&gt;</code></td>
+                        <td>Define texto importante</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;sub&gt;</code></td>
+                        <td>Define texto subescrito</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;sup&gt;</code></td>
+                        <td>Define texto sobrescrito</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;ins&gt;</code></td>
+                        <td>Define texto inserido</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;del&gt;</code></td>
+                        <td>Define texto deletado</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;mark&gt;</code></td>
+                        <td>Define texto marcado/destacado</td>
+                    </tr>
+                </table>
+
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

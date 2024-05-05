@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Attributes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Input Attributes">
+                <h1>Atributos do Elemento &lt;input&gt;</h1>
+                <p>Os atributos do input controlam o comportamento do campo de entrada.</p>
+
+                <h2>O Atributo value</h2>
+                <p>O atributo <code style="color:#f0b400">value</code> define um valor inicial para um campo de entrada.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">value</span>="<span class="html-value">John</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">value</span>="<span class="html-value">Doe</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label for="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo readonly</h2>
+                <p>O atributo <code style="color:#f0b400">readonly</code> define que um campo de entrada é somente leitura.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">value</span>="<span class="html-value">John</span>" <span class="html-attribute">readonly</span><span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">value</span>="<span class="html-value">Doe</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label for="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" value="John" readonly><br>
+                        <label for="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo disabled</h2>
+                <p>O atributo <code style="color:#f0b400">disabled</code> define que um campo de entrada está desativado e não pode ser usado.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">value</span>="<span class="html-value">John</span>" <span class="html-attribute">disabled</span><span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>" <span class="html-attribute">value</span>="<span class="html-value">Doe</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label for="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" value="John" disabled><br>
+                        <label for="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo size</h2>
+                <p>O atributo <code style="color:#f0b400">size</code> especifica a largura visível, em caracteres, de um campo de entrada.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">size</span>="<span class="html-value">50</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">pin</span>"<span class="html-tag">&gt;</span>PIN:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">pin</span>" <span class="html-attribute">name</span>="<span class="html-value">pin</span>" <span class="html-attribute">size</span>="<span class="html-value">4</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label for="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" size="50"><br>
+                        <label para="pin">PIN:</label><br>
+                        <input type="text" id="pin" name="pin" size="4">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo maxlength</h2>
+                <p>O atributo <code style="color:#f0b400">maxlength</code> define o número máximo de caracteres permitidos em um campo de
+                    entrada.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">maxlength</span>="<span class="html-value">50</span>" <span class="html-attribute">size</span>="<span class="html-value">50</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">pin</span>"<span class="html-tag">&gt;</span>PIN:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">pin</span>" <span class="html-attribute">name</span>="<span class="html-value">pin</span>" <span class="html-attribute">maxlength</span>="<span class="html-value">4</span>" <span class="html-attribute">size</span>="<span class="html-value">4</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" maxlength="50" size="50"><br>
+                        <label para="pin">PIN:</label><br>
+                        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>Os Atributos min e max</h2>
+                <p>Os atributos <code style="color:#f0b400">min</code> e <code style="color:#f0b400">max</code> definem os valores mínimos e máximos para um campo
+                    de entrada.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">datemax</span>"<span class="html-tag">&gt;</span>Insira uma data antes de 1980-01-01:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">date</span>" <span class="html-attribute">id</span>="<span class="html-value">datemax</span>" <span class="html-attribute">name</span>="<span class="html-value">datemax</span>" <span class="html-attribute">max</span>="<span class="html-value">1979-12-31</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">datemin</span>"<span class="html-tag">&gt;</span>Insira uma data após 2000-01-01:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">date</span>" <span class="html-attribute">id</span>="<span class="html-value">datemin</span>" <span class="html-attribute">name</span>="<span class="html-value">datemin</span>" <span class="html-attribute">min</span>="<span class="html-value">2000-01-02</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">quantity</span>"<span class="html-tag">&gt;</span>Quantidade (entre 1 e 5):<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">number</span>" <span class="html-attribute">id</span>="<span class="html-value">quantity</span>" <span class="html-attribute">name</span>="<span class="html-value">quantity</span>" <span class="html-attribute">min</span>="<span class="html-value">1</span>" <span class="html-attribute">max</span>="<span class="html-value">5</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="datemax">Insira uma data antes de 1980-01-01:</label>
+                        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+                        <label para="datemin">Insira uma data após 2000-01-01:</label>
+                        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+                        <label para="quantity">Quantidade (entre 1 e 5):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo multiple</h2>
+                <p>O atributo <code style="color:#f0b400">multiple</code> permite ao usuário inserir mais de um valor em um campo de entrada.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">files</span>"<span class="html-tag">&gt;</span>Selecione arquivos:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">file</span>" <span class="html-attribute">id</span>="<span class="html-value">files</span>" <span class="html-attribute">name</span>="<span class="html-value">files</span>" <span class="html-attribute">multiple</span><span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="files">Selecione arquivos:</label>
+                        <input type="file" id="files" name="files" multiple>
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo pattern</h2>
+                <p>O atributo <code style="color:#f0b400">pattern</code> especifica uma expressão regular contra a qual o valor do campo de
+                    entrada é verificado ao enviar o formulário.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">country_code</span>"<span class="html-tag">&gt;</span>Código do país:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">country_code</span>" <span class="html-attribute">name</span>="<span class="html-value">country_code</span>" <span class="html-attribute">pattern</span>="<span class="html-value">[A-Za-z]{3}</span>" <span class="html-attribute">title</span>="<span class="html-value">Código de país de três letras</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="country_code">Código do país:</label>
+                        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"
+                            title="Código de país de três letras">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo placeholder</h2>
+                <p>O atributo <code style="color:#f0b400">placeholder</code> especifica uma dica curta que descreve o valor esperado de um
+                    campo de entrada.</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">phone</span>"<span class="html-tag">&gt;</span>Insira um número de telefone:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">tel</span>" <span class="html-attribute">id</span>="<span class="html-value">phone</span>" <span class="html-attribute">name</span>="<span class="html-value">phone</span>" <span class="html-attribute">placeholder</span>="<span class="html-value">123-45-678</span>" <span class="html-attribute">pattern</span>="<span class="html-value">[0-9]{3}-[0-9]{2}-[0-9]{3}</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="phone">Insira um número de telefone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo required</h2>
+                <p>O atributo <code style="color:#f0b400">required</code> especifica que um campo de entrada deve ser preenchido antes de
+                    enviar o formulário.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">username</span>"<span class="html-tag">&gt;</span>Nome de usuário:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">username</span>" <span class="html-attribute">name</span>="<span class="html-value">username</span>" <span class="html-attribute">required</span><span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="username">Nome de usuário:</label>
+                        <input type="text" id="username" name="username" required>
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo step</h2>
+                <p>O atributo <code style="color:#f0b400">step</code> especifica os intervalos de número legais para um campo de entrada.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">points</span>"<span class="html-tag">&gt;</span>Pontos:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">number</span>" <span class="html-attribute">id</span>="<span class="html-value">points</span>" <span class="html-attribute">name</span>="<span class="html-value">points</span>" <span class="html-attribute">step</span>="<span class="html-value">3</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="points">Pontos:</label>
+                        <input type="number" id="points" name="points" step="3">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo autofocus</h2>
+                <p>O atributo <code style="color:#f0b400">autofocus</code> especifica que um campo de entrada deve automaticamente receber
+                    foco quando a página é carregada.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>" <span class="html-attribute">autofocus</span><span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname" autofocus><br>
+                        <label para="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>Os Atributos height e width</h2>
+                <p>Os atributos <code style="color:#f0b400">height</code> e <code style="color:#f0b400">width</code> especificam a altura e a largura de um
+                    elemento.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>"<span class="html-tag">/&gt;</span> <span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">image</span>" <span class="html-attribute">src</span>="<span class="html-value">../media/Dog.png</span>" <span class="html-attribute">alt</span>="<span class="html-value">Enviar</span>" <span class="html-attribute">width</span>="<span class="html-value">48</span>" <span class="html-attribute">height</span>="<span class="html-value">48</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <label para="fname">Primeiro nome:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label para="lname">Último nome:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="image" src="../media/Dog.png" alt="Enviar" width="48" height="48">
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo list</h2>
+                <p>O atributo <code style="color:#f0b400">list</code> refere-se a um elemento <code style="color:#0059ff">&lt;datalist&gt;</code> que contém opções
+                    predefinidas para um elemento <code style="color:#0059ff">&lt;input&gt;</code>.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">list</span>="<span class="html-value">browsers</span>"<span class="html-tag">/&gt;</span>
+        <span class="html-tag">&lt;datalist</span> <span class="html-attribute">id</span>="<span class="html-value">browsers</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Edge</span>"<span class="html-tag">&gt;&lt;/option&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Firefox</span>"<span class="html-tag">&gt;&lt;/option&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Chrome</span>"<span class="html-tag">&gt;&lt;/option&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Opera</span>"<span class="html-tag">&gt;&lt;/option&gt;</span>
+            <span class="html-tag">&lt;option</span> <span class="html-attribute">value</span>="<span class="html-value">Safari</span>"<span class="html-tag">&gt;&lt;/option&gt;</span>
+        <span class="html-tag">&lt;/datalist&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form>
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </form>
+                </div>
+                <hr>
+
+                <h2>O Atributo autocomplete</h2>
+                <p>O atributo <code style="color:#f0b400">autocomplete</code> especifica se um formulário ou um campo de entrada deve ter
+                    preenchimento automático ativado ou desativado.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;form</span> <span class="html-attribute">action</span>="<span class="html-value">/action_page.php</span>" <span class="html-attribute">autocomplete</span>="<span class="html-value">on</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">fname</span>"<span class="html-tag">&gt;</span>Primeiro nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">fname</span>" <span class="html-attribute">name</span>="<span class="html-value">fname</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">lname</span>"<span class="html-tag">&gt;</span>Último nome:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">id</span>="<span class="html-value">lname</span>" <span class="html-attribute">name</span>="<span class="html-value">lname</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;label</span> <span class="html-attribute">for</span>="<span class="html-value">email</span>"<span class="html-tag">&gt;</span>E-mail:<span class="html-tag">&lt;/label&gt;</span><span class="html-tag">&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">email</span>" <span class="html-attribute">id</span>="<span class="html-value">email</span>" <span class="html-attribute">name</span>="<span class="html-value">email</span>" <span class="html-attribute">autocomplete</span>="<span class="html-value">off</span>"<span class="html-tag">/&gt;</span><span class="html-tag">&lt;br&gt;&lt;br&gt;</span>
+        <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">submit</span>" <span class="html-attribute">value</span>="<span class="html-value">Enviar</span>"<span class="html-tag">/&gt;</span>
+     <span class="html-tag">&lt;/form&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <form action="/action_page.php" autocomplete="on">
+                        <label para="fname">Primeiro nome:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label para="lname">Último nome:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label para="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

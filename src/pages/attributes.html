@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Attributes">
+                <h1>Atributos HTML</h1>
+                <p>Os atributos HTML fornecem informações adicionais sobre os elementos HTML.</p>
+                <hr>
+                <p>Todos os elementos HTML podem ter <b>atributos</b>.</p>
+                <p>Os atributos fornecem <b>informações adicionais</b> sobre os elementos.</p>
+                <p>Os atributos são sempre especificados na <b>tag de abertura</b>.</p>
+                <p>Os atributos geralmente vêm em pares nome/valor, como: <b> <code>nome="valor"</code></b>.</p>
+                <hr>
+
+                <h2>O Atributo href</h2>
+                <p>A tag <code style="color:#0059ff">&lt;a&gt;</code> define um hiperlink. O atributo <code
+                        style="color:#f0b400">href</code> especifica o URL para
+                    o qual o link aponta.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">"https://example.com"</span> <span class="html-attribute">target</span>=<span class="html-value">"_blank"</span><span class="html-tag">&gt;</span><span class="html-text">Link para Example.com</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://example.com" target="_blank">Link para Example.com</a>
+                </div>
+                <hr>
+
+                <h2>O Atributo src</h2>
+                <p>A tag <code style="color:#0059ff">&lt;img&gt;</code> é usada para incorporar uma imagem em uma página
+                    HTML. O atributo <code style="color:#f0b400">src</code> especifica o caminho para a imagem a ser exibida.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/Dog.png"</span>&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <img src="../media/Dog.png">
+                </div>
+
+                <p>Há duas maneiras de especificar o URL no atributo <code style="color:#f0b400">src</code>:</p>
+                <span><strong>URL absoluto</strong> - Aponta para uma imagem externa hospedada em outro site. Exemplo:
+                    <code>src="https://i.pinimg.com/originals/8d/5b/ea/8d5bea80a05662e69d6acc9ef10bace8.jpg"</code>.
+                </span>
+                <br>
+                <span><strong>URL relativo</strong> - Aponta para uma imagem hospedada dentro do site. Exemplo:
+                    <code>src="../media/Dog.png"</code>.
+                </span>
+                <hr>
+
+                <h2>Os Atributos width e height</h2>
+                <p>A tag <code style="color:#0059ff">&lt;img&gt;</code> também deve conter os atributos <code
+                        style="color:#f0b400">width</code> e <code style="color:#f0b400">height</code>, que especificam
+                    a largura e altura da imagem (em pixels):
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/Dog.png"</span> <span class="html-attribute">width</span>=<span class="html-value">"300"</span> <span class="html-attribute">height</span>=<span class="html-value">"300"</span><span class="html-tag">&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <img src="../media/Dog.png" width="300" height="300">
+                </div>
+                <hr>
+
+                <h2>O Atributo alt</h2>
+                <p>O atributo <code style="color:#f0b400">alt</code> é obrigatório para a tag <code
+                        style="color:#0059ff">&lt;img&gt;</code> e especifica um texto
+                    alternativo para a imagem, caso a imagem não possa ser exibida:
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;img</span> <span class="html-attribute">src</span>=<span class="html-value">"../media/Dog.png"</span> <span class="html-attribute">alt</span>=<span class="html-value">"Cachorro"</span> <span class="html-attribute">width</span>=<span class="html-value">"300"</span> <span class="html-attribute">height</span>=<span class="html-value">"300"</span><span class="html-tag">&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <img src="../media/Dog.png" alt="Cachorro" width="300" height="300">
+                </div>
+                <hr>
+
+                <h2>O Atributo style</h2>
+                <p>O atributo <code style="color:#f0b400">style</code> é usado para adicionar estilos a um elemento,
+                    como cor, fonte, tamanho,
+                    etc.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p</span> <span class="html-attribute">style</span>=<span class="html-value">"color: red;"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um parágrafo vermelho.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p style="color: red;">Este é um parágrafo vermelho.</p>
+                </div>
+                <hr>
+
+                <h2>O Atributo lang</h2>
+                <p>O atributo <code>lang</code> deve ser incluído na tag <code>&lt;html&gt;</code> para declarar o
+                    idioma da página da web:
+                </p>
+                <pre>
+                <span class="html-tag">&lt;!DOCTYPE</span> <span class="html-attribute">html</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;html</span> <span class="html-attribute">lang</span>=<span class="html-value">"pt-BR"</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;body&gt;</span>
+            ...
+        <span class="html-tag">&lt;/body&gt;</span>
+        <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <hr>
+
+                <h2>O Atributo title</h2>
+                <p>O atributo <code>title</code> define uma informação adicional sobre um elemento. O valor do atributo
+                    será exibido como uma dica (tooltip) quando você passar o mouse sobre o elemento:
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p</span> <span class="html-attribute">title</span>=<span class="html-value">"Eu sou uma dica"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p title="Eu sou uma dica">Este é um parágrafo.</p>
+                </div>
+                <hr>
+
+                <h2>Recomendações sobre Atributos HTML</h2>
+                <p>
+                    Sempre use atributos em letras minúsculas. Embora o padrão HTML não exija atributos em minúsculas, a W3C recomenda isso.
+                </p>
+                <p>Sempre coloque aspas nos valores dos atributos. Mesmo que o padrão HTML não exija, é uma boa prática.</p>
+                <hr>
+
+                <h2>Aspas simples ou duplas?</h2>
+                <p>
+                    Você pode usar aspas simples ou duplas para envolver valores de atributos, mas aspas duplas são mais comuns.
+                </p>
+                <p>Em alguns casos, onde o valor do atributo contém aspas duplas, você deve usar aspas simples.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p</span> <span class="html-attribute">title</span>=<span class="html-value">"John 'ShotGun' Nelson"</span><span class="html-tag">&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <p>Ou vice-versa:</p>
+                <pre>
+                    <span class="html-tag">&lt;p</span> <span class="html-attribute">title</span>=<span class="html-value">'John "ShotGun" Nelson'</span><span class="html-tag">&gt;</span><span class="html-text">Este é um parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p title="John 'ShotGun' Nelson">Este é um parágrafo.</p>
+                    <p title='John "ShotGun" Nelson'>Este é um parágrafo.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

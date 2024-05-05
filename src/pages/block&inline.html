@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formatting</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Block And Inline">
+                <h1>Elementos de Bloco e Inline em HTML</h1>
+                <p>Todo elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento.</p>
+                <p>Os valores mais comuns são block e inline.</p>
+
+                <h2>Elementos de Bloco</h2>
+                <p>Um elemento de bloco sempre começa em uma nova linha, e os navegadores automaticamente adicionam
+                    espaço (margem) antes e depois do elemento.</p>
+                <p>Um elemento de bloco sempre ocupa toda a largura disponível (estendendo-se para a esquerda e para
+                    a direita tanto quanto possível).</p>
+                <p>Dois elementos de bloco comumente usados são: <code style="color:#0059ff">&lt;p&gt;</code> e <code style="color:#0059ff">&lt;div&gt;</code>.
+                <p>O elemento define um parágrafo em um Documento HTML. <code style="color:#0059ff">&lt;p&gt;</code>.
+                <p>O elemento define uma divisão ou uma seção em um documento HTML. <code style="color:#0059ff">&lt;div&gt;</code>.
+                </p>
+                <p style="border:1px solid #04AA6D;padding:5px;">
+                    O elemento &lt;p&gt; é um elemento de nível de bloco.
+                </p>
+                <p style="border:1px solid #04AA6D;padding:5px;">
+                    O elemento &lt;div&gt; é um elemento de nível de bloco.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Hello World</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;div&gt;</span><span class="html-text">Hello World</span><span class="html-tag">&lt;/div&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Hello World</p>
+                    <div>Hello World</div>
+                </div>
+
+                <p>Aqui estão os elementos de bloco em HTML:</p>
+                <ul style="columns: 8;list-style: none; margin-bottom: 20px;">
+                    <li><code>&lt;address&gt;</code></li>
+                    <li><code>&lt;article&gt;</code></li>
+                    <li><code>&lt;aside&gt;</code></li>
+                    <li><code>&lt;blockquote&gt;</code></li>
+                    <li><code>&lt;canvas&gt;</code></li>
+                    <li><code>&lt;dd&gt;</code></li>
+                    <li><code>&lt;div&gt;</code></li>
+                    <li><code>&lt;dl&gt;</code></li>
+                    <li><code>&lt;dt&gt;</code></li>
+                    <li><code>&lt;fieldset&gt;</code></li>
+                    <li><code>&lt;figcaption&gt;</code></li>
+                    <li><code>&lt;figure&gt;</code></li>
+                    <li><code>&lt;footer&gt;</code></li>
+                    <li><code>&lt;form&gt;</code></li>
+                    <li><code>&lt;h1&gt;-&lt;h6&gt;</code></li>
+                    <li><code>&lt;header&gt;</code></li>
+                    <li><code>&lt;hr&gt;</code></li>
+                    <li><code>&lt;li&gt;</code></li>
+                    <li><code>&lt;main&gt;</code></li>
+                    <li><code>&lt;nav&gt;</code></li>
+                    <li><code>&lt;noscript&gt;</code></li>
+                    <li><code>&lt;ol&gt;</code></li>
+                    <li><code>&lt;p&gt;</code></li>
+                    <li><code>&lt;pre&gt;</code></li>
+                    <li><code>&lt;section&gt;</code></li>
+                    <li><code>&lt;table&gt;</code></li>
+                    <li><code>&lt;tfoot&gt;</code></li>
+                    <li><code>&lt;ul&gt;</code></li>
+                    <li><code>&lt;video&gt;</code></li>
+                </ul>
+                <hr>
+
+                <h2>Elementos Inline</h2>
+                <p>Um elemento inline não começa em uma nova linha.</p>
+                <p>Ele ocupa apenas a largura necessária.</p>
+                <p>Este é <span style="border:1px solid #04AA6D;padding:5px;">um elemento <code>&lt;span&gt;</code> 
+                    dentro</span> de um parágrafo.
+                </p>
+
+                <h3>Exemplo de Elementos Inline</h3>
+                <pre>
+                    <span class="html-tag">&lt;span&gt;</span><span class="html-text">Hello World</span><span class="html-tag">&lt;/span&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <span>Hello World</span>
+                </div>
+
+                <p>Aqui estão os elementos inline em HTML:</p>
+                <ul style="columns: 8;list-style: none;">
+                    <li><code>&lt;a&gt;</code></li>
+                    <li><code>&lt;abbr&gt;</code></li>
+                    <li><code>&lt;acronym&gt;</code></li>
+                    <li><code>&lt;b&gt;</code></li>
+                    <li><code>&lt;bdo&gt;</code></li>
+                    <li><code>&lt;big&gt;</code></li>
+                    <li><code>&lt;br&gt;</code></li>
+                    <li><code>&lt;button&gt;</code></li>
+                    <li><code>&lt;cite&gt;</code></li>
+                    <li><code>&lt;code&gt;</code></li>
+                    <li><code>&lt;dfn&gt;</code></li>
+                    <li><code>&lt;em&gt;</code></li>
+                    <li><code>&lt;i&gt;</code></li>
+                    <li><code>&lt;img&gt;</code></li>
+                    <li><code>&lt;input&gt;</code></li>
+                    <li><code>&lt;kbd&gt;</code></li>
+                    <li><code>&lt;label&gt;</code></li>
+                    <li><code>&lt;map&gt;</code></li>
+                    <li><code>&lt;object&gt;</code></li>
+                    <li><code>&lt;output&gt;</code></li>
+                    <li><code>&lt;q&gt;</code></li>
+                    <li><code>&lt;samp&gt;</code></li>
+                    <li><code>&lt;script&gt;</code></li>
+                    <li><code>&lt;select&gt;</code></li>
+                    <li><code>&lt;small&gt;</code></li>
+                    <li><code>&lt;span&gt;</code></li>
+                    <li><code>&lt;strong&gt;</code></li>
+                    <li><code>&lt;sub&gt;</code></li>
+                    <li><code>&lt;sup&gt;</code></li>
+                    <li><code>&lt;textarea&gt;</code></li>
+                    <li><code>&lt;time&gt;</code></li>
+                    <li><code>&lt;tt&gt;</code></li>
+                    <li><code>&lt;var&gt;</code></li>
+                </ul>
+                <p><strong>Nota:</strong> Um elemento inline não pode conter um elemento de bloco!</p>
+                <hr>
+
+                <h2>O Elemento &lt;div&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;div&gt;</code> é frequentemente usado como um contêiner para outros
+                    elementos HTML.</p>
+                <p>Ele não tem atributos obrigatórios, mas <code style="color:#f0b400">style</code>, <code style="color:#f0b400">class</code> e <code style="color:#f0b400">id</code>
+                    são comuns.</p>
+
+                <h3>Exemplo com o Elemento &lt;div&gt;</h3>
+                <pre>
+                    <span class="html-tag">&lt;div</span> <span class="html-attribute">style</span>=<span class="html-value">"background-color:black;color:white;padding:20px;"</span><span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span>
+            <span class="html-text">Londres é a capital da Inglaterra. É a cidade mais populosa do Reino Unido, com uma área metropolitana de mais 
+            de 13 milhões de habitantes.</span>
+        <span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/div&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="background-color:black;color:white;padding:20px;">
+                        <h2>Londres</h2>
+                        <p>
+                        Londres é a capital da Inglaterra. É a cidade mais populosa do Reino Unido, com uma área metropolitana de mais de 13 milhões de habitantes.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>O Elemento &lt;span&gt;</h2>
+                <p>O elemento <code style="color:#0059ff">&lt;span&gt;</code> é um contêiner inline usado para marcar uma parte do texto
+                    ou de um documento.</p>
+                <p>Ele não tem atributos obrigatórios, mas <code style="color:#f0b400">style</code>, <code style="color:#f0b400">class</code>, e <code style="color:#f0b400">id</code>
+                    são comuns.</p>
+
+                <h3>Exemplo com o Elemento &lt;span&gt;</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>
+   <span class="html-text">Minha mãe tem </span><span class="html-tag">&lt;span</span> <span class="html-attribute">style</span>=<span class="html-value">"color:blue;font-weight:bold;"</span><span class="html-tag">&gt;</span><span class="html-text">olhos azuis</span><span class="html-tag">&lt;/span&gt;</span></span><span class="html-text"> e meu pai tem</span> <span class="html-tag">&lt;span</span> <span class="html-attribute">style</span>=<span class="html-value">"color:darkolivegreen;font-weight:bold;"</span><span class="html-tag">></span><span class="html-text">olhos verde-escuros</span><span class="html-tag">&lt;/span&gt;</span> 
+     <span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <div class="exemplo">
+                    <p>
+                        Minha mãe tem <span style="color:blue;font-weight:bold;">olhos azuis</span> e meu pai tem <span style="color:darkolivegreen;font-weight:bold;">olhos verde-escuros</span> 
+                    </p>
+                </div>
+                <hr>
+
+                <h2>Tags de Tabelas em HTML</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;div&gt;</code></td>
+                        <td>Define uma seção em um documento (nível de bloco)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;span&gt;</code></td>
+                        <td>Define uma seção em um documento (inline)</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

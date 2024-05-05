@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Classes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Classes">
+                <h1>Atributo Class em HTML</h1>
+                <p>O atributo <code style="color:#f0b400">class</code> é usado para especificar uma classe para um elemento HTML.</p>
+                <p>Classes são usadas para aplicar estilos a elementos específicos ou para organizar elementos
+                    semelhantes.</p>
+                <p>Vários elementos HTML podem compartilhar a mesma classe.</p>
+                <p>O atributo <code style="color:#f0b400">class</code> é frequentemente usado para apontar para um nome de classe em uma
+                    folha de estilos (CSS). Também pode ser usado por um JavaScript para acessar e manipular
+                    elementos com um nome de classe específico.</p>
+
+                <h2>Exemplo de Uso do Atributo class</h2>
+                <p>No exemplo a seguir, temos três elementos <code style="color:#0059ff">&lt;div&gt;</code> com um atributo
+                    <code style="color:#f0b400">class</code> com o valor "city". Todos os três elementos <code style="color:#0059ff">&lt;div&gt;</code> serão
+                    estilizados igualmente de acordo com a definição de estilo <code style="color:#0059ff" >.city</code> na seção
+                    <code style="color:#0059ff">&lt;head&gt;</code>:
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html&gt;</span>
+     <span class="html-tag">&lt;head&gt;</span>
+     <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">.city</span> {
+        <span class="html-attribute">background-color</span>: <span class="html-value">tomato</span>;
+        <span class="html-attribute">color</span>: <span class="html-value">white</span>;
+        <span class="html-attribute">border</span>: <span class="html-value">2px solid black</span>;
+        <span class="html-attribute">margin</span>: <span class="html-value">20px</span>;
+        <span class="html-attribute">padding</span>: <span class="html-value">20px</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+     <span class="html-tag">&lt;/head&gt;</span>
+    
+    <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/div&gt;</span>
+        
+        <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">Paris é a capital da França.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/div&gt;</span>
+        
+        <span class="html-tag">&lt;div</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span>
+            <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/h2&gt;</span>
+            <span class="html-tag">&lt;p&gt;</span><span class="html-text">Tóquio é a capital do Japão.</span><span class="html-tag">&lt;/p&gt;</span>
+        <span class="html-tag">&lt;/div&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <style>
+                            .city {
+                                background-color: tomato;
+                                color: white;
+                                border: 2px solid black;
+                                margin: 20px;
+                                padding: 20px;
+                            }
+                        </style>
+                        <div class="city">
+                            <h2>Londres</h2>
+                            <p>Londres é a capital da Inglaterra.</p>
+                        </div>
+
+                        <div class="city">
+                            <h2>Paris</h2>
+                            <p>Paris é a capital da França.</p>
+                        </div>
+
+                        <div class="city">
+                            <h2>Tóquio</h2>
+                            <p>Tóquio é a capital do Japão.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>O atributo class em diferentes elementos HTML</h2>
+                <p>No exemplo a seguir, temos dois elementos <code style="color:#0059ff">&lt;span&gt;</code> com um atributo
+                    <code style="color:#f0b400">class</code> com o valor "note". Ambos os elementos <code style="color:#0059ff">&lt;span&gt;</code> serão
+                    estilizados igualmente de acordo com a definição de estilo <code style="color:#0059ff">.note</code> na seção
+                    <code style="color:#0059ff">&lt;head&gt;</code>:
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html&gt;</span>
+     <span class="html-tag">&lt;head&gt;</span>
+     <span class="html-tag">&lt;style&gt;</span>
+     <span class="html-tag">.note</span> {
+        <span class="html-attribute">font-size</span>: <span class="html-value">120%</span>;
+        <span class="html-attribute">color</span>: <span class="html-value">red</span>;
+     }
+     <span class="html-tag">&lt;/style&gt;</span>
+     <span class="html-tag">&lt;/head&gt;</span>
+    
+     <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Meu</span> <span class="html-tag">&lt;span</span> <span class="html-attribute">class</span>="<span class="html-value">note</span>"<span class="html-tag">&gt;</span><span class="html-text">Importante</span><span class="html-tag">&lt;/span&gt;</span> <span class="html-text">Título</span><span class="html-tag">&lt;/h1&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um texto</span> <span class="html-tag">&lt;span</span> <span class="html-attribute">class</span>="<span class="html-value">note</span>"<span class="html-tag">&gt;</span><span class="html-text">importante</span><span class="html-tag">&lt;/span&gt;</span>.<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>
+</pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <style>
+                        .note {
+                            font-size: 120%;
+                            color: red;
+                        }
+                    </style>
+                    <h1>Meu <span class="note">Importante</span> Título</h1>
+                    <p>Este é um texto <span class="note">importante</span>.</p>
+                </div>
+                <hr>
+
+                <h2>O Atributo class com CSS</h2>
+                <p>Para criar uma classe no CSS, escreva um caractere de ponto (.) seguido por um nome de classe.
+                    Depois, defina as propriedades CSS entre chaves { }:</p>
+
+                <h3>Criação de Classe</h3>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html&gt;</span>
+     <span class="html-tag">&lt;html&gt;</span>
+     <span class="html-tag">&lt;head&gt;</span>
+     <span class="html-tag">&lt;style&gt;</span>
+     <span class="html-tag">.city</span> {
+        <span class="html-attribute">background-color</span>: <span class="html-value">tomato</span>;
+        <span class="html-attribute">color</span>: <span class="html-value">white</span>;
+        <span class="html-attribute">padding</span>: <span class="html-value">10px</span>;
+     }
+     <span class="html-tag">&lt;/style&gt;</span>
+     <span class="html-tag">&lt;/head&gt;</span>
+
+     <span class="html-tag">&lt;body&gt;</span>
+        <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+
+        <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Paris é a capital da França.</span><span class="html-tag">&lt;/p&gt;</span>
+
+        <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/h2&gt;</span>
+        <span class="html-tag">&lt;p&gt;</span><span class="html-text">Tóquio é a capital do Japão.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>
+
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <style>
+                            .city {
+                                background-color: tomato;
+                                color: white;
+                                padding: 10px;
+                            }
+                        </style>
+                        <h2 class="city">Londres</h2>
+                        <p>Londres é a capital da Inglaterra.</p>
+
+                        <h2 class="city">Paris</h2>
+                        <p>Paris é a capital da França.</p>
+
+                        <h2 class="city">Tóquio</h2>
+                        <p>Tóquio é a capital do Japão.</p>
+                    </div>
+                </div>
+
+                <h2>Usando Múltiplas Classes</h2>
+                <p>Elementos HTML podem pertencer a mais de uma classe.</p>
+                <p>Para definir várias classes, separe os nomes das classes com um espaço, como
+                    <code style="color:#0059ff">&lt;div class="city main"&gt;</code>. O elemento será estilizado de acordo com todas as
+                    classes especificadas.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">.city</span> {
+            <span class="html-attribute">background-color</span>: <span class="html-value">tomato</span>;
+            <span class="html-attribute">color</span>: <span class="html-value">white</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">10px</span>;
+        }
+        <span class="html-tag">.main</span> {
+            <span class="html-attribute">text-align</span>: <span class="html-value">center</span>;
+        }
+     <span class="html-tag">&lt;/style&gt;</span>
+
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city main</span>"<span class="html-tag">&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/h2&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <style>
+                            .city {
+                                background-color: tomato;
+                                color: white;
+                                padding: 10px;
+                            }
+
+                            .main {
+                                text-align: center;
+                            }
+                        </style>
+
+                        <h2 class="city main">Londres</h2>
+                        <h2 class="city">Paris</h2>
+                        <h2 class="city">Tóquio</h2>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>Elementos Diferentes Compartilhando a Mesma Classe</h2>
+                <p>Diferentes elementos HTML podem apontar para o mesmo nome de classe.</p>
+                <p>No exemplo a seguir, tanto o elemento <code style="color:#0059ff">&lt;h2&gt;</code> quanto o elemento
+                    <code style="color:#0059ff">&lt;p&gt;</code> apontam para a classe "city" e compartilham o mesmo estilo:
+                </p>
+                <h3>Elementos Diferentes com a Mesma Classe</h3>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;style&gt;</span>
+        <span class="html-tag">.city</span> {
+            <span class="html-attribute">background-color</span>: <span class="html-value">tomato</span>;
+            <span class="html-attribute">color</span>: <span class="html-value">white</span>;
+            <span class="html-attribute">padding</span>: <span class="html-value">10px</span>;
+        }
+    <span class="html-tag">&lt;/style&gt;</span>
+                    
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Paris é a capital da França.</span><span class="html-tag">&lt;/p&gt;</span>
+     
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <style>
+                            .city {
+                                background-color: tomato;
+                                color: white;
+                                padding: 10px;
+                            }
+                        </style>
+
+                        <h2 class="city">Paris</h2>
+                        <p class="city">Paris é a capital da França.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>Usando o Atributo class com JavaScript</h2>
+                <p>O nome da classe também pode ser usado por JavaScript para executar certas tarefas para elementos
+                    específicos.</p>
+                <p>JavaScript pode acessar elementos com um nome de classe específico usando o método
+                    <code style="color:#f0b400">getElementsByClassName()</code>:
+                </p>
+
+                <h3>JavaScript com Class</h3>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;button</span> <span class="html-attribute">onclick</span>="<span class="html-value">myFunction()</span>"<span class="html-tag">&gt;</span><span class="html-text">Ocultar elementos</span><span class="html-tag">&lt;/button&gt;</span>
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Londres</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Londres é a capital da Inglaterra.</span><span class="html-tag">&lt;/p&gt;</span>
+
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Paris</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Paris é a capital da França.</span><span class="html-tag">&lt;/p&gt;</span>
+
+     <span class="html-tag">&lt;h2</span> <span class="html-attribute">class</span>="<span class="html-value">city</span>"<span class="html-tag">&gt;</span><span class="html-text">Tóquio</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Tóquio é a capital do Japão.</span><span class="html-tag">&lt;/p&gt;</span>
+
+     <span class="html-tag">&lt;script&gt;</span>
+        <span class="html-tag">function</span> <span class="js-var">myFunction</span>() {
+            <span class="html-tag">var</span> <span class="js-var">x</span> = <span class="html-tag">document</span>.<span class="js-var">getElementsByClassName</span>("city");
+            <span class="html-tag">for</span> (<span class="html-tag">var</span> <span class="js-var">i</span> = 0; <span class="js-var">i</span> &lt; <span class="html-var">x.length</span>; <span class="js-var">i</span>++) {
+            <span class="js-var">x[i].style.display</span> = <span class="html-value">"none"</span>;
+            }
+        }
+     <span class="html-tag">&lt;/script&gt;</span>
+     
+    </pre>
+                <h3>Resultado</h3>
+                <p>Clique em um botão para ocultar todos os elementos com o nome de classe "city":</p>
+                <div class="exemplo">
+                    <div style="width: 100%;text-align: initial;">
+                        <button onclick="myFunction()">Ocultar elementos</button>
+                        <h2 class="city">Londres</h2>
+                        <p>Londres é a capital da Inglaterra.</p>
+
+                        <h2 class="city">Paris</h2>
+                        <p>Paris é a capital da França.</p>
+
+                        <h2 class="city">Tóquio</h2>
+                        <p>Tóquio é a capital do Japão.</p>
+
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementsByClassName("city");
+                                for (var i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

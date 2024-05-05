@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML vs XHTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .exemplo hr {
+            width: 100%;
+            border-top: 1px solid #d8d8d8;
+        }
+
+        .exemplo pre {
+            color: initial;
+            font-family: initial;
+            background-color: initial;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML vs XHTML">
+                <h1>HTML vs XHTML</h1>
+
+                <h2>O que é XHTML?</h2>
+                <p>XHTML significa EXtensible HyperText Markup Language</p>
+                <p>XHTML é uma versão mais rigorosa e baseada em XML do HTML</p>
+                <p>XHTML é suportado por todos os principais navegadores</p>
+                <hr>
+
+                <h2>Requisitos do XHTML</h2>
+                <ul style="text-align: start;">
+                    <li><strong>DOCTYPE</strong> é obrigatório</li>
+                    <li>O atributo <strong>xmlns</strong> em <strong>&lt;html&gt;</strong> é obrigatório</li>
+                    <li>Os elementos <strong>&lt;html&gt;</strong>, <strong>&lt;head&gt;</strong>,
+                        <strong>&lt;title&gt;</strong>, e <strong>&lt;body&gt;</strong> são obrigatórios
+                    </li>
+                    <li>Os elementos devem estar sempre aninhados corretamente</li>
+                    <li>Os elementos devem sempre ser fechados</li>
+                    <li>Os elementos devem estar sempre em minúsculas</li>
+                    <li>Os nomes de atributos devem estar sempre em minúsculas</li>
+                    <li>Os valores de atributo devem sempre ser citados</li>
+                    <li>A minimização de atributos é proibida</li>
+                </ul>
+                <hr>
+
+                <h2>Exemplo de Documento XHTML Mínimo</h2>
+                <p>A seguir, um documento XHTML com um mínimo de tags necessárias:</p>
+                <pre>
+                    <span class="html-tag">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"</span>
+     <span class="html-tag">"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</span>
+     <span class="html-tag">&lt;html</span> <span class="html-attribute">xmlns</span>="<span class="html-value">http://www.w3.org/1999/xhtml</span>"<span class="html-tag">&gt;</span>
+        <span class="html-tag">&lt;head&gt;</span>
+            <span class="html-tag">&lt;title&gt;</span><span class="html-text">Título do documento</span><span class="html-tag">&lt;/title&gt;</span>
+        <span class="html-tag">&lt;/head&gt;</span>
+    
+        <span class="html-tag">&lt;body&gt;</span>
+            <span class="html-text">algum conteúdo aqui...</span>
+        <span class="html-tag">&lt;/body&gt;</span>
+     <span class="html-tag">&lt;/html&gt;</span>       
+                </pre>
+                <hr>
+
+                <h2>Diferenças Importantes</h2>
+                <p>Os elementos do XHTML devem ser aninhados e fechados corretamente, como mostrado abaixo:</p>
+                <strong>Correto:</strong>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>&lt;b&gt;&lt;i&gt;Algum texto&lt;/i&gt;&lt;/b&gt;<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><b><i>Algum texto</i></b></p>
+                </div>
+
+                <strong>Errado:</strong>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>&lt;b&gt;&lt;i&gt;Algum texto&lt;/b&gt;&lt;/i&gt;<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><b><i>Algum texto</b></i></p>
+                </div>
+                <hr>
+
+                <h3>Exemplo de elementos vazios fechados:</h3>
+                <strong>Correto:</strong>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>&lt;br /&gt;<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span>&lt;hr /&gt;<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span>&lt;img src="../media/Dog.png" alt="Descrição da imagem" /&gt;<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><br /></p>
+                    <p><hr /></p>
+                    <p><img src="../media/Dog.png" alt="Descrição da imagem" width="150px"/></p>
+                </div>
+
+                <strong>Errado:</strong>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>&lt;br&gt;<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span>&lt;hr&gt;<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span>&lt;img src="../media/Dog.png" alt="Descrição da imagem"&gt;<span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><br></p>
+                    <p><hr></p>
+                    <p><img src="../media/Dog.png" alt="Descrição da imagem" width="150px"></p>
+                </div>
+
+                <hr>
+
+                <h3>Exemplo de valores de atributos citados:</h3>
+                <strong>Correto:</strong>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>="<span class="html-value">https://www.w3schools.com/html/</span>"<span class="html-tag">&gt;</span><span class="html-text">Visite nosso tutorial de HTML</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href="https://www.w3schools.com/html/">Visite nosso tutorial de HTML</a>
+                </div>
+                <p>&lt;a href="https://www.w3schools.com/html/"&gt;Visite nosso tutorial de HTML&lt;/a&gt;</p>
+                <strong>Errado:</strong>
+                <pre>
+                    <span class="html-tag">&lt;a</span> <span class="html-attribute">href</span>=<span class="html-value">https://www.w3schools.com/html/</span><span class="html-tag">&gt;</span><span class="html-text">Visite nosso tutorial de HTML</span><span class="html-tag">&lt;/a&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <a href=https://www.w3schools.com/html />Visite nosso tutorial de HTML</a>
+                </div>
+
+                <h3>Proibição de minimização de atributos:</h3>
+                <h3>Exemplo</h3>
+                <strong>Correto:</strong>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>&lt;input type="checkbox" checked="checked" /&gt;<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">name</span>="<span class="html-value">lastname</span>" <span class="html-attribute">disabled</span>="<span class="html-value">disabled</span>" <span class="html-tag">/&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><input type="checkbox" checked="checked" /></p>
+                    <input type="text" name="lastname" disabled="disabled" />
+                </div>
+
+                <strong>Errado:</strong>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>&lt;input type="checkbox" checked /&gt;<span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;input</span> <span class="html-attribute">type</span>="<span class="html-value">text</span>" <span class="html-attribute">name</span>="<span class="html-value">lastname</span>" <span class="html-attribute">disabled</span> <span class="html-tag">/&gt;</span>
+
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p><input type="checkbox" checked /></p>
+                    <input type="text" name="lastname" disabled />
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

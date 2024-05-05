@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Paragraphs</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .exemplo hr {
+            width: 100%;
+            border-top: 1px solid #d8d8d8;
+        }
+
+        .exemplo pre {
+            color: initial;
+            font-family: initial;
+            background-color: initial;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li id="HTML Paragraphs">
+                <h1>Parágrafos HTML</h1>
+                <p>Um parágrafo sempre começa em uma nova linha e geralmente é um bloco de texto.</p>
+                <hr>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;p&gt;</code> define um parágrafo.</p>
+                <p>Um parágrafo sempre começa em uma nova linha, e os navegadores automaticamente adicionam um pouco de
+                    espaço em branco (margem) antes e depois de um parágrafo.
+                </p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Isso é um parágrafo.</span><span
+                        class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Isso é outro parágrafo.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Isso é um parágrafo.</p>
+                    <p>Isso é outro parágrafo.</p>
+                </div>
+                <hr>
+
+                <h2>Exibição HTML</h2>
+                <p>Você não pode ter certeza de como o HTML será exibido.</p>
+                <p>Telas grandes ou pequenas e janelas redimensionadas podem criar resultados diferentes.</p>
+                <p>Com HTML, você não pode alterar a exibição adicionando espaços extras ou linhas extras no código
+                    HTML.</p>
+                <p>O navegador automaticamente remove espaços e linhas adicionais quando a página é exibida.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span>
+     <span class="html-text">Este parágrafo
+     contém várias linhas
+     no código-fonte,
+     mas o navegador
+     ignora isso.</span>
+     <span class="html-tag">&lt;/p&gt;</span>
+
+     <span class="html-tag">&lt;p&gt;</span>
+     <span class="html-text">Este parágrafo
+     contém       muitos espaços
+     no        código-fonte,
+     mas o        navegador
+     ignora isso.</span>
+     <span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>
+                        Este parágrafo
+                        contém várias linhas
+                        no código-fonte,
+                        mas o navegador
+                        ignora isso.
+                    </p>
+                    <p>
+                        Este parágrafo
+                        contém muitos espaços
+                        no código-fonte,
+                        mas o navegador
+                        ignora isso.
+                    </p>
+                </div>
+                <hr>
+
+                <h2>Regras Horizontais HTML</h2>
+                <p>A tag <code style="color:#0059ff">&lt;hr&gt;</code> define uma quebra temática em uma página HTML, e
+                    geralmente é exibida
+                    como uma linha horizontal.</p>
+                <p> Ela é usada para separar conteúdo ou definir uma mudança na página:</p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                        <span class="html-tag">&lt;h1&gt;</span><span class="html-text">Este é um título 1</span><span class="html-tag">&lt;/h1&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um texto.</span><span class="html-tag">&lt;/p&gt;</span>
+     <span class="html-tag">&lt;hr&gt;</span>
+     <span class="html-tag">&lt;h2&gt;</span><span class="html-text">Este é um título 2</span><span class="html-tag">&lt;/h2&gt;</span>
+     <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é um texto.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <h1>Este é um título 1</h1>
+                    <p>Este é um texto.</p>
+                    <hr>
+                    <h2 style="margin-bottom: 0;">Este é um título 2</h2>
+                    <p>Este é um texto.</p>
+                </div>
+                <p>A tag <code style="color:#0059ff">&lt;hr&gt;</code> é uma tag vazia, ou seja, não tem uma tag de
+                    fechamento.
+                </p>
+                <hr>
+
+                <h2>Quebras de Linha HTML</h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;br&gt;</code> define uma quebra de linha.</p>
+                <p> Use <code style="color:#0059ff">&lt;br&gt;</code> se
+                    você quiser uma quebra de linha (nova linha) sem iniciar um novo parágrafo:
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">Este é <span class="html-tag">&lt;br&gt;</span> um parágrafo <span class="html-tag">&lt;br&gt;</span> com quebras de linha.</span><span class="html-tag">&lt;/p&gt;</span>
+                </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>Este é<br>um parágrafo<br>com quebras de linha.</p>
+                </div>
+
+                <p>A tag <code style="color:#0059ff">&lt;br&gt;</code> é uma tag vazia e não tem uma tag de fechamento.
+                </p>
+                <hr>
+
+                <h2>O Problema do Poema</h2>
+                <p>Este poema será exibido em uma única linha.</p>
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;p&gt;</span><span class="html-text">
+       My Bonnie lies over the ocean. 
+       My Bonnie lies over the sea.
+       My Bonnie lies over the ocean.
+       Oh, bring back my Bonnie to me.
+     <span class="html-tag">&lt;/p&gt;</span></pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <p>
+                        My Bonnie lies over the ocean.
+                        My Bonnie lies over the sea.
+                        My Bonnie lies over the ocean.
+                        Oh, bring back my Bonnie to me.
+                    </p>
+                </div>
+                <hr>
+
+                <h2>Solução - O Elemento HTML <code>&lt;pre&gt;</code></h2>
+                <p>O elemento HTML <code style="color:#0059ff">&lt;pre&gt;</code> define texto pré-formatado. O texto
+                    dentro de um
+                    <code style="color:#0059ff">&lt;pre&gt;</code> é exibido em uma fonte de largura fixa (geralmente
+                    Courier) e preserva
+                    espaços e quebras de linha:
+                </p>
+
+                <h3>Exemplo</h3>
+                <pre>
+                    <span class="html-tag">&lt;pre&gt;</span>
+       My Bonnie lies over the ocean.
+       My Bonnie lies over the sea.
+       My Bonnie lies over the ocean.
+       Oh, bring back my Bonnie to me.
+     <span class="html-tag">&lt;/pre&gt;</span>
+    </pre>
+                <h3>Resultado</h3>
+                <div class="exemplo">
+                    <pre class="ignore">
+            My Bonnie lies over the ocean.
+            My Bonnie lies over the sea.
+            My Bonnie lies over the ocean.
+            Oh, bring back my Bonnie to me.</pre>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
