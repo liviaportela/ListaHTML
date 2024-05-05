@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,9 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+    --sb-track-color: #e0e0e0;
+    --sb-thumb-color: #a0a0a0;
+    --sb-size: 11px;
 }
 
 html,
@@ -48,18 +53,18 @@ nav {
     top: 0;
 }
 
-nav > h2 {
+nav>h2 {
     padding: 15px 35px 10px;
     text-align: start;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-nav > ul > li {
+nav>ul>li {
     display: flex;
     align-items: center;
     text-align: left;
@@ -69,7 +74,7 @@ nav > ul > li {
     gap: 145px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     text-decoration: none;
     width: 100%;
     color: gray;
@@ -123,7 +128,7 @@ hr {
     border-top: 1px solid #eee;
 }
 
-main > iframe {
+main>iframe {
     width: 100%;
     border: none;
 }
@@ -262,8 +267,29 @@ footer {
     color: white;
 }
 
-@media (max-width: 525px) {
+::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+@media (max-width: 750px) {
     nav {
+        width: 100%;
         max-width: 100%;
+        position: relative;
+    }
+
+    .conteudo {
+        flex-direction: column;
     }
 }
